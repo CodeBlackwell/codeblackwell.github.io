@@ -4,13 +4,14 @@ export const Polaroid = styled.div`
     display: inline-block;
     overflow: hidden;
     > img {
+        display: inline-block;
         height: 40vh;
         width: 40vh;
         padding: 15px 10px 10px 10px;
     }
     :hover {
         & > img {
-            transform: scale(1.2);   
+            transform: scale(1.4);   
         }
     }
     
