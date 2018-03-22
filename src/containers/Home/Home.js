@@ -23,7 +23,7 @@ export default class Home extends Component {
                 </HeroImage>
                 <WhenInView>
                     { ({ isInView })  =>
-                        <RevealP hide={isInView}>
+                        <RevealP hide={!isInView}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum nulla est,
                         et mattis leo pellentesque malesuada. Vivamus sodales accumsan orci, nec malesuada nisi
                         molestie quis. Donec turpis lectus, congue sit amet sem tempus, varius auctor ex. Sed est

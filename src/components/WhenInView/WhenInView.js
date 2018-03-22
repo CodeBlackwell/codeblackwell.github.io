@@ -9,18 +9,20 @@ class WhenInView extends Component {
             isInView: false
         };
 
-        this.onEnter.bind(this);
+        this.onEnter = this.onEnter.bind(this);
     }
 
 
     onEnter({ previousPosition }) {
+        console.log('should be in view', this.state);
         if( previousPosition === Waypoint.below) {
             this.setState({
-                IsInView: true
+                isInView: true
             })
         }
     }
     render () {
+        console.log(this.state , 'on render');
         return (
             <div>
                 <Waypoint onEnter={this.onEnter}>
