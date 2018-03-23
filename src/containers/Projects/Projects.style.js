@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { purple, tomato } from '../../theme/variables';
+import { purple, tomato, orange } from '../../theme/variables';
 
 export const Polaroid = styled.div`
     display: inline-block;
@@ -27,4 +27,18 @@ export const Polaroid = styled.div`
     border: 2px solid black;
     box-shadow: 2px 2px ${tomato};
 
+`;
+
+export const Index = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    h1 {
+        font-size: 4em;
+        margin: 0;
+        font-weight: bold;
+        color: ${orange};
+        opacity: 0.4;
+    }
 `;
