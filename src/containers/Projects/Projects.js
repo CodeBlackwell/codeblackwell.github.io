@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
 import { Polaroid } from './Projects.style';
+import { Container } from '../../theme/grid';
 
 class Projects extends Component {
     render() {
-        // for (let key in styled) {
-        //     console.log(key);
-        // }
         return (
-            <div>
+            <Container>
+                <h1>This is projects</h1>
                 <Polaroid >
                     <img src={'http://i.imgur.com/tIDAnmM.png'} />
-                    <h2>Gottem Coach!</h2>
+                    <h2>Polis</h2>
                 </Polaroid>
-                <h1>This is projects</h1>
 
-            </div>
+            </Container>
         );
     }
 }

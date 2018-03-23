@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { midnight } from '../../theme/variables';
 
 
 //@TODO: background-image: url({'my.picture.com'})
@@ -8,7 +9,7 @@ export const Background = styled.div`
     width: 80vw;
     top: 10vh;
     height: 80vh;
-    background-color: #610078;
+    background-color: ${midnight};
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
