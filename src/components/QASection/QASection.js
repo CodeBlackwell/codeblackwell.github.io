@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {H1, H2} from '../../theme/types';
-import {RevealP} from '../../containers/Home/Home.style';
 import {QASection, QAImage} from './QASection.style';
 
 class Section extends Component {

@@ -24,7 +24,7 @@ class AboutMe extends Component {
                         {/*</VideoContainer>*/}
 
                     {/*</ScrollSection>*/}
-                    <ScrollSection pageId={0} style={ScrollStyle}>
+                    <ScrollSection pageId={0}>
                         <Section
                             question="Soo what sports am I into?"
                             justify="flex-end"
