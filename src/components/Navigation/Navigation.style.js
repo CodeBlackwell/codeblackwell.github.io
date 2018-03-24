@@ -6,6 +6,7 @@ import { midnight } from '../../theme/variables';
 
 export const NavigationContainer = styled(Flex)`
     position: fixed;
+    z-index: 99;
     right: 0;
     right: 2em;
     top: 1.8em;
