@@ -12,9 +12,11 @@ class Section extends Component {
             imageURL,
         } = this.props;
         return (
-                <QASection column width="90vw">
+                <QASection column>
                     <H1>{question}</H1>
-                    <QAImage imageURL={imageURL}/>
+                    <QAImage>
+                        <img src={imageURL}/>
+                    </QAImage>
                     <H2>{answer}</H2>
                 </QASection>
         )

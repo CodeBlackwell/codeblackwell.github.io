@@ -3,7 +3,8 @@ import { tomato } from '../../theme/variables';
 import { Relative, Flex } from '../../theme/grid';
 
 export const Title = styled.h1`
-    margin-top: 0;
+    position: fixed;
+    margin-top: 25px;
     color: ${tomato}
 `;
 

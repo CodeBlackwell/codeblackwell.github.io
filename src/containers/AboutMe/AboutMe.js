@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactPlayer from 'react-player';
-import {ScrollSection, ScrollContainer} from 'react-onepage-scroll';
+import { ScrollContainer, ScrollSection } from 'react-onepage-scroll';
 
 import {Container} from '../../theme/grid';
 import {H2, H1} from '../../theme/types';
@@ -24,13 +24,14 @@ class AboutMe extends Component {
                         {/*</VideoContainer>*/}
 
                     {/*</ScrollSection>*/}
-                    <ScrollSection pageId={0}>
+                    <ScrollSection pageId={0} style={ScrollStyle}>
                         <Section
                             question="Soo what sports am I into?"
                             justify="flex-end"
                             align="flex-end"
                             qIndex="2"
                             answer="Well they change every so often but right now I love Rock Climbing!!"
+                            imageURL="https://i.imgur.com/4e9MCPt.jpg"
                         />
                     </ScrollSection>
                     <ScrollSection pageId={1}>
