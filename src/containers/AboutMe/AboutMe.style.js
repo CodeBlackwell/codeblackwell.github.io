@@ -8,7 +8,8 @@ export const Title = styled.h1`
 `;
 
 export const VideoContainer = styled(Relative)`
-    width: 70%;
+    align-self: right;
+    width: 90vh;
     flex-shrink: 0;
     flex-grow: 0;
 `;

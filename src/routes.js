@@ -10,8 +10,8 @@ export default (
     <Router history={ hashHistory }>
         <Route path="/" component={ App }>
             <IndexRoute component={ Home } />
-            <Route path="/projects" component={Projects}/>
-            <Route path="/about" component={AboutMe}/>
+            <Route path="/projects" component={ Projects }/>
+            <Route path="/about" component={ AboutMe }/>
         </Route>
     </Router>
 )
