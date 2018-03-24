@@ -10,7 +10,7 @@ export const Background = styled.div`
     top: 10vh;
     height: 80vh;
     background-color: ${midnight};
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -99;

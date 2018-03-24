@@ -24,6 +24,8 @@ export const QAImage = styled.div`
     > img {
         height: 60vh;
         width: 75vw;
+        max-width: 600px;
+        justify-self: right;
     }
     text-align: center;
     color: white;
