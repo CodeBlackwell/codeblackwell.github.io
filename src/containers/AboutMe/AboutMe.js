@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ReactPlayer from 'react-player';
 
-import { Container } from '../../theme/grid';
-import { H2, H1 } from '../../theme/types';
+import {Container} from '../../theme/grid';
+import {H2, H1} from '../../theme/types';
 
 import QASection from '../../components/QASection/QASection';
-import { Title, VideoContainer } from './AboutMe.style';
+import {Title, VideoContainer} from './AboutMe.style';
+import WhenInView from '../../components/WhenInView/WhenInView';
+import {RevealQASection} from './AboutMe.style';
 
 class AboutMe extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            question2: false,
-            question3: false,
-        };
-
-        this.showQuestion = this.showQuestion.bind(this);
-    }
     render() {
         return (
             <Container>
@@ -25,18 +17,76 @@ class AboutMe extends Component {
                 <H1 align="right">Do you like to stay active? Haha I can't help it!!</H1>
                 <H2 align="right">Check out </H2>
                 <VideoContainer>
-                    <ReactPlayer url={require('../../assets/IMG_2510.mp4')} controls={true} />
+                <ReactPlayer url={require('../../assets/IMG_2510.mp4')} controls={true} />
                 </VideoContainer>
+
+
                 <QASection
-                    question="What is my favorite sport?"
-                    answer="Well it changes every so often but right now I love Rock Climbing!!"
+                    question="Soo what sports am I into?"
+                    justify="flex-end"
+                    align="flex-end"
+                    qIndex="2"
+                    answer="Well they change every so often but right now I love Rock Climbing!!"
+                    imageURL="http://i.imgur.com/tIDAnmM.png"
                 />
+                <WhenInView>
+                    { ({isInView}) =>
+                        <RevealQASection hide={!isInView}>
+                            <QASection
+                                question="Soo what sports am I into?"
+                                justify="flex-start"
+                                align="flex-end"
+                                qIndex="3"
+                                answer="Well they change every so often but right now I love Rock Climbing!!"
+                                imageURL="http://i.imgur.com/tIDAnmM.png"
+                            />
+                        </RevealQASection>
+                    }
+                </WhenInView>
+                <WhenInView>
+                    { ({isInView}) =>
+                        <RevealQASection hide={!isInView}>
+                            <QASection
+                                question="Soo what sports am I into?"
+                                justify="flex-start"
+                                align="flex-end"
+                                qIndex="3"
+                                answer="Well they change every so often but right now I love Rock Climbing!!"
+                                imageURL="http://i.imgur.com/tIDAnmM.png"
+                            />
+                        </RevealQASection>
+                    }
+                </WhenInView>
+                <WhenInView>
+                    { ({isInView}) =>
+                        <RevealQASection hide={!isInView}>
+                            <QASection
+                                question="Soo what sports am I into?"
+                                justify="flex-start"
+                                align="flex-end"
+                                qIndex="3"
+                                answer="Well they change every so often but right now I love Rock Climbing!!"
+                                imageURL="http://i.imgur.com/tIDAnmM.png"
+                            />
+                        </RevealQASection>
+                    }
+                </WhenInView>
+                <WhenInView>
+                    { ({isInView}) =>
+                        <RevealQASection hide={!isInView}>
+                            <QASection
+                                question="Soo what sports am I into?"
+                                justify="flex-start"
+                                align="flex-end"
+                                qIndex="3"
+                                answer="Well they change every so often but right now I love Rock Climbing!!"
+                                imageURL="http://i.imgur.com/tIDAnmM.png"
+                            />
+                        </RevealQASection>
+                    }
+                </WhenInView>
             </Container>
         );
-    }
-
-    showQuestion(number) {
-        this.setState({ ['question' + number]: true})
     }
 }
 
