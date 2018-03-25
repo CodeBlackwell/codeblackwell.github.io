@@ -1,10 +1,15 @@
 import styled, { css } from 'styled-components';
 import { tomato } from '../../theme/variables';
 import { Relative, Flex } from '../../theme/grid';
+import media from '../../theme/media';
 
 export const Title = styled.h1`
     position: fixed;
     margin-top: 25px;
+    ${media.phone`
+        margin-top: 2px;
+        font-size: 1.4em;
+    `}
     color: ${tomato}
 `;
 

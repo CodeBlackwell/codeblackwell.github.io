@@ -7,6 +7,24 @@ export const QASection = styled(Flex)`
     margin-left: 100px;
     margin-right: 50px;
     margin-bottom: 100px;
+    ${media.desktop`
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    `}
+    ${media.tablet`
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0x;
+    margin-bottom: 0px;
+    `}
+    ${media.phone`
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    `}
     > img {
         width: 50%;
         height: 50%;
