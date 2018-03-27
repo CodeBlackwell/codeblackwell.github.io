@@ -8,8 +8,7 @@ import { midnight } from '../../theme/variables';
 export const NavigationContainer = styled(Flex)`
     position: fixed;
     z-index: 99;
-    right: 0;
-    right: 2em;
+    left: 2em;
     top: 1.8em;
 `;
 
@@ -22,7 +21,7 @@ export const NavItem = styled(Link)`
         background-color: ${midnight}
     }
     ${media.phone`
-        margin-right: 20px;
+        margin-left: -10px;
         font-size: .9em;
         margin-top: 17px;
     `}

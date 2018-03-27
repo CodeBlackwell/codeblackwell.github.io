@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import media from '../../theme/media';
 
 //@formatter-off
 export const Image = styled.img`
@@ -8,7 +9,7 @@ export const Image = styled.img`
 
 export const HeroImage = styled.div`
     height: 100vh;
-    max-width: 50vw;
+    
     background-image: url('${require('../../assets/Me.jpg')}');
     background-repeat: no-repeat;
     background-size: cover;

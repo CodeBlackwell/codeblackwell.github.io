@@ -10,6 +10,7 @@ export const Title = styled.h1`
     ${media.phone`
         margin-top: 100px;
         font-size: 1.1em;
+        margin-left: 8px;
     `}
     ${media.giant`
         margin-top: 2px;
