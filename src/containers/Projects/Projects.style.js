@@ -27,6 +27,9 @@ export const Polaroid = styled.div`
     padding: 0 10px 0 10px;        
     border: 2px solid black;
     box-shadow: 2px 2px ${tomato};
+    ${media.phone`
+        margin-top: -3vh;
+    `}
 
 `;
 
@@ -42,4 +45,7 @@ export const Index = styled.div`
         color: ${orange};
         opacity: 0.4;
     }
+    ${media.phone`
+        margin-left: 
+    `}
 `;

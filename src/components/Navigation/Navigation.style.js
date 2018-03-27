@@ -10,6 +10,10 @@ export const NavigationContainer = styled(Flex)`
     z-index: 99;
     left: 2em;
     top: 1.8em;
+    ${media.phone`
+        transform: rotate(90deg);
+        margin: 24vh -30vh;
+    `}
 `;
 
 export const NavItem = styled(Link)`

@@ -5,15 +5,17 @@ import media from '../../theme/media';
 
 export const Question = styled(H1)`
     ${media.phone`
-        font-size: 1.1em;
-        margin-top: -20px;
+        font-size: 1em;
+        margin-top: -5vh;
+        margin-bottom: auto;
     `}
 `;
 
 export const Answer = styled(H2)`
     ${media.phone`
-        font-size: 1.1em;
-        margin-right: 16px;
+        font-size: .8em;
+        margin-right: 3vw;
+        
     `}
 `;
 
@@ -35,7 +37,7 @@ export const QASection = styled(Flex)`
     margin-bottom: 0px;
     `}
     ${media.phone`
-    margin-top: 100px;
+    margin-top: 12vh;
     margin-left: 15px;
     margin-right: 50px;
     margin-bottom: 100px;
