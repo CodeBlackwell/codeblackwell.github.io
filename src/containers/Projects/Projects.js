@@ -3,12 +3,13 @@ import styled from 'styled-components';
 
 import {Polaroid, Index} from './Projects.style';
 import {Container, Relative} from '../../theme/grid';
-import {A} from '../../theme/types';
+import {A, Title} from '../../theme/types';
 
 class Projects extends Component {
     render() {
         return (
             <Container>
+                <Title>Projects</Title>
                 {/* Project 1*/}
                 <Relative>
                     <Index>

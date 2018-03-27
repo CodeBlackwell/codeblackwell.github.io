@@ -3,10 +3,10 @@ import ReactPlayer from 'react-player';
 import { ScrollContainer, ScrollSection } from 'react-onepage-scroll';
 
 import {Container} from '../../theme/grid';
-import {H2, H1} from '../../theme/types';
+import {H2, H1, Title} from '../../theme/types';
 
 import Section from '../../components/QASection/QASection';
-import {Title, VideoContainer} from './AboutMe.style';
+import {VideoContainer} from './AboutMe.style';
 import WhenInView from '../../components/WhenInView/WhenInView';
 import {RevealQASection} from './AboutMe.style';
 

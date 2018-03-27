@@ -45,6 +45,10 @@ ${media.giant`
 
 export const Relative = styled(Div)`
     position: relative;
+    ${media.phone`
+        margin-top: 105px;
+        
+    `}
 `;
 
 export const Flex = styled(Div)`

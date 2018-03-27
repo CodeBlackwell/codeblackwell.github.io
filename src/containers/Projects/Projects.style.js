@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { purple, tomato, orange } from '../../theme/variables';
+import media from '../../theme/media';
 
 export const Polaroid = styled.div`
     display: inline-block;
