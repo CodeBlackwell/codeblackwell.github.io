@@ -28,6 +28,16 @@ export const HeroImage = styled.div`
     h1 {
     margin-bottom: 0;
     }
+    ${media.phone`
+        h1 {
+            font-size: 1.1em;
+            margin: 8vh 0vh -5vh;
+        }
+        h2 {
+            font-size: .8em;
+            margin: 36vh 10vw;
+        }
+    `}
 `;
 
 export const RevealP = styled.p`

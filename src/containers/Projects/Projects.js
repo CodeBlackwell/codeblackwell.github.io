@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import {ScrollContainer, ScrollSection} from 'react-onepage-scroll';
 
 
-import {Polaroid, Index, IndexContainer} from './Projects.style';
+import {Polaroid, Index, IndexContainer, ProjectDescription} from './Projects.style';
 import {Container, Relative} from '../../theme/grid';
-import {A, Title} from '../../theme/types';
+import {A, Title, H2} from '../../theme/types';
 
 class Projects extends Component {
     render() {
@@ -24,6 +24,10 @@ class Projects extends Component {
                             <img src={'http://i.imgur.com/tIDAnmM.png'}/>
                             <h2>Polis</h2>
                         </Polaroid>
+                        <ProjectDescription>
+                            This Project incorporates all of the most cutting edge technologies into one
+                            easy to use boilerplate
+                        </ProjectDescription>
                     </ScrollSection>
                     <ScrollSection pageId={1}>
                         {/*Project 2*/}
@@ -36,6 +40,10 @@ class Projects extends Component {
                             <img src={'http://i.imgur.com/tIDAnmM.png'}/>
                             <h2>Polis</h2>
                         </Polaroid>
+                        <ProjectDescription>
+                            This Project incorporates all of the most cutting edge technologies into one
+                            easy to use boilerplate
+                        </ProjectDescription>
                     </ScrollSection>
                 </ScrollContainer>
 
