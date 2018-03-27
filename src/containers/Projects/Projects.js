@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {ScrollContainer, ScrollSection} from 'react-onepage-scroll';
 
 
-import {Polaroid, Index} from './Projects.style';
+import {Polaroid, Index, IndexContainer} from './Projects.style';
 import {Container, Relative} from '../../theme/grid';
 import {A, Title} from '../../theme/types';
 
@@ -15,12 +15,11 @@ class Projects extends Component {
                 <ScrollContainer>
                     <ScrollSection pageId={0}>
                         {/* Project 1*/}
-                        <Relative>
+                        <IndexContainer>
                             <Index>
                                 <h1>01</h1>
                             </Index>
-                            <h1>Polis</h1>
-                        </Relative>
+                        </IndexContainer>
                         <Polaroid >
                             <img src={'http://i.imgur.com/tIDAnmM.png'}/>
                             <h2>Polis</h2>
@@ -32,7 +31,6 @@ class Projects extends Component {
                             <Index>
                                 <h1>02</h1>
                             </Index>
-                            <h1>Polis</h1>
                         </Relative>
                         <Polaroid >
                             <img src={'http://i.imgur.com/tIDAnmM.png'}/>

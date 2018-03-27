@@ -37,7 +37,7 @@ export const QASection = styled(Flex)`
     margin-bottom: 0px;
     `}
     ${media.phone`
-    margin-top: 12vh;
+    margin-top: 14vh;
     margin-left: 15px;
     margin-right: 50px;
     margin-bottom: 100px;

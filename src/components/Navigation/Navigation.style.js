@@ -12,7 +12,7 @@ export const NavigationContainer = styled(Flex)`
     top: 1.8em;
     ${media.phone`
         transform: rotate(90deg);
-        margin: 24vh -30vh;
+        margin: 17vh -16vh;
     `}
 `;
 

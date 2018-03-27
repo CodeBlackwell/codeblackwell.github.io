@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { purple, tomato, orange } from '../../theme/variables';
 import media from '../../theme/media';
+import { Relative } from '../../theme/grid';
 
 export const Polaroid = styled.div`
     display: inline-block;
@@ -28,9 +29,16 @@ export const Polaroid = styled.div`
     border: 2px solid black;
     box-shadow: 2px 2px ${tomato};
     ${media.phone`
-        margin-top: -3vh;
+        margin: -18vh 0vh 0vh 12vh;
     `}
 
+`;
+
+export const IndexContainer = styled(Relative)`
+    h1 {
+        display: inline-block;
+        marnL
+    }
 `;
 
 export const Index = styled.div`
@@ -46,6 +54,10 @@ export const Index = styled.div`
         opacity: 0.4;
     }
     ${media.phone`
-        margin-left: 
+        margin: 9vh 4vw;
+        h1 {
+            font-size: 3em;
+            margin: 2.8vh 0vh;
+        }
     `}
 `;
