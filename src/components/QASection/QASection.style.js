@@ -1,22 +1,37 @@
 import styled, {css} from 'styled-components';
 import {Flex} from '../../theme/grid';
-import media from '../../theme/media'
+import { H2, H1 } from '../../theme/types';
+import media from '../../theme/media';
+
+export const Question = styled(H1)`
+    ${media.phone`
+        font-size: 1.1em;
+        margin-top: -20px;
+    `}
+`;
+
+export const Answer = styled(H2)`
+    ${media.phone`
+        font-size: 1.1em;
+        margin-right: 16px;
+    `}
+`;
 
 export const QASection = styled(Flex)`
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     ${media.desktop`
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     `}
     ${media.tablet`
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: 0x;
+    margin-right: 0px;
     margin-bottom: 0px;
     `}
     ${media.phone`

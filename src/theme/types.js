@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { orange } from './variables';
+import media from './media';
 
 export const A = styled.a`
     color: ${orange};

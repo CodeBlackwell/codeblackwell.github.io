@@ -8,6 +8,7 @@ export const Image = styled.img`
 
 export const HeroImage = styled.div`
     height: 100vh;
+    max-width: 50vw;
     background-image: url('${require('../../assets/Me.jpg')}');
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +17,7 @@ export const HeroImage = styled.div`
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-end;
     
     text-align: center;
     color: white;

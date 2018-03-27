@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {H1, H2} from '../../theme/types';
-import {QASection, QAImage} from './QASection.style';
+import {QASection, QAImage, Question, Answer } from './QASection.style';
 
 class Section extends Component {
 
@@ -12,11 +12,11 @@ class Section extends Component {
         } = this.props;
         return (
                 <QASection column>
-                    <H1>{question}</H1>
+                    <Question>{question}</Question>
                     <QAImage>
                         <img src={imageURL}/>
                     </QAImage>
-                    <H2>{answer}</H2>
+                    <Answer>{answer}</Answer>
                 </QASection>
         )
     }

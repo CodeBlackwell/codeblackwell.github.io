@@ -22,6 +22,7 @@ export const NavItem = styled(Link)`
         background-color: ${midnight}
     }
     ${media.phone`
+        margin-right: 20px;
         font-size: .9em;
         margin-top: 17px;
     `}
