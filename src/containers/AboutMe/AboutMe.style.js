@@ -19,11 +19,6 @@ export const Title = styled.h1`
     color: ${tomato}
 `;
 
-export const Answer = styled(H2)`
-    ${media.tablet`
-    `}
-`;
-
 export const VideoContainer = styled(Relative)`
     align-self: right;
     width: 90vh;
