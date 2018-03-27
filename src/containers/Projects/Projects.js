@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
+import {ScrollContainer, ScrollSection} from 'react-onepage-scroll';
+
 
 import {Polaroid, Index} from './Projects.style';
 import {Container, Relative} from '../../theme/grid';
@@ -10,33 +12,39 @@ class Projects extends Component {
         return (
             <Container>
                 <Title>Projects</Title>
-                {/* Project 1*/}
-                <Relative>
-                    <Index>
-                        <h1>01</h1>
-                    </Index>
-                    <h1>Polis</h1>
-                </Relative>
-                <Polaroid >
-                    <img src={'http://i.imgur.com/tIDAnmM.png'}/>
-                    <h2>Polis</h2>
-                </Polaroid>
-                {/*Project 2*/}
-                <Relative>
-                    <Index>
-                        <h1>02</h1>
-                    </Index>
-                    <h1>Isomorphic React</h1>
-                </Relative>
-                <Polaroid >
-                    <img src={'http://i.imgur.com/tIDAnmM.png'}/>
-                    <h2>Isomorphic React</h2>
-                </Polaroid>
+                <ScrollContainer>
+                    <ScrollSection pageId={0}>
+                        {/* Project 1*/}
+                        <Relative>
+                            <Index>
+                                <h1>01</h1>
+                            </Index>
+                            <h1>Polis</h1>
+                        </Relative>
+                        <Polaroid >
+                            <img src={'http://i.imgur.com/tIDAnmM.png'}/>
+                            <h2>Polis</h2>
+                        </Polaroid>
+                    </ScrollSection>
+                    <ScrollSection pageId={1}>
+                        {/*Project 2*/}
+                        <Relative>
+                            <Index>
+                                <h1>02</h1>
+                            </Index>
+                            <h1>Polis</h1>
+                        </Relative>
+                        <Polaroid >
+                            <img src={'http://i.imgur.com/tIDAnmM.png'}/>
+                            <h2>Polis</h2>
+                        </Polaroid>
+                    </ScrollSection>
+                </ScrollContainer>
 
 
             </Container>
-        );
+    );
     }
-}
+    }
 
-export default Projects;
+    export default Projects;
