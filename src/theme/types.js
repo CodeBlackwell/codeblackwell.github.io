@@ -22,14 +22,12 @@ export const A = styled.a`
 export const Title = styled.h1`
     position: fixed;
     margin-top: 25px;
-    ${media.phone`
-        margin-top: 100px;
-        font-size: 1.1em;
-        margin-left: 8px;
+    ${media.tablet`
+        margin: 0vh 5vw;
+        font-size: 1.6em;
     `}
-    ${media.giant`
-        margin-top: 2px;
-        font-size: 1.4em;
+    ${media.phone`
+        font-size: 1.1em;
     `}
     color: ${tomato}
 `;

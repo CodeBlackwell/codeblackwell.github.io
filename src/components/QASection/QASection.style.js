@@ -1,9 +1,14 @@
 import styled, {css} from 'styled-components';
 import {Flex} from '../../theme/grid';
-import { H2, H1 } from '../../theme/types';
+import {H2, H1} from '../../theme/types';
 import media from '../../theme/media';
 
 export const Question = styled(H1)`
+    ${media.tablet`
+        font-size: 1.3em;
+        margin-top: -5vh;
+        margin-bottom: auto;
+    `}
     ${media.phone`
         font-size: 1em;
         margin-top: -5vh;
@@ -12,6 +17,11 @@ export const Question = styled(H1)`
 `;
 
 export const Answer = styled(H2)`
+    ${media.tablet`
+        font-size: 1em;
+        margin-right: 12vw;
+        
+    `}
     ${media.phone`
         font-size: .8em;
         margin-right: 3vw;
@@ -20,10 +30,6 @@ export const Answer = styled(H2)`
 `;
 
 export const QASection = styled(Flex)`
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     ${media.desktop`
     margin-top: 0px;
     margin-left: 0px;
@@ -31,16 +37,10 @@ export const QASection = styled(Flex)`
     margin-bottom: 0px;
     `}
     ${media.tablet`
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin: 15vh 0 0 7.5vw;
     `}
     ${media.phone`
-    margin-top: 14vh;
-    margin-left: 15px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+    margin: 14vh 10vw;
     `}
     > img {
         width: 50%;

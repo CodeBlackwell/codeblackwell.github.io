@@ -7,14 +7,15 @@ import media from '../../theme/media';
 export const Title = styled.h1`
     position: fixed;
     margin-top: 25px;
-    ${media.phone`
+     ${media.tablet`
         margin-top: 100px;
         font-size: 1.1em;
         margin-left: 8px;
     `}
-    ${media.giant`
-        margin-top: 2px;
-        font-size: 1.4em;
+    ${media.phone`
+        margin-top: 100px;
+        font-size: 1.1em;
+        margin-left: 8px;
     `}
     color: ${tomato}
 `;
