@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router';
 
 import { Flex } from '../../theme/grid';
+import media from '../../theme/media';
 import { midnight } from '../../theme/variables';
 
 export const NavigationContainer = styled(Flex)`
@@ -20,4 +21,8 @@ export const NavItem = styled(Link)`
         color: white;
         background-color: ${midnight}
     }
+    ${media.phone`
+        font-size: .9em;
+        margin-top: 17px;
+    `}
 `;
