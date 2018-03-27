@@ -10,6 +10,10 @@ export const Title = styled.h1`
         margin-top: 2px;
         font-size: 1.4em;
     `}
+    ${media.giant`
+        margin-top: 2px;
+        font-size: 1.4em;
+    `}
     color: ${tomato}
 `;
 
