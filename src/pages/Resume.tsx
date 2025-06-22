@@ -1,6 +1,6 @@
-import React from 'react';
+import type { FC } from 'react';
 
-const Resume: React.FC = () => (
+const Resume: FC = () => (
   <div>
     <h1>Resume</h1>
     <p>Embed or link to my resume PDF here for easy access.</p>

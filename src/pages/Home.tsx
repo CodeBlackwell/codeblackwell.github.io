@@ -1,6 +1,6 @@
-import React from 'react';
+import type { FC } from 'react';
 
-const Home: React.FC = () => (
+const Home: FC = () => (
   <section className="hero">
     <div className="hero-inner">
       <h1 className="hero-title">Your Name</h1>
