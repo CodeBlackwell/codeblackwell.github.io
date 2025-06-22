@@ -1,6 +1,6 @@
-import React from 'react';
+import type { FC } from 'react';
 
-const Projects: React.FC = () => (
+const Projects: FC = () => (
   <div>
     <h1>Projects</h1>
     <p>Showcase of bleeding-edge work and advanced engineering projects will go here.</p>

@@ -1,6 +1,6 @@
-import React from 'react';
+import type { FC } from 'react';
 
-const About: React.FC = () => (
+const About: FC = () => (
   <div>
     <h1>About Me</h1>
     <p>This page will tell my story as a modern, future-focused engineer.</p>
