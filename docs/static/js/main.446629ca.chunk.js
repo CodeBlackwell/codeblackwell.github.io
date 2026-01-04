@@ -7092,18 +7092,19 @@
       a(149);
       function dt(e) {
         let { theme: t } = e;
-        const [a, n] = Object(l.useState)(!1),
+        const [a, n] = Object(l.useState)(!0),
           [c, i] = Object(l.useState)(!1),
           s = Object(l.useRef)(null),
           o = Object(l.useRef)(null);
         Object(l.useEffect)(() => {
-          const e = setTimeout(() => {
+          const e = "true" === localStorage.getItem("musicPlayerPaused");
+          e && n(!1);
+          const t = setTimeout(() => {
             window.SC &&
               s.current &&
               ((o.current = window.SC.Widget(s.current)),
               o.current.bind(window.SC.Widget.Events.READY, () => {
-                i(!0);
-                "true" !== localStorage.getItem("musicPlayerPaused") && o.current.play();
+                i(!0), e && o.current.pause();
               }),
               o.current.bind(window.SC.Widget.Events.PLAY, () => {
                 n(!0);
@@ -7115,7 +7116,7 @@
                 o.current.seekTo(0), o.current.play();
               }));
           }, 500);
-          return () => clearTimeout(e);
+          return () => clearTimeout(t);
         }, []);
         const m = () => {
             o.current &&
@@ -7219,4 +7220,4 @@
   ]),
   [[52, 1, 2]],
 ]);
-//# sourceMappingURL=main.c7879584.chunk.js.map
+//# sourceMappingURL=main.446629ca.chunk.js.map
