@@ -68,6 +68,35 @@ class Contact extends Component {
                 <div className="blogsite-btn-div">
                   <Button text="Read My Blog" newTab={true} href={blogSection.link} theme={theme} />
                 </div>
+                {blogSection.posts && blogSection.posts.length > 0 && (
+                  <div
+                    className={`blog-posts-container ${
+                      blogSection.posts.length >= 4 ? "scrollable" : ""
+                    }`}
+                  >
+                    <h3 className="blog-posts-title" style={{ color: theme.text }}>
+                      Recent Posts
+                    </h3>
+                    <div className="blog-posts-list">
+                      {blogSection.posts.map((post, index) => (
+                        <a
+                          key={index}
+                          href={post.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="blog-post-link"
+                          style={{
+                            color: theme.text,
+                            backgroundColor: theme.highlight,
+                            border: `1px solid ${theme.text}`,
+                          }}
+                        >
+                          {post.title}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="blog-heading-img-div">
                 {/* <img

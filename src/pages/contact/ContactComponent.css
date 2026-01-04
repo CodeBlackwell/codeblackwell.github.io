@@ -139,6 +139,70 @@
   }
 }
 
+/* Blog Posts Section */
+.blog-posts-container {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.blog-posts-title {
+  font-size: 18px;
+  font-family: "Google Sans Medium";
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.blog-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.blog-posts-container.scrollable .blog-posts-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.blog-post-link {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  transition: all 0.3s ease;
+  width: 80%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.blog-post-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
+}
+
+/* Scrollbar styling for blog posts */
+.blog-posts-container.scrollable .blog-posts-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.blog-posts-container.scrollable .blog-posts-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.blog-posts-container.scrollable .blog-posts-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.blog-posts-container.scrollable .blog-posts-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media (max-width: 768px) {
   .contact-heading-text {
     font-size: 30px;
@@ -190,5 +254,15 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .blog-post-link {
+    width: 90%;
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .blog-posts-container.scrollable .blog-posts-list {
+    max-height: 180px;
   }
 }

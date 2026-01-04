@@ -487,6 +487,20 @@ const contactPageData = {
       "I write about AI, software engineering, and lessons learned building scalable systems.",
     link: "https://medium.com/@CodeBlackwell",
     avatar_image_path: "blogs_image.svg",
+    posts: [
+      {
+        title: "Building Multi-Agent AI Systems",
+        url: "https://medium.com/@CodeBlackwell",
+      },
+      {
+        title: "RAG Pipelines: A Practical Guide",
+        url: "https://medium.com/@CodeBlackwell",
+      },
+      {
+        title: "From QA to Full-Stack: My Journey",
+        url: "https://medium.com/@CodeBlackwell",
+      },
+    ],
   },
   addressSection: {
     title: "Location",
