@@ -31,10 +31,7 @@ class Contact extends Component {
                 />
               </div>
               <div className="contact-heading-text-div">
-                <h1
-                  className="contact-heading-text"
-                  style={{ color: theme.text }}
-                >
+                <h1 className="contact-heading-text" style={{ color: theme.text }}>
                   {ContactData["title"]}
                 </h1>
                 <p
@@ -69,12 +66,7 @@ class Contact extends Component {
                   {blogSection["subtitle"]}
                 </p>
                 <div className="blogsite-btn-div">
-                  <Button
-                    text="Visit My Blogsite"
-                    newTab={true}
-                    href={blogSection.link}
-                    theme={theme}
-                  />
+                  <Button text="Read My Blog" newTab={true} href={blogSection.link} theme={theme} />
                 </div>
               </div>
               <div className="blog-heading-img-div">
@@ -96,10 +88,7 @@ class Contact extends Component {
                 <AddressImg theme={theme} />
               </div>
               <div className="address-heading-text-div">
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
+                <h1 className="address-heading-text" style={{ color: theme.text }}>
                   {addressSection["title"]}
                 </h1>
                 <p
@@ -108,10 +97,7 @@ class Contact extends Component {
                 >
                   {addressSection["subtitle"]}
                 </p>
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
+                <h1 className="address-heading-text" style={{ color: theme.text }}>
                   {phoneSection["title"]}
                 </h1>
                 <p

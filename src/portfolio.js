@@ -442,28 +442,32 @@ const publications = {
       id: "betterprompts",
       name: "BetterPrompts",
       createdAt: "2025-01-01T00:00:00Z",
-      description: "AI-powered prompt engineering platform with microservices architecture achieving 89.3% accuracy in intent detection",
+      description:
+        "AI-powered prompt engineering platform with microservices architecture achieving 89.3% accuracy in intent detection",
       url: "https://github.com/codeblackwell/BetterPrompts",
     },
     {
       id: "agent-blackwell",
       name: "Agent_Blackwell",
       createdAt: "2024-12-01T00:00:00Z",
-      description: "Multi-expert AI orchestration system for automated software development using Agent Communication Protocol",
+      description:
+        "Multi-expert AI orchestration system for automated software development using Agent Communication Protocol",
       url: "https://github.com/codeblackwell/Agent_Blackwell",
     },
     {
       id: "aura",
       name: "A.U.R.A",
       createdAt: "2024-10-01T00:00:00Z",
-      description: "4-bit quantized Text-to-JSON engine powered by StarCoder LLM fine-tuned with PEFT & LoRA",
+      description:
+        "4-bit quantized Text-to-JSON engine powered by StarCoder LLM fine-tuned with PEFT & LoRA",
       url: "https://github.com/codeblackwell/A.U.R.A",
     },
     {
       id: "poi-alchemist",
       name: "POI_Alchemist",
       createdAt: "2024-08-01T00:00:00Z",
-      description: "Blazing-fast POI reconciliation engine combining OpenStreetMap and Foursquare data",
+      description:
+        "Blazing-fast POI reconciliation engine combining OpenStreetMap and Foursquare data",
       url: "https://github.com/codeblackwell/POI_Alchemist",
     },
   ],
@@ -478,10 +482,10 @@ const contactPageData = {
       "I'm always open to discussing new projects, AI/ML opportunities, or interesting technical challenges. Feel free to reach out via email or connect on social media.",
   },
   blogSection: {
-    title: "GitHub",
+    title: "Blog",
     subtitle:
-      "Check out my open source projects and contributions on GitHub.",
-    link: "https://github.com/codeblackwell",
+      "I write about AI, software engineering, and lessons learned building scalable systems.",
+    link: "https://medium.com/@CodeBlackwell",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
