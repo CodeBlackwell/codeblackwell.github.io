@@ -67,17 +67,6 @@
   }
 }
 
-/* Hidden SoundCloud iframe - positioned off-screen with real dimensions
-   to prevent canvas rendering errors in the widget */
-.music-player-iframe {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  width: 300px;
-  height: 150px;
-  pointer-events: none;
-}
-
 /* Tooltip on hover */
 .music-player-tooltip {
   position: absolute;

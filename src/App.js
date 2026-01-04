@@ -5,7 +5,9 @@ import { ThemeProvider } from "styled-components";
 import { blueTheme, materialDarkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import ThemeToggle from "./components/themeToggle/ThemeToggle";
-import MusicPlayer from "./components/musicPlayer/MusicPlayer";
+import MusicPlayer, { AUDIO_FILE } from "./components/musicPlayer/MusicPlayer";
+import AudioVisualizer from "./components/audioVisualizer/AudioVisualizer";
+import { useAudioAnalyser } from "./hooks/useAudioAnalyser";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -15,6 +17,9 @@ function App() {
   });
 
   const currentTheme = isDarkMode ? materialDarkTheme : blueTheme;
+
+  // Audio analyser hook
+  const { isPlaying, needsInteraction, toggle, getFrequencyData } = useAudioAnalyser(AUDIO_FILE);
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
@@ -28,9 +33,26 @@ function App() {
     <ThemeProvider theme={currentTheme}>
       <>
         <GlobalStyles />
+
+        {/* Background visualizer - z-index: 0 */}
+        <AudioVisualizer
+          theme={currentTheme}
+          getFrequencyData={getFrequencyData}
+          isPlaying={isPlaying}
+        />
+
         <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-        <MusicPlayer theme={currentTheme} />
-        <div>
+
+        {/* Music player controls - z-index: 9998 */}
+        <MusicPlayer
+          theme={currentTheme}
+          isPlaying={isPlaying}
+          needsInteraction={needsInteraction}
+          onToggle={toggle}
+        />
+
+        {/* Main content - rendered above visualizer */}
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Main theme={currentTheme} />
         </div>
       </>

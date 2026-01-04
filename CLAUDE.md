@@ -29,12 +29,29 @@ All portfolio content is configured in `src/portfolio.js`:
 - `degrees`, `certifications` - Education page
 - `experience` - Work, internships, volunteerships
 - `contactPageData` - Contact page content
+- `contactPageData.blogSection.posts` - Blog post cards with title, url, and image
 
 ### Theming System
 
 - Themes defined in `src/theme.js` (14 themes: blue, brown, purple, green, red, black, pink, violet, teal, orange, yellow, materialDark, materialLight, materialTeal)
-- Change active theme by modifying `export const chosenTheme = blueTheme;`
+- Default theme: `blueTheme` (light) / `materialDarkTheme` (dark)
+- Dark mode toggle persists to localStorage
 - ThemeProvider wraps the app in `src/App.js`
+
+### App-Level Components (src/App.js)
+
+- **ThemeToggle** (`src/components/themeToggle/`) - Dark/light mode toggle, top-right position
+- **MusicPlayer** (`src/components/musicPlayer/`) - Background music player, bottom-left position
+
+### Music Player
+
+Located in `src/components/musicPlayer/`:
+
+- Uses SoundCloud Widget API for embedded playback
+- Hidden iframe positioned off-screen (not 0x0 to avoid canvas errors)
+- Glassmorphism button style matching ThemeToggle
+- Features: autoplay, localStorage persistence, "Click to enable audio" prompt
+- SoundCloud API script loaded in `public/index.html`
 
 ### Routing
 
@@ -51,10 +68,27 @@ All portfolio content is configured in `src/portfolio.js`:
 
 ### Directory Structure
 
-- `src/pages/` - Page components (home, education, experience, etc.)
-- `src/containers/` - Section containers (greeting, skills, certifications, etc.)
-- `src/components/` - Reusable UI components (cards, buttons, charts)
-- `public/skills/` - Custom skill icons (use `imageSrc` in portfolio.js)
+```
+src/
+├── App.js              # Root component with theme provider, toggle, music player
+├── portfolio.js        # All content configuration
+├── theme.js            # Theme definitions
+├── global.js           # Global styled-components styles
+├── pages/              # Page components (home, education, experience, etc.)
+├── containers/         # Section containers (greeting, skills, certifications, etc.)
+│   └── Main.js         # React Router configuration
+├── components/         # Reusable UI components
+│   ├── themeToggle/    # Dark/light mode toggle
+│   ├── musicPlayer/    # Background music player (SoundCloud)
+│   ├── blogCard/       # Blog post cards for contact page
+│   └── ...             # Other components (cards, buttons, charts)
+└── shared/opensource/  # Fetched GitHub data (JSON)
+
+public/
+├── index.html          # HTML template with external scripts
+├── skills/             # Custom skill icons
+└── icons/              # Favicon and app icons
+```
 
 ### Icons
 
