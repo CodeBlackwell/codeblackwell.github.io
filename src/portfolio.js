@@ -24,8 +24,7 @@ const greeting = {
   nickname: "codeblackwell",
   subTitle:
     "Building the future with AI — Full-stack engineer specializing in LLMs, data pipelines, and scalable web applications. Passionate about prompt engineering, machine learning, and turning complex problems into elegant solutions.",
-  resumeLink:
-    "https://github.com/codeblackwell/codeblackwell.github.io/raw/master/resume1-Fullstack.pdf",
+  resumeLink: "./LeChristopher_Blackwell_Resume.pdf",
   portfolio_repository: "https://github.com/codeblackwell/codeblackwell.github.io",
   githubProfile: "https://github.com/codeblackwell",
 };
