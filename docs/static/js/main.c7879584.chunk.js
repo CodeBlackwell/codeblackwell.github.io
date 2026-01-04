@@ -7103,7 +7103,7 @@
               ((o.current = window.SC.Widget(s.current)),
               o.current.bind(window.SC.Widget.Events.READY, () => {
                 i(!0);
-                "false" !== localStorage.getItem("musicPlayerAutoplay") && o.current.play();
+                "true" !== localStorage.getItem("musicPlayerPaused") && o.current.play();
               }),
               o.current.bind(window.SC.Widget.Events.PLAY, () => {
                 n(!0);
@@ -7121,14 +7121,14 @@
             o.current &&
               c &&
               (a
-                ? (o.current.pause(), localStorage.setItem("musicPlayerAutoplay", "false"))
-                : (o.current.play(), localStorage.setItem("musicPlayerAutoplay", "true")));
+                ? (o.current.pause(), localStorage.setItem("musicPlayerPaused", "true"))
+                : (o.current.play(), localStorage.removeItem("musicPlayerPaused")));
           },
           h = "https://w.soundcloud.com/player/?url=".concat(
             encodeURIComponent(
               "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive"
             ),
-            "&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"
+            "&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"
           );
         return r.a.createElement(
           "div",
@@ -7219,4 +7219,4 @@
   ]),
   [[52, 1, 2]],
 ]);
-//# sourceMappingURL=main.071fbe9d.chunk.js.map
+//# sourceMappingURL=main.c7879584.chunk.js.map
