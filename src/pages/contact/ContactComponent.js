@@ -84,14 +84,25 @@ class Contact extends Component {
                           href={post.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="blog-post-link"
+                          className="blog-post-card"
                           style={{
-                            color: theme.text,
                             backgroundColor: theme.highlight,
-                            border: `1px solid ${theme.text}`,
+                            border: `1px solid ${theme.secondaryText}30`,
                           }}
                         >
-                          {post.title}
+                          {post.image && (
+                            <div className="blog-post-image">
+                              <img src={post.image} alt={post.title} />
+                            </div>
+                          )}
+                          <div className="blog-post-content">
+                            <span className="blog-post-title" style={{ color: theme.text }}>
+                              {post.title}
+                            </span>
+                            <span className="blog-post-read" style={{ color: theme.secondaryText }}>
+                              Read article →
+                            </span>
+                          </div>
                         </a>
                       ))}
                     </div>

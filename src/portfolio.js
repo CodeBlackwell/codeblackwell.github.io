@@ -489,16 +489,11 @@ const contactPageData = {
     avatar_image_path: "blogs_image.svg",
     posts: [
       {
-        title: "Building Multi-Agent AI Systems",
-        url: "https://medium.com/@CodeBlackwell",
-      },
-      {
-        title: "RAG Pipelines: A Practical Guide",
-        url: "https://medium.com/@CodeBlackwell",
-      },
-      {
-        title: "From QA to Full-Stack: My Journey",
-        url: "https://medium.com/@CodeBlackwell",
+        title: "MonitorsFour: From Zero to Docker Desktop Escape",
+        url:
+          "https://medium.com/@CodeBlackwell/monitorsfour-from-zero-to-docker-desktop-escape-af1b2522de35",
+        image:
+          "https://miro.medium.com/v2/resize:fit:720/format:webp/1*dCqnOHkLeJ4d7C1gt1NQQw.jpeg",
       },
     ],
   },
