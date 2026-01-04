@@ -6,7 +6,7 @@ const SOUNDCLOUD_TRACK_URL =
 
 export default function MusicPlayer({ theme }) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [, setIsLoaded] = useState(false);
   const [needsInteraction, setNeedsInteraction] = useState(true);
   const iframeRef = useRef(null);
   const widgetRef = useRef(null);

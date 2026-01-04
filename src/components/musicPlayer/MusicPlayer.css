@@ -67,12 +67,14 @@
   }
 }
 
-/* Hidden SoundCloud iframe */
+/* Hidden SoundCloud iframe - positioned off-screen with real dimensions
+   to prevent canvas rendering errors in the widget */
 .music-player-iframe {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
+  left: -9999px;
+  top: -9999px;
+  width: 300px;
+  height: 150px;
   pointer-events: none;
 }
 
