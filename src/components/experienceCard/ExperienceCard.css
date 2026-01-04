@@ -199,33 +199,33 @@
 
 .experience-card-company > a {
   position: relative;
-  color: #000;
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .experience-card-company > a:hover {
-  color: #000;
-} 
+  opacity: 0.8;
+}
 
 .experience-card-company > a:hover:before {
-visibility: visible;
--webkit-transform: scaleX(1);
-transform: scaleX(1);
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .experience-card-company > a:before {
-content: "";
-position: absolute;
-width: 100%;
-height: 1px;
-bottom: 0;
-left: 0;
-background-color: #000;
-visibility: hidden;
--webkit-transform: scaleX(0);
-transform: scaleX(0);
--webkit-transition: all 0.3s ease-in-out 0s;
-transition: all 0.3s ease-in-out 0s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 } 
 
 .experience-list-item {

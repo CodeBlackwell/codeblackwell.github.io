@@ -15,11 +15,31 @@ class ExperienceCard extends Component {
       >
         <Fade left duration={2000} distance="40px">
           <div className="experience-card-logo-div">
-            <img
-              className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
-            />
+            {experience["logo_path"] ? (
+              <img
+                className="experience-card-logo"
+                src={require(`../../assets/images/${experience["logo_path"]}`)}
+                alt=""
+              />
+            ) : (
+              <div
+                className="experience-card-logo-placeholder"
+                style={{
+                  width: 60,
+                  height: 60,
+                  borderRadius: "50%",
+                  backgroundColor: experience["color"] || "#6366F1",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#fff",
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
+                }}
+              >
+                {experience["company"]?.charAt(0) || "?"}
+              </div>
+            )}
           </div>
         </Fade>
         <div className="experience-card-stepper">
@@ -76,6 +96,7 @@ class ExperienceCard extends Component {
                       href={experience["company_url"]}
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{ color: theme.secondaryText }}
                     >
                       {experience["company"]}
                     </a>
@@ -100,13 +121,46 @@ class ExperienceCard extends Component {
               </div>
               <div
                 style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
                   marginTop: 20,
+                  color: theme.text,
+                  lineHeight: "1.8",
+                  fontSize: "14px",
                 }}
               >
-                <div className="repo-description" />
-                {experience["description"]}
+                {experience["descriptionBullets"] ? (
+                  <ul
+                    style={{
+                      margin: 0,
+                      paddingLeft: "20px",
+                      listStyleType: "none",
+                    }}
+                  >
+                    {experience["descriptionBullets"].map((bullet, idx) => (
+                      <li
+                        key={idx}
+                        style={{
+                          marginBottom: "8px",
+                          position: "relative",
+                          paddingLeft: "15px",
+                        }}
+                      >
+                        <span
+                          style={{
+                            position: "absolute",
+                            left: 0,
+                            color: experience["color"] || theme.secondaryText,
+                            fontWeight: "bold",
+                          }}
+                        >
+                          ▸
+                        </span>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  experience["description"]
+                )}
               </div>
             </div>
           </div>
