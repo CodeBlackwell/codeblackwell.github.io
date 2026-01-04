@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { svgColors } from "../../config/svgColors";
 
 export default class CloudInfraImg extends Component {
   render() {
@@ -80,7 +81,7 @@ export default class CloudInfraImg extends Component {
         />
         <path
           d="M298.5,290.83h22a16.76,16.76,0,0,1,16.76,16.76v46.33a27.76,27.76,0,0,1-27.76,27.76h0a27.76,27.76,0,0,1-27.76-27.76V307.59A16.76,16.76,0,0,1,298.5,290.83Z"
-          fill="#8D5524"
+          fill={svgColors.skin.main}
         />
         <path
           d="M449.33,453.67a116.17,116.17,0,0,0,55.52,0V414.13H449.33Z"
@@ -88,7 +89,7 @@ export default class CloudInfraImg extends Component {
           opacity="0.1"
         />
         <circle cx="309.5" cy="189.88" r="121.14" fill="#333" />
-        <circle cx="309.5" cy="217.64" r="116.09" fill="#8D5524" />
+        <circle cx="309.5" cy="217.64" r="116.09" fill={svgColors.skin.main} />
         <path
           d="M400.44,202.19c22.33-18.23,56.11-21.48,72.94-44.9,7-9.73,11.93-23.4,23.73-25.52l.35,24.9,37.79-3.88c-5.83,16.42,8.48,32.23,17.08,47.38a77.93,77.93,0,0,1,10.09,36.68c-13.12,7.88-29.39-.72-44-5.31-14.2-4.46-29.29-4.92-44.17-5.34-7.63-.22-15.35-.42-22.8,1.25-6.53,1.47-12.64,4.34-18.82,6.93-10.05,4.21-41.79,20.09-51.13,9.85C370.92,232.62,391.82,209.23,400.44,202.19Z"
           transform="translate(-167.6 -120.78)"
@@ -104,8 +105,8 @@ export default class CloudInfraImg extends Component {
           transform="translate(-167.6 -120.78)"
           fill="#333"
         />
-        <ellipse cx="424.33" cy="217.64" rx="10.1" ry="18.93" fill="#8D5524" />
-        <ellipse cx="194.67" cy="217.64" rx="10.1" ry="18.93" fill="#8D5524" />
+        <ellipse cx="424.33" cy="217.64" rx="10.1" ry="18.93" fill={svgColors.skin.main} />
+        <ellipse cx="194.67" cy="217.64" rx="10.1" ry="18.93" fill={svgColors.skin.main} />
         <path
           d="M504.39,473.27S651.23,450.4,620.95,677.54l-17.66,65.11-50.48-2s32.81-75.71,12.62-126.19S504.39,473.27,504.39,473.27Z"
           transform="translate(-167.6 -120.78)"
@@ -126,8 +127,8 @@ export default class CloudInfraImg extends Component {
           transform="translate(-167.6 -120.78)"
           opacity="0.1"
         />
-        <circle cx="404.08" cy="619.68" r="27.76" fill="#8D5524" />
-        <circle cx="214.91" cy="619.68" r="27.76" fill="#8D5524" />
+        <circle cx="404.08" cy="619.68" r="27.76" fill={svgColors.skin.main} />
+        <circle cx="214.91" cy="619.68" r="27.76" fill={svgColors.skin.main} />
         <g opacity="0.7">
           <rect
             x="218.04"
