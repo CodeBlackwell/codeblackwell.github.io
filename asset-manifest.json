@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "./static/css/main.ac8a7b5d.chunk.css",
-    "main.js": "./static/js/main.efd08d64.chunk.js",
-    "main.js.map": "./static/js/main.efd08d64.chunk.js.map",
+    "main.js": "./static/js/main.3a892189.chunk.js",
+    "main.js.map": "./static/js/main.3a892189.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fb7e7b0c.js",
     "runtime-main.js.map": "./static/js/runtime-main.fb7e7b0c.js.map",
     "static/js/2.d3549dad.chunk.js": "./static/js/2.d3549dad.chunk.js",
     "static/js/2.d3549dad.chunk.js.map": "./static/js/2.d3549dad.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.3be10f81aa56cc36f25a822c4583999f.js": "./precache-manifest.3be10f81aa56cc36f25a822c4583999f.js",
+    "precache-manifest.98f3533d07463aee63edcc1349a64348.js": "./precache-manifest.98f3533d07463aee63edcc1349a64348.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.ac8a7b5d.chunk.css.map": "./static/css/main.ac8a7b5d.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "./static/media/address_image.137185a8.svg",
-    "static/media/animated_ashutosh.png": "./static/media/animated_ashutosh.eaf02c2d.png",
     "static/media/animated_logo.svg": "./static/media/animated_logo.dcd6dee2.svg",
     "static/media/blogs_image.svg": "./static/media/blogs_image.52320b8c.svg",
     "static/media/cloud_infrastructure.svg": "./static/media/cloud_infrastructure.d4398470.svg",
@@ -42,6 +41,7 @@
     "static/media/muffito_logo.png": "./static/media/muffito_logo.069938a8.png",
     "static/media/nptel_logo.png": "./static/media/nptel_logo.95a12a2b.png",
     "static/media/portfolio.gif": "./static/media/portfolio.414dfbd9.gif",
+    "static/media/profile_avatar.png": "./static/media/profile_avatar.eaf02c2d.png",
     "static/media/programmer.svg": "./static/media/programmer.d86d0a61.svg",
     "static/media/projects_image.svg": "./static/media/projects_image.3cdc8120.svg",
     "static/media/pwa.png": "./static/media/pwa.71408db7.png",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.fb7e7b0c.js",
     "static/js/2.d3549dad.chunk.js",
     "static/css/main.ac8a7b5d.chunk.css",
-    "static/js/main.efd08d64.chunk.js"
+    "static/js/main.3a892189.chunk.js"
   ]
 }
