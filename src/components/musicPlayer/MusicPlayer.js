@@ -19,9 +19,9 @@ export default function MusicPlayer({ theme }) {
         widgetRef.current.bind(window.SC.Widget.Events.READY, () => {
           setIsLoaded(true);
 
-          // Check localStorage for user preference
-          const shouldAutoplay = localStorage.getItem("musicPlayerAutoplay");
-          if (shouldAutoplay !== "false") {
+          // Autoplay by default unless user explicitly paused
+          const userPaused = localStorage.getItem("musicPlayerPaused");
+          if (userPaused !== "true") {
             widgetRef.current.play();
           }
         });
@@ -53,10 +53,10 @@ export default function MusicPlayer({ theme }) {
 
     if (isPlaying) {
       widgetRef.current.pause();
-      localStorage.setItem("musicPlayerAutoplay", "false");
+      localStorage.setItem("musicPlayerPaused", "true");
     } else {
       widgetRef.current.play();
-      localStorage.setItem("musicPlayerAutoplay", "true");
+      localStorage.removeItem("musicPlayerPaused");
     }
   };
 
@@ -69,7 +69,7 @@ export default function MusicPlayer({ theme }) {
 
   const embedUrl = `https://w.soundcloud.com/player/?url=${encodeURIComponent(
     SOUNDCLOUD_TRACK_URL
-  )}&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`;
+  )}&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`;
 
   return (
     <div className="music-player" style={{ color: theme.text }}>
