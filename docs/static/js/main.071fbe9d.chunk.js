@@ -99,7 +99,7 @@
     },
     ,
     function (e, t, a) {
-      e.exports = a(151);
+      e.exports = a(152);
     },
     ,
     ,
@@ -296,6 +296,7 @@
     function (e, t, a) {},
     function (e, t, a) {},
     function (e, t, a) {},
+    function (e, t, a) {},
     ,
     function (e, t, a) {
       "use strict";
@@ -304,10 +305,10 @@
         r = a.n(l),
         n = a(11),
         c = a.n(n),
-        i = a(169),
-        s = a(152),
+        i = a(170),
+        s = a(153),
         o = a(16),
-        m = a(167),
+        m = a(168),
         h = (a(57), a(58), a(7)),
         d = a(5),
         A = (a(59), a(3));
@@ -819,10 +820,10 @@
       const G = (e, t) => {
           e.target.style.backgroundColor = t;
         },
-        T = (e) => {
+        O = (e) => {
           e.target.style.backgroundColor = "transparent";
         };
-      class O extends l.Component {
+      class T extends l.Component {
         render() {
           const e = this.props.theme,
             t = p ? "/splash" : "home";
@@ -871,7 +872,7 @@
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
                         onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseOut: (e) => O(e),
                       },
                       "Home"
                     )
@@ -887,7 +888,7 @@
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
                         onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseOut: (e) => O(e),
                       },
                       "Education"
                     )
@@ -903,7 +904,7 @@
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
                         onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseOut: (e) => O(e),
                       },
                       "Experience"
                     )
@@ -919,7 +920,7 @@
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
                         onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseOut: (e) => O(e),
                       },
                       "Projects"
                     )
@@ -935,7 +936,7 @@
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
                         onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseOut: (e) => O(e),
                       },
                       "Contact Me"
                     )
@@ -947,7 +948,7 @@
         }
       }
       var q,
-        P = O,
+        P = T,
         z = (a(76), a(26)),
         J = (a(77), a(18));
       const V = J.c.span(
@@ -1489,8 +1490,8 @@
         );
       }
       a(41), a(81);
-      var ee = a(166),
-        te = a(164);
+      var ee = a(167),
+        te = a(165);
       class ae extends r.a.Component {
         render() {
           return r.a.createElement(
@@ -4689,8 +4690,8 @@
         }
       }
       var je = Le,
-        Qe = (a(139), a(170)),
-        Fe = a(168);
+        Qe = (a(139), a(171)),
+        Fe = a(169);
       class De extends l.Component {
         render() {
           const e = this.props.theme,
@@ -5173,7 +5174,7 @@
           );
         }
       }
-      class Te extends l.Component {
+      class Oe extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5225,7 +5226,7 @@
           );
         }
       }
-      var Oe = Te;
+      var Te = Oe;
       class qe extends l.Component {
         render() {
           const e = this.props.theme;
@@ -6961,7 +6962,7 @@
                 path: "/experience",
                 exact: !0,
                 render: (e) =>
-                  r.a.createElement(Oe, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(Te, Object.assign({}, e, { theme: this.props.theme })),
               }),
               r.a.createElement(d.b, {
                 path: "/education",
@@ -7088,7 +7089,83 @@
               )
         );
       };
-      var dt = function () {
+      a(149);
+      function dt(e) {
+        let { theme: t } = e;
+        const [a, n] = Object(l.useState)(!1),
+          [c, i] = Object(l.useState)(!1),
+          s = Object(l.useRef)(null),
+          o = Object(l.useRef)(null);
+        Object(l.useEffect)(() => {
+          const e = setTimeout(() => {
+            window.SC &&
+              s.current &&
+              ((o.current = window.SC.Widget(s.current)),
+              o.current.bind(window.SC.Widget.Events.READY, () => {
+                i(!0);
+                "false" !== localStorage.getItem("musicPlayerAutoplay") && o.current.play();
+              }),
+              o.current.bind(window.SC.Widget.Events.PLAY, () => {
+                n(!0);
+              }),
+              o.current.bind(window.SC.Widget.Events.PAUSE, () => {
+                n(!1);
+              }),
+              o.current.bind(window.SC.Widget.Events.FINISH, () => {
+                o.current.seekTo(0), o.current.play();
+              }));
+          }, 500);
+          return () => clearTimeout(e);
+        }, []);
+        const m = () => {
+            o.current &&
+              c &&
+              (a
+                ? (o.current.pause(), localStorage.setItem("musicPlayerAutoplay", "false"))
+                : (o.current.play(), localStorage.setItem("musicPlayerAutoplay", "true")));
+          },
+          h = "https://w.soundcloud.com/player/?url=".concat(
+            encodeURIComponent(
+              "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive"
+            ),
+            "&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"
+          );
+        return r.a.createElement(
+          "div",
+          { className: "music-player", style: { color: t.text } },
+          r.a.createElement("iframe", {
+            ref: s,
+            className: "music-player-iframe",
+            title: "SoundCloud Player",
+            src: h,
+            allow: "autoplay",
+            scrolling: "no",
+            frameBorder: "no",
+          }),
+          r.a.createElement(
+            "button",
+            {
+              className: "music-player-button "
+                .concat(a ? "playing" : "", " ")
+                .concat(c ? "" : "loading"),
+              onClick: m,
+              onKeyDown: (e) => {
+                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), m());
+              },
+              "aria-label": a ? "Pause music" : "Play music",
+              title: a ? "Pause" : "Play",
+              style: { color: t.text, borderColor: t.text },
+            },
+            r.a.createElement("i", { className: "fa-solid ".concat(a ? "fa-pause" : "fa-music") })
+          ),
+          r.a.createElement(
+            "div",
+            { className: "music-player-tooltip" },
+            a ? "Now Playing: Khruangbin" : "Click to play music"
+          )
+        );
+      }
+      var At = function () {
         const [e, t] = Object(l.useState)(() => {
             const e = localStorage.getItem("darkMode");
             return null !== e
@@ -7113,6 +7190,7 @@
                   t(!e);
                 },
               }),
+              r.a.createElement(dt, { theme: a }),
               r.a.createElement("div", null, r.a.createElement(ct, { theme: a }))
             )
           )
@@ -7123,13 +7201,13 @@
           "[::1]" === window.location.hostname ||
           window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
       );
-      a(149);
-      const At = new m.a();
+      a(150);
+      const pt = new m.a();
       c.a.render(
         r.a.createElement(
           o.a,
-          { value: At },
-          r.a.createElement(i.a, { theme: s.a }, r.a.createElement(dt, null))
+          { value: pt },
+          r.a.createElement(i.a, { theme: s.a }, r.a.createElement(At, null))
         ),
         document.getElementById("root")
       ),
@@ -7141,4 +7219,4 @@
   ]),
   [[52, 1, 2]],
 ]);
-//# sourceMappingURL=main.1b930848.chunk.js.map
+//# sourceMappingURL=main.071fbe9d.chunk.js.map
