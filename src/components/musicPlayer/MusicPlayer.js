@@ -5,57 +5,70 @@ const SOUNDCLOUD_TRACK_URL =
   "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive";
 
 export default function MusicPlayer({ theme }) {
-  const [isPlaying, setIsPlaying] = useState(true); // Assume playing since auto_play=true
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [needsInteraction, setNeedsInteraction] = useState(true);
   const iframeRef = useRef(null);
   const widgetRef = useRef(null);
 
   useEffect(() => {
-    // Check if user previously paused - if so, don't autoplay
     const userPaused = localStorage.getItem("musicPlayerPaused") === "true";
-    if (userPaused) {
-      setIsPlaying(false);
-    }
 
-    // Wait for SC.Widget to be available
     const initWidget = () => {
-      if (window.SC && iframeRef.current) {
-        widgetRef.current = window.SC.Widget(iframeRef.current);
+      if (window.SC && window.SC.Widget && iframeRef.current) {
+        try {
+          widgetRef.current = window.SC.Widget(iframeRef.current);
 
-        widgetRef.current.bind(window.SC.Widget.Events.READY, () => {
-          setIsLoaded(true);
+          widgetRef.current.bind(window.SC.Widget.Events.READY, () => {
+            setIsLoaded(true);
 
-          // If user previously paused, pause the widget
-          if (userPaused) {
-            widgetRef.current.pause();
-          }
-          // Otherwise, auto_play=true in the URL handles autoplay
-        });
+            // Try to autoplay if user hasn't paused
+            if (!userPaused) {
+              widgetRef.current.play();
+            }
+          });
 
-        widgetRef.current.bind(window.SC.Widget.Events.PLAY, () => {
-          setIsPlaying(true);
-        });
+          widgetRef.current.bind(window.SC.Widget.Events.PLAY, () => {
+            setIsPlaying(true);
+            setNeedsInteraction(false);
+          });
 
-        widgetRef.current.bind(window.SC.Widget.Events.PAUSE, () => {
-          setIsPlaying(false);
-        });
+          widgetRef.current.bind(window.SC.Widget.Events.PAUSE, () => {
+            setIsPlaying(false);
+          });
 
-        widgetRef.current.bind(window.SC.Widget.Events.FINISH, () => {
-          // Loop the track
-          widgetRef.current.seekTo(0);
-          widgetRef.current.play();
-        });
+          widgetRef.current.bind(window.SC.Widget.Events.FINISH, () => {
+            widgetRef.current.seekTo(0);
+            widgetRef.current.play();
+          });
+
+          widgetRef.current.bind(window.SC.Widget.Events.PLAY_PROGRESS, () => {
+            // If we're getting progress events, audio is working
+            setNeedsInteraction(false);
+          });
+        } catch (e) {
+          console.warn("SoundCloud widget init error:", e);
+        }
       }
     };
 
-    // Small delay to ensure SC.Widget is loaded
-    const timeout = setTimeout(initWidget, 500);
+    // Wait for SC.Widget API to load
+    const checkAndInit = () => {
+      if (window.SC && window.SC.Widget) {
+        initWidget();
+      } else {
+        setTimeout(checkAndInit, 200);
+      }
+    };
 
+    const timeout = setTimeout(checkAndInit, 300);
     return () => clearTimeout(timeout);
   }, []);
 
   const togglePlay = () => {
-    if (!widgetRef.current || !isLoaded) return;
+    if (!widgetRef.current) return;
+
+    setNeedsInteraction(false);
 
     if (isPlaying) {
       widgetRef.current.pause();
@@ -91,12 +104,12 @@ export default function MusicPlayer({ theme }) {
 
       <button
         className={`music-player-button ${isPlaying ? "playing" : ""} ${
-          !isLoaded ? "loading" : ""
+          needsInteraction && !isPlaying ? "needs-click" : ""
         }`}
         onClick={togglePlay}
         onKeyDown={handleKeyDown}
         aria-label={isPlaying ? "Pause music" : "Play music"}
-        title={isPlaying ? "Pause" : "Play"}
+        title={isPlaying ? "Pause" : "Click to enable audio"}
         style={{
           color: theme.text,
           borderColor: theme.text,
@@ -104,6 +117,15 @@ export default function MusicPlayer({ theme }) {
       >
         <i className={`fa-solid ${isPlaying ? "fa-pause" : "fa-music"}`}></i>
       </button>
+
+      {needsInteraction && !isPlaying && (
+        <div
+          className="music-player-prompt"
+          style={{ color: theme.text, backgroundColor: theme.body }}
+        >
+          Click to enable audio
+        </div>
+      )}
 
       <div className="music-player-tooltip">
         {isPlaying ? "Now Playing: Khruangbin" : "Click to play music"}
