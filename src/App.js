@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { blueTheme, materialDarkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import ThemeToggle from "./components/themeToggle/ThemeToggle";
+import MusicPlayer from "./components/musicPlayer/MusicPlayer";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -28,6 +29,7 @@ function App() {
       <>
         <GlobalStyles />
         <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+        <MusicPlayer theme={currentTheme} />
         <div>
           <Main theme={currentTheme} />
         </div>
