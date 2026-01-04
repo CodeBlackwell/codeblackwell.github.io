@@ -1,53 +1,53 @@
 (this.webpackJsonpmasterPortfolio = this.webpackJsonpmasterPortfolio || []).push([
   [0],
-  Array(24).concat([
+  Array(28).concat([
     function (e, t, a) {
       var l = {
-        "./address_image.svg": 89,
-        "./animated_logo.svg": 90,
-        "./blogs_image.svg": 91,
-        "./cloud_infrastructure.svg": 92,
-        "./codeInLogo.png": 93,
-        "./contactMail.png": 94,
-        "./coursera_logo.png": 95,
-        "./data_science.svg": 96,
-        "./deeplearning_ai_logo.png": 97,
-        "./delhivery_logo.png": 98,
-        "./developerActivity.svg": 99,
-        "./dsc_logo.png": 100,
-        "./education.svg": 101,
-        "./experience.svg": 102,
-        "./feelingProud.svg": 103,
-        "./freecopy_logo.png": 104,
-        "./fullstack.svg": 105,
-        "./gcp_logo.png": 106,
-        "./github_logo.png": 107,
-        "./googleAssistant.jpg": 108,
-        "./googleAssistant.svg": 109,
-        "./google_logo.png": 110,
-        "./ibm_logo.png": 111,
-        "./iiitk_logo.png": 112,
-        "./intel_logo.jpg": 113,
-        "./iu_logo.png": 114,
-        "./jsFramework.svg": 115,
-        "./legato_logo.png": 116,
-        "./manOnTable.svg": 117,
-        "./microsoft_logo.png": 118,
-        "./mozilla_logo.png": 119,
-        "./muffito_logo.png": 120,
-        "./nextuLogo.jpg": 121,
-        "./nptel_logo.png": 122,
-        "./portfolio.gif": 123,
-        "./profile_avatar.png": 124,
-        "./programmer.svg": 125,
-        "./projects_image.svg": 126,
-        "./pwa.png": 127,
-        "./saayaHealthLogo.png": 128,
-        "./stanford_logo.png": 129,
-        "./talksCardBack.svg": 130,
-        "./talksCardBackAlt.svg": 131,
-        "./tiktok_logo.png": 132,
-        "./ui_ux_design.svg": 133,
+        "./address_image.svg": 95,
+        "./animated_logo.svg": 96,
+        "./blogs_image.svg": 97,
+        "./cloud_infrastructure.svg": 98,
+        "./codeInLogo.png": 99,
+        "./contactMail.png": 100,
+        "./coursera_logo.png": 101,
+        "./data_science.svg": 102,
+        "./deeplearning_ai_logo.png": 103,
+        "./delhivery_logo.png": 104,
+        "./developerActivity.svg": 105,
+        "./dsc_logo.png": 106,
+        "./education.svg": 107,
+        "./experience.svg": 108,
+        "./feelingProud.svg": 109,
+        "./freecopy_logo.png": 110,
+        "./fullstack.svg": 111,
+        "./gcp_logo.png": 112,
+        "./github_logo.png": 113,
+        "./googleAssistant.jpg": 114,
+        "./googleAssistant.svg": 115,
+        "./google_logo.png": 116,
+        "./ibm_logo.png": 117,
+        "./iiitk_logo.png": 118,
+        "./intel_logo.jpg": 119,
+        "./iu_logo.png": 120,
+        "./jsFramework.svg": 121,
+        "./legato_logo.png": 122,
+        "./manOnTable.svg": 123,
+        "./microsoft_logo.png": 124,
+        "./mozilla_logo.png": 125,
+        "./muffito_logo.png": 126,
+        "./nextuLogo.jpg": 127,
+        "./nptel_logo.png": 128,
+        "./portfolio.gif": 129,
+        "./profile_avatar.png": 130,
+        "./programmer.svg": 131,
+        "./projects_image.svg": 132,
+        "./pwa.png": 133,
+        "./saayaHealthLogo.png": 134,
+        "./stanford_logo.png": 135,
+        "./talksCardBack.svg": 136,
+        "./talksCardBackAlt.svg": 137,
+        "./tiktok_logo.png": 138,
+        "./ui_ux_design.svg": 139,
       };
       function r(e) {
         var t = n(e);
@@ -65,7 +65,7 @@
       }),
         (r.resolve = n),
         (e.exports = r),
-        (r.id = 24);
+        (r.id = 28);
     },
     ,
     ,
@@ -98,8 +98,10 @@
       );
     },
     ,
+    ,
+    ,
     function (e, t, a) {
-      e.exports = a(152);
+      e.exports = a(164);
     },
     ,
     ,
@@ -298,20 +300,26 @@
     function (e, t, a) {},
     function (e, t, a) {},
     ,
+    ,
+    ,
+    ,
+    ,
+    function (e, t, a) {},
+    ,
     function (e, t, a) {
       "use strict";
       a.r(t);
       var l = a(0),
         r = a.n(l),
-        n = a(11),
+        n = a(12),
         c = a.n(n),
-        i = a(170),
-        s = a(153),
-        o = a(16),
-        m = a(168),
-        h = (a(57), a(58), a(7)),
-        d = a(5),
-        A = (a(59), a(3));
+        i = a(182),
+        s = a(165),
+        o = a(17),
+        m = a(180),
+        d = (a(63), a(64), a(8)),
+        h = a(6),
+        A = (a(65), a(3));
       const p = !0,
         f = {
           title: "LeChristopher Blackwell | Full-Stack Engineer & AI Specialist",
@@ -330,8 +338,8 @@
           "Building the future with AI \u2014 Full-stack engineer specializing in LLMs, data pipelines, and scalable web applications. Passionate about prompt engineering, machine learning, and turning complex problems into elegant solutions.",
         x = "./LeChristopher_Blackwell_Resume.pdf",
         b = "https://github.com/codeblackwell/codeblackwell.github.io",
-        M = "https://github.com/codeblackwell",
-        w = [
+        v = "https://github.com/codeblackwell",
+        M = [
           {
             name: "Github",
             link: "https://github.com/codeblackwell",
@@ -357,7 +365,7 @@
             backgroundColor: "#D14836",
           },
         ],
-        v = {
+        w = {
           data: [
             {
               title: "AI & Machine Learning",
@@ -713,13 +721,13 @@
             },
           ],
         },
-        L = {
+        j = {
           title: "Contact Me",
           profile_image_path: "profile_avatar.png",
           description:
             "I'm always open to discussing new projects, AI/ML opportunities, or interesting technical challenges. Feel free to reach out via email or connect on social media.",
         },
-        j = {
+        L = {
           title: "Blog",
           subtitle:
             "I write about AI, software engineering, and lessons learned building scalable systems.",
@@ -735,7 +743,7 @@
             },
           ],
         },
-        Q = {
+        D = {
           title: "Location",
           subtitle: "San Francisco, CA, USA",
           locality: "San Francisco",
@@ -747,14 +755,14 @@
           location_map_link: "https://maps.app.goo.gl/San-Francisco",
         },
         F = { title: "", subtitle: "" };
-      var D = a(42);
-      var U = function () {
-        var e, t, a, l, n, c, i, s, o, m, h, d, A;
+      var O = a(46);
+      var Q = function () {
+        var e, t, a, l, n, c, i, s, o, m, d, h, A;
         let p = [];
-        w.filter((e) => !(e.link.startsWith("tel") || e.link.startsWith("mailto"))).forEach((e) => {
+        M.filter((e) => !(e.link.startsWith("tel") || e.link.startsWith("mailto"))).forEach((e) => {
           p.push(e.link);
         });
-        let E = w.find((e) => e.link.startsWith("mailto")).link.substring("mailto:".length),
+        let E = M.find((e) => e.link.startsWith("mailto")).link.substring("mailto:".length),
           y =
             null === (e = N.sections) ||
             void 0 === e ||
@@ -786,28 +794,28 @@
           worksFor: { "@type": "Organization", name: y.company },
           address: {
             "@type": "PostalAddress",
-            addressLocality: null === (c = Q) || void 0 === c ? void 0 : c.locality,
-            addressRegion: null === (i = Q) || void 0 === i ? void 0 : i.region,
-            addressCountry: null === (s = Q) || void 0 === s ? void 0 : s.country,
-            postalCode: null === (o = Q) || void 0 === o ? void 0 : o.postalCode,
-            streetAddress: null === (m = Q) || void 0 === m ? void 0 : m.streetAddress,
+            addressLocality: null === (c = D) || void 0 === c ? void 0 : c.locality,
+            addressRegion: null === (i = D) || void 0 === i ? void 0 : i.region,
+            addressCountry: null === (s = D) || void 0 === s ? void 0 : s.country,
+            postalCode: null === (o = D) || void 0 === o ? void 0 : o.postalCode,
+            streetAddress: null === (m = D) || void 0 === m ? void 0 : m.streetAddress,
           },
           hasCredential: u,
         };
         return r.a.createElement(
-          D.a,
+          O.a,
           null,
           r.a.createElement("title", null, f.title),
           r.a.createElement("meta", { name: "description", content: f.description }),
           r.a.createElement("meta", {
             property: "og:title",
             content:
-              null === f || void 0 === f || null === (h = f.og) || void 0 === h ? void 0 : h.title,
+              null === f || void 0 === f || null === (d = f.og) || void 0 === d ? void 0 : d.title,
           }),
           r.a.createElement("meta", {
             property: "og:type",
             content:
-              null === f || void 0 === f || null === (d = f.og) || void 0 === d ? void 0 : d.type,
+              null === f || void 0 === f || null === (h = f.og) || void 0 === h ? void 0 : h.type,
           }),
           r.a.createElement("meta", {
             property: "og:url",
@@ -817,20 +825,20 @@
           r.a.createElement("script", { type: "application/ld+json" }, JSON.stringify(x))
         );
       };
-      const G = (e, t) => {
+      const z = (e, t) => {
           e.target.style.backgroundColor = t;
         },
-        O = (e) => {
+        T = (e) => {
           e.target.style.backgroundColor = "transparent";
         };
-      class T extends l.Component {
+      class U extends l.Component {
         render() {
           const e = this.props.theme,
             t = p ? "/splash" : "home";
           return r.a.createElement(
             A.Fade,
             { top: !0, duration: 1e3, distance: "20px" },
-            r.a.createElement(U, null),
+            r.a.createElement(Q, null),
             r.a.createElement(
               "div",
               null,
@@ -838,8 +846,8 @@
                 "header",
                 { className: "header" },
                 r.a.createElement(
-                  h.c,
-                  { to: t, tag: h.b, className: "logo" },
+                  d.c,
+                  { to: t, tag: d.b, className: "logo" },
                   r.a.createElement("span", { style: { color: e.text } }, " <"),
                   r.a.createElement(
                     "span",
@@ -865,14 +873,14 @@
                     "li",
                     null,
                     r.a.createElement(
-                      h.c,
+                      d.c,
                       {
                         to: "/home",
-                        tag: h.b,
+                        tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => O(e),
+                        onMouseEnter: (t) => z(t, e.highlight),
+                        onMouseOut: (e) => T(e),
                       },
                       "Home"
                     )
@@ -881,14 +889,14 @@
                     "li",
                     null,
                     r.a.createElement(
-                      h.c,
+                      d.c,
                       {
                         to: "/education",
-                        tag: h.b,
+                        tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => O(e),
+                        onMouseEnter: (t) => z(t, e.highlight),
+                        onMouseOut: (e) => T(e),
                       },
                       "Education"
                     )
@@ -897,14 +905,14 @@
                     "li",
                     null,
                     r.a.createElement(
-                      h.c,
+                      d.c,
                       {
                         to: "/experience",
-                        tag: h.b,
+                        tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => O(e),
+                        onMouseEnter: (t) => z(t, e.highlight),
+                        onMouseOut: (e) => T(e),
                       },
                       "Experience"
                     )
@@ -913,14 +921,14 @@
                     "li",
                     null,
                     r.a.createElement(
-                      h.c,
+                      d.c,
                       {
                         to: "/projects",
-                        tag: h.b,
+                        tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => O(e),
+                        onMouseEnter: (t) => z(t, e.highlight),
+                        onMouseOut: (e) => T(e),
                       },
                       "Projects"
                     )
@@ -929,14 +937,14 @@
                     "li",
                     null,
                     r.a.createElement(
-                      h.c,
+                      d.c,
                       {
                         to: "/contact",
-                        tag: h.b,
+                        tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => G(t, e.highlight),
-                        onMouseOut: (e) => O(e),
+                        onMouseEnter: (t) => z(t, e.highlight),
+                        onMouseOut: (e) => T(e),
                       },
                       "Contact Me"
                     )
@@ -947,13 +955,13 @@
           );
         }
       }
-      var q,
-        P = T,
-        z = (a(76), a(26)),
-        J = (a(77), a(18));
-      const V = J.c.span(
-        q ||
-          (q = Object(z.a)([
+      var P,
+        G = U,
+        q = (a(82), a(29)),
+        V = (a(83), a(19));
+      const J = V.c.span(
+        P ||
+          (P = Object(q.a)([
             "\n  i {\n    background-color: ",
             ";\n  }\n  &:hover i {\n    background-color: ",
             ";\n    transition: 0.3s ease-in;\n  }\n",
@@ -968,7 +976,7 @@
         return r.a.createElement(
           "div",
           { className: "social-media-div" },
-          w.map((t, a) =>
+          M.map((t, a) =>
             r.a.createElement(
               "a",
               {
@@ -979,7 +987,7 @@
                 rel: "noopener noreferrer",
               },
               r.a.createElement(
-                V,
+                J,
                 Object.assign({}, t, e),
                 r.a.createElement("i", { className: "fab ".concat(t.fontAwesomeIcon) })
               )
@@ -987,7 +995,7 @@
           )
         );
       }
-      a(80);
+      a(86);
       function W(e) {
         let { text: t, className: a, href: l, newTab: n, theme: c, download: i } = e;
         return r.a.createElement(
@@ -1489,9 +1497,9 @@
           )
         );
       }
-      a(41), a(81);
-      var ee = a(167),
-        te = a(165);
+      a(45), a(87);
+      var ee = a(179),
+        te = a(177);
       class ae extends r.a.Component {
         render() {
           return r.a.createElement(
@@ -3706,7 +3714,7 @@
           return r.a.createElement(
             "div",
             null,
-            v.data.map((t, a) =>
+            w.data.map((t, a) =>
               r.a.createElement(
                 "div",
                 { key: a, className: "skills-main-div" },
@@ -3762,7 +3770,7 @@
         }
       }
       var me = oe;
-      function he(e) {
+      function de(e) {
         const t = e.theme;
         return r.a.createElement(
           "div",
@@ -3783,8 +3791,8 @@
           r.a.createElement(me, { theme: t })
         );
       }
-      a(83);
-      function de(e) {
+      a(89);
+      function he(e) {
         return r.a.createElement(
           "div",
           { className: "footer-div" },
@@ -3802,7 +3810,7 @@
           )
         );
       }
-      a(84);
+      a(90);
       function Ae(e) {
         let { theme: t } = e;
         window.onscroll = function () {
@@ -3846,16 +3854,16 @@
           return r.a.createElement(
             "div",
             null,
-            r.a.createElement(P, { theme: this.props.theme }),
+            r.a.createElement(G, { theme: this.props.theme }),
             r.a.createElement($, { theme: this.props.theme }),
-            r.a.createElement(he, { theme: this.props.theme }),
             r.a.createElement(de, { theme: this.props.theme }),
+            r.a.createElement(he, { theme: this.props.theme }),
             r.a.createElement(Ae, { theme: this.props.theme })
           );
         }
       }
       var fe = pe;
-      a(85), a(86);
+      a(91), a(92);
       class ge extends r.a.Component {
         render() {
           const e = this.props.theme;
@@ -3908,12 +3916,12 @@
         }
         render() {
           return this.state.redirect
-            ? r.a.createElement(d.a, { to: "/home" })
+            ? r.a.createElement(h.a, { to: "/home" })
             : r.a.createElement(ye, { theme: this.props.theme });
         }
       }
       var xe = ue;
-      a(87), a(88);
+      a(93), a(94);
       class be extends l.Component {
         render() {
           const e = this.props.degree,
@@ -3930,7 +3938,7 @@
                   { className: "card-img" },
                   r.a.createElement("img", {
                     style: { maxWidth: "100%", maxHeight: "100%", transform: "scale(0.9)" },
-                    src: a(24)("./".concat(e.logo_path)),
+                    src: a(28)("./".concat(e.logo_path)),
                     alt: e.alt_name,
                   })
                 )
@@ -3998,8 +4006,8 @@
           );
         }
       }
-      var Me = be;
-      class we extends l.Component {
+      var ve = be;
+      class Me extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -4021,13 +4029,13 @@
             r.a.createElement(
               "div",
               { className: "educations-body-div" },
-              k.degrees.map((t) => r.a.createElement(Me, { degree: t, theme: e }))
+              k.degrees.map((t) => r.a.createElement(ve, { degree: t, theme: e }))
             )
           );
         }
       }
-      var ve = we;
-      a(134), a(135);
+      var we = Me;
+      a(140), a(141);
       class Ce extends l.Component {
         render() {
           const e = this.props.certificate,
@@ -4050,7 +4058,7 @@
                     { className: "cert-header", style: { backgroundColor: e.color_code } },
                     r.a.createElement("img", {
                       className: "logo_img",
-                      src: a(24)("./".concat(e.logo_path)),
+                      src: a(28)("./".concat(e.logo_path)),
                       alt: e.alt_name,
                     })
                   ),
@@ -4112,7 +4120,7 @@
         }
       }
       var Ne = Ze;
-      a(136);
+      a(142);
       class Se extends r.a.Component {
         render() {
           return r.a.createElement(
@@ -4458,14 +4466,14 @@
           );
         }
       }
-      a(137);
+      a(143);
       class Be extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
             "div",
             { className: "education-main" },
-            r.a.createElement(P, { theme: this.props.theme }),
+            r.a.createElement(G, { theme: this.props.theme }),
             r.a.createElement(
               "div",
               { className: "basic-education" },
@@ -4497,19 +4505,19 @@
                   )
                 )
               ),
-              r.a.createElement(ve, { theme: this.props.theme }),
+              r.a.createElement(we, { theme: this.props.theme }),
               Z.certifications.length > 0
                 ? r.a.createElement(Ne, { theme: this.props.theme })
                 : null
             ),
-            r.a.createElement(de, { theme: this.props.theme }),
+            r.a.createElement(he, { theme: this.props.theme }),
             r.a.createElement(Ae, { theme: this.props.theme })
           );
         }
       }
       var He = Be;
-      a(138);
-      class Le extends l.Component {
+      a(144);
+      class je extends l.Component {
         render() {
           var e;
           const t = this.props.experience,
@@ -4528,7 +4536,7 @@
                 t.logo_path
                   ? r.a.createElement("img", {
                       className: "experience-card-logo",
-                      src: a(24)("./".concat(t.logo_path)),
+                      src: a(28)("./".concat(t.logo_path)),
                       alt: "",
                     })
                   : r.a.createElement(
@@ -4689,10 +4697,10 @@
           );
         }
       }
-      var je = Le,
-        Qe = (a(139), a(171)),
-        Fe = a(169);
-      class De extends l.Component {
+      var Le = je,
+        De = (a(145), a(183)),
+        Fe = a(181);
+      class Oe extends l.Component {
         render() {
           const e = this.props.theme,
             t = this.props.sections.map((e, t) => String(t));
@@ -4700,7 +4708,7 @@
             "div",
             { className: "experience-accord" },
             r.a.createElement(
-              Qe.a,
+              De.a,
               { initialState: { expanded: t } },
               this.props.sections.map((t, a) =>
                 r.a.createElement(
@@ -4726,7 +4734,7 @@
                     },
                   },
                   t.experiences.map((a, l) =>
-                    r.a.createElement(je, {
+                    r.a.createElement(Le, {
                       index: l,
                       totalCards: t.experiences.length,
                       experience: a,
@@ -4739,9 +4747,9 @@
           );
         }
       }
-      var Ue = De;
-      a(141);
-      class Ge extends l.Component {
+      var Qe = Oe;
+      a(147);
+      class ze extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5174,13 +5182,13 @@
           );
         }
       }
-      class Oe extends l.Component {
+      class Te extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
             "div",
             { className: "experience-main" },
-            r.a.createElement(P, { theme: e }),
+            r.a.createElement(G, { theme: e }),
             r.a.createElement(
               "div",
               { className: "basic-experience" },
@@ -5193,7 +5201,7 @@
                   r.a.createElement(
                     "div",
                     { className: "experience-heading-img-div" },
-                    r.a.createElement(Ge, { theme: e })
+                    r.a.createElement(ze, { theme: e })
                   ),
                   r.a.createElement(
                     "div",
@@ -5220,14 +5228,14 @@
                 )
               )
             ),
-            r.a.createElement(Ue, { sections: N.sections, theme: e }),
-            r.a.createElement(de, { theme: this.props.theme, onToggle: this.props.onToggle }),
+            r.a.createElement(Qe, { sections: N.sections, theme: e }),
+            r.a.createElement(he, { theme: this.props.theme, onToggle: this.props.onToggle }),
             r.a.createElement(Ae, { theme: this.props.theme })
           );
         }
       }
-      var Te = Oe;
-      class qe extends l.Component {
+      var Ue = Te;
+      class Pe extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5532,7 +5540,7 @@
           );
         }
       }
-      class Pe extends l.Component {
+      class Ge extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5770,10 +5778,10 @@
           );
         }
       }
-      a(142);
-      const ze = L,
-        Je = j,
-        Ve = Q,
+      a(148);
+      const qe = j,
+        Ve = L,
+        Je = D,
         Xe = F;
       class We extends l.Component {
         render() {
@@ -5781,7 +5789,7 @@
           return r.a.createElement(
             "div",
             { className: "contact-main" },
-            r.a.createElement(P, { theme: e }),
+            r.a.createElement(G, { theme: e }),
             r.a.createElement(
               "div",
               { className: "basic-contact" },
@@ -5795,7 +5803,7 @@
                     "div",
                     { className: "contact-heading-img-div" },
                     r.a.createElement("img", {
-                      src: a(24)("./".concat(ze.profile_image_path)),
+                      src: a(28)("./".concat(qe.profile_image_path)),
                       alt: "",
                     })
                   ),
@@ -5805,7 +5813,7 @@
                     r.a.createElement(
                       "h1",
                       { className: "contact-heading-text", style: { color: e.text } },
-                      ze.title
+                      qe.title
                     ),
                     r.a.createElement(
                       "p",
@@ -5813,7 +5821,7 @@
                         className: "contact-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      ze.description
+                      qe.description
                     ),
                     r.a.createElement(X, { theme: e }),
                     r.a.createElement(
@@ -5842,7 +5850,7 @@
                     r.a.createElement(
                       "h1",
                       { className: "blog-heading-text", style: { color: e.text } },
-                      Je.title
+                      Ve.title
                     ),
                     r.a.createElement(
                       "p",
@@ -5850,7 +5858,7 @@
                         className: "blog-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      Je.subtitle
+                      Ve.subtitle
                     ),
                     r.a.createElement(
                       "div",
@@ -5858,17 +5866,17 @@
                       r.a.createElement(W, {
                         text: "Read My Blog",
                         newTab: !0,
-                        href: Je.link,
+                        href: Ve.link,
                         theme: e,
                       })
                     ),
-                    Je.posts &&
-                      Je.posts.length > 0 &&
+                    Ve.posts &&
+                      Ve.posts.length > 0 &&
                       r.a.createElement(
                         "div",
                         {
                           className: "blog-posts-container ".concat(
-                            Je.posts.length >= 4 ? "scrollable" : ""
+                            Ve.posts.length >= 4 ? "scrollable" : ""
                           ),
                         },
                         r.a.createElement(
@@ -5879,7 +5887,7 @@
                         r.a.createElement(
                           "div",
                           { className: "blog-posts-list" },
-                          Je.posts.map((t, a) =>
+                          Ve.posts.map((t, a) =>
                             r.a.createElement(
                               "a",
                               {
@@ -5924,7 +5932,7 @@
                   r.a.createElement(
                     "div",
                     { className: "blog-heading-img-div" },
-                    r.a.createElement(qe, { theme: e })
+                    r.a.createElement(Pe, { theme: e })
                   )
                 )
               ),
@@ -5937,7 +5945,7 @@
                   r.a.createElement(
                     "div",
                     { className: "contact-heading-img-div" },
-                    r.a.createElement(Pe, { theme: e })
+                    r.a.createElement(Ge, { theme: e })
                   ),
                   r.a.createElement(
                     "div",
@@ -5945,7 +5953,7 @@
                     r.a.createElement(
                       "h1",
                       { className: "address-heading-text", style: { color: e.text } },
-                      Ve.title
+                      Je.title
                     ),
                     r.a.createElement(
                       "p",
@@ -5953,7 +5961,7 @@
                         className: "contact-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      Ve.subtitle
+                      Je.subtitle
                     ),
                     r.a.createElement(
                       "h1",
@@ -5974,7 +5982,7 @@
                       r.a.createElement(W, {
                         text: "Visit on Google Maps",
                         newTab: !0,
-                        href: Ve.location_map_link,
+                        href: Je.location_map_link,
                         theme: e,
                       })
                     )
@@ -5982,13 +5990,13 @@
                 )
               )
             ),
-            r.a.createElement(de, { theme: this.props.theme, onToggle: this.props.onToggle }),
+            r.a.createElement(he, { theme: this.props.theme, onToggle: this.props.onToggle }),
             r.a.createElement(Ae, { theme: this.props.theme })
           );
         }
       }
       var Ye = We;
-      a(143);
+      a(149);
       class Ke extends l.Component {
         render() {
           return r.a.createElement(
@@ -6029,7 +6037,7 @@
         }
       }
       var _e = Ke;
-      a(144);
+      a(150);
       function $e(e) {
         let { repo: t, theme: a } = e;
         return r.a.createElement(
@@ -6088,7 +6096,7 @@
           )
         );
       }
-      a(145);
+      a(151);
       function et(e) {
         let { pub: t, theme: a } = e;
         return r.a.createElement(
@@ -6137,8 +6145,8 @@
           )
         );
       }
-      var tt = a(50);
-      a(146);
+      var tt = a(54);
+      a(152);
       class at extends l.Component {
         render() {
           const e = this.props.theme;
@@ -6810,7 +6818,7 @@
           return r.a.createElement(
             "div",
             { className: "projects-main" },
-            r.a.createElement(P, { theme: e }),
+            r.a.createElement(G, { theme: e }),
             r.a.createElement(
               "div",
               { className: "basic-projects" },
@@ -6853,7 +6861,7 @@
             r.a.createElement(W, {
               text: "More Projects",
               className: "project-button",
-              href: M,
+              href: v,
               newTab: !0,
               theme: e,
             }),
@@ -6893,20 +6901,20 @@
               { className: "repo-cards-div-main" },
               H.data.map((t) => r.a.createElement(et, { pub: t, theme: e }))
             ),
-            r.a.createElement(de, { theme: this.props.theme, onToggle: this.props.onToggle }),
+            r.a.createElement(he, { theme: this.props.theme, onToggle: this.props.onToggle }),
             r.a.createElement(Ae, { theme: this.props.theme })
           );
         }
       }
       var rt = lt;
-      a(147);
+      a(153);
       class nt extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
             "div",
             { className: "error-main" },
-            r.a.createElement(P, { theme: this.props.theme }),
+            r.a.createElement(G, { theme: this.props.theme }),
             r.a.createElement(
               "div",
               { className: "error-class" },
@@ -6917,7 +6925,7 @@
                 r.a.createElement("h1", { className: "error-404" }, "404"),
                 r.a.createElement("p", null, "The requested page is unavailable at the moment!"),
                 r.a.createElement(
-                  h.b,
+                  d.b,
                   {
                     className: "main-button",
                     to: "/home",
@@ -6932,7 +6940,7 @@
                 )
               )
             ),
-            r.a.createElement(de, { theme: this.props.theme }),
+            r.a.createElement(he, { theme: this.props.theme }),
             r.a.createElement(Ae, { theme: this.props.theme })
           );
         }
@@ -6940,12 +6948,12 @@
       class ct extends l.Component {
         render() {
           return r.a.createElement(
-            h.a,
+            d.a,
             { basename: "/" },
             r.a.createElement(
-              d.d,
+              h.d,
               null,
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "/",
                 exact: !0,
                 render: (e) =>
@@ -6953,39 +6961,39 @@
                     ? r.a.createElement(xe, Object.assign({}, e, { theme: this.props.theme }))
                     : r.a.createElement(fe, Object.assign({}, e, { theme: this.props.theme })),
               }),
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "/home",
                 render: (e) =>
                   r.a.createElement(fe, Object.assign({}, e, { theme: this.props.theme })),
               }),
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "/experience",
                 exact: !0,
                 render: (e) =>
-                  r.a.createElement(Te, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(Ue, Object.assign({}, e, { theme: this.props.theme })),
               }),
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "/education",
                 render: (e) =>
                   r.a.createElement(He, Object.assign({}, e, { theme: this.props.theme })),
               }),
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "/contact",
                 render: (e) =>
                   r.a.createElement(Ye, Object.assign({}, e, { theme: this.props.theme })),
               }),
               p &&
-                r.a.createElement(d.b, {
+                r.a.createElement(h.b, {
                   path: "/splash",
                   render: (e) =>
                     r.a.createElement(xe, Object.assign({}, e, { theme: this.props.theme })),
                 }),
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "/projects",
                 render: (e) =>
                   r.a.createElement(rt, Object.assign({}, e, { theme: this.props.theme })),
               }),
-              r.a.createElement(d.b, {
+              r.a.createElement(h.b, {
                 path: "*",
                 render: (e) =>
                   r.a.createElement(nt, Object.assign({}, e, { theme: this.props.theme })),
@@ -7006,6 +7014,13 @@
           jacketColor: "#0A2472",
           headerColor: "#0E6BA877",
           splashBg: "#001C55",
+          visualizer: {
+            primary: "#0E6BA8",
+            secondary: "#A6E1FA",
+            accent: "#0A2472",
+            glow: "#0E6BA8",
+            opacity: 0.7,
+          },
         },
         st = {
           body: "#263238",
@@ -7019,14 +7034,21 @@
           jacketColor: "#8eacbb",
           headerColor: "#34515e",
           splashBg: "#4f5b62",
+          visualizer: {
+            primary: "#607d8b",
+            secondary: "#8eacbb",
+            accent: "#4f5b62",
+            glow: "#607d8b",
+            opacity: 0.8,
+          },
         };
       var ot;
-      const mt = Object(J.b)(
+      const mt = Object(V.b)(
         ot ||
-          (ot = Object(z.a)([
+          (ot = Object(q.a)([
             "\n  *,\n  *::after,\n  *::before {\n    box-sizing: border-box;\n  }\n\n  body {\n    align-items: center;\n    background: ",
             ";\n    color: ",
-            ";\n    display: flex;\n    // flex-direction: column;\n    // justify-content: center;\n    // height: 100vh;\n    // margin: 0;\n    // padding: 0;\n    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;\n    transition: all 0.25s linear;\n  }",
+            ";\n    display: flex;\n    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;\n    transition: all 0.25s linear;\n    min-height: 100vh;\n    margin: 0;\n    padding: 0;\n    overflow-x: hidden;\n  }\n\n  #root {\n    width: 100%;\n    position: relative;\n    z-index: 1;\n  }\n",
           ])),
         (e) => {
           let { theme: t } = e;
@@ -7037,8 +7059,8 @@
           return t.text;
         }
       );
-      a(148);
-      var ht = function (e) {
+      a(154);
+      var dt = function (e) {
         let { isDarkMode: t, toggleTheme: a } = e;
         return r.a.createElement(
           "button",
@@ -7089,80 +7111,21 @@
               )
         );
       };
-      a(149);
-      function dt(e) {
-        let { theme: t } = e;
-        const [a, n] = Object(l.useState)(!1),
-          [, c] = Object(l.useState)(!1),
-          [i, s] = Object(l.useState)(!0),
-          o = Object(l.useRef)(null),
-          m = Object(l.useRef)(null);
-        Object(l.useEffect)(() => {
-          const e = "true" === localStorage.getItem("musicPlayerPaused"),
-            t = () => {
-              window.SC && window.SC.Widget
-                ? (() => {
-                    if (window.SC && window.SC.Widget && o.current)
-                      try {
-                        (m.current = window.SC.Widget(o.current)),
-                          m.current.bind(window.SC.Widget.Events.READY, () => {
-                            c(!0), e || m.current.play();
-                          }),
-                          m.current.bind(window.SC.Widget.Events.PLAY, () => {
-                            n(!0), s(!1);
-                          }),
-                          m.current.bind(window.SC.Widget.Events.PAUSE, () => {
-                            n(!1);
-                          }),
-                          m.current.bind(window.SC.Widget.Events.FINISH, () => {
-                            m.current.seekTo(0), m.current.play();
-                          }),
-                          m.current.bind(window.SC.Widget.Events.PLAY_PROGRESS, () => {
-                            s(!1);
-                          });
-                      } catch (t) {
-                        console.warn("SoundCloud widget init error:", t);
-                      }
-                  })()
-                : setTimeout(t, 200);
-            },
-            a = setTimeout(t, 300);
-          return () => clearTimeout(a);
-        }, []);
-        const h = () => {
-            m.current &&
-              (s(!1),
-              a
-                ? (m.current.pause(), localStorage.setItem("musicPlayerPaused", "true"))
-                : (m.current.play(), localStorage.removeItem("musicPlayerPaused")));
-          },
-          d = "https://w.soundcloud.com/player/?url=".concat(
-            encodeURIComponent(
-              "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive"
-            ),
-            "&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"
-          );
+      a(155);
+      function ht(e) {
+        let { theme: t, isPlaying: a, needsInteraction: l, onToggle: n } = e;
         return r.a.createElement(
           "div",
           { className: "music-player", style: { color: t.text } },
-          r.a.createElement("iframe", {
-            ref: o,
-            className: "music-player-iframe",
-            title: "SoundCloud Player",
-            src: d,
-            allow: "autoplay",
-            scrolling: "no",
-            frameBorder: "no",
-          }),
           r.a.createElement(
             "button",
             {
               className: "music-player-button "
                 .concat(a ? "playing" : "", " ")
-                .concat(i && !a ? "needs-click" : ""),
-              onClick: h,
+                .concat(l && !a ? "needs-click" : ""),
+              onClick: n,
               onKeyDown: (e) => {
-                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), h());
+                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), n());
               },
               "aria-label": a ? "Pause music" : "Play music",
               title: a ? "Pause" : "Click to enable audio",
@@ -7170,7 +7133,7 @@
             },
             r.a.createElement("i", { className: "fa-solid ".concat(a ? "fa-pause" : "fa-music") })
           ),
-          i &&
+          l &&
             !a &&
             r.a.createElement(
               "div",
@@ -7187,33 +7150,382 @@
           )
         );
       }
-      var At = function () {
+      var At = a(23),
+        pt = a(4);
+      a(156);
+      function ft(e) {
+        let { frequencyData: t, theme: a, layerIndex: n, scale: c, zPosition: i } = e;
+        const s = Object(l.useRef)(),
+          o = Object(l.useRef)(),
+          m = Object(l.useMemo)(() => {
+            var e, t, l;
+            return {
+              primary: new pt.Color(
+                (null === (e = a.visualizer) || void 0 === e ? void 0 : e.primary) ||
+                  a.imageHighlight ||
+                  "#0E6BA8"
+              ),
+              secondary: new pt.Color(
+                (null === (t = a.visualizer) || void 0 === t ? void 0 : t.secondary) ||
+                  a.highlight ||
+                  "#A6E1FA"
+              ),
+              accent: new pt.Color(
+                (null === (l = a.visualizer) || void 0 === l ? void 0 : l.accent) ||
+                  a.text ||
+                  "#001C55"
+              ),
+            };
+          }, [a]),
+          d = Object(l.useMemo)(() => {
+            var e;
+            return {
+              uTime: { value: 0 },
+              uBass: { value: 0 },
+              uMid: { value: 0 },
+              uTreble: { value: 0 },
+              uColorPrimary: { value: m.primary },
+              uColorSecondary: { value: m.secondary },
+              uColorAccent: { value: m.accent },
+              uOpacity: {
+                value: (null === (e = a.visualizer) || void 0 === e ? void 0 : e.opacity) || 0.7,
+              },
+            };
+          }, [m, a.visualizer]);
+        return (
+          Object(At.b)((e) => {
+            if (!o.current) return;
+            const a = t.current,
+              { bass: l = 0, mid: r = 0, treble: c = 0 } = a;
+            (o.current.uniforms.uTime.value = e.clock.elapsedTime),
+              (o.current.uniforms.uBass.value = l * (1.5 - 0.3 * n)),
+              (o.current.uniforms.uMid.value = r * (1 + 0.1 * n)),
+              (o.current.uniforms.uTreble.value = c * (0.5 + 0.3 * n)),
+              s.current &&
+                ((s.current.rotation.x += 0.001 + 0.005 * l),
+                (s.current.rotation.y += 0.002 + 0.003 * r),
+                (s.current.rotation.z += 5e-4 + 0.002 * c));
+          }),
+          Object(l.useEffect)(() => {
+            var e;
+            o.current &&
+              ((o.current.uniforms.uColorPrimary.value = m.primary),
+              (o.current.uniforms.uColorSecondary.value = m.secondary),
+              (o.current.uniforms.uColorAccent.value = m.accent),
+              (o.current.uniforms.uOpacity.value =
+                (null === (e = a.visualizer) || void 0 === e ? void 0 : e.opacity) || 0.7));
+          }, [m, a.visualizer]),
+          r.a.createElement(
+            "mesh",
+            { ref: s, position: [0, 0, i], scale: c },
+            r.a.createElement("icosahedronGeometry", { args: [4, 20] }),
+            r.a.createElement("shaderMaterial", {
+              ref: o,
+              vertexShader:
+                "\n  uniform float uTime;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTreble;\n\n  varying vec2 vUv;\n  varying float vDisplacement;\n\n  // Simplex 3D Noise\n  vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\n  vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\n  vec4 permute(vec4 x) { return mod289(((x*34.0)+1.0)*x); }\n  vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }\n\n  float snoise(vec3 v) {\n    const vec2 C = vec2(1.0/6.0, 1.0/3.0);\n    const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);\n    vec3 i = floor(v + dot(v, C.yyy));\n    vec3 x0 = v - i + dot(i, C.xxx);\n    vec3 g = step(x0.yzx, x0.xyz);\n    vec3 l = 1.0 - g;\n    vec3 i1 = min(g.xyz, l.zxy);\n    vec3 i2 = max(g.xyz, l.zxy);\n    vec3 x1 = x0 - i1 + C.xxx;\n    vec3 x2 = x0 - i2 + C.yyy;\n    vec3 x3 = x0 - D.yyy;\n    i = mod289(i);\n    vec4 p = permute(permute(permute(\n        i.z + vec4(0.0, i1.z, i2.z, 1.0))\n      + i.y + vec4(0.0, i1.y, i2.y, 1.0))\n      + i.x + vec4(0.0, i1.x, i2.x, 1.0));\n    float n_ = 0.142857142857;\n    vec3 ns = n_ * D.wyz - D.xzx;\n    vec4 j = p - 49.0 * floor(p * ns.z * ns.z);\n    vec4 x_ = floor(j * ns.z);\n    vec4 y_ = floor(j - 7.0 * x_);\n    vec4 x = x_ * ns.x + ns.yyyy;\n    vec4 y = y_ * ns.x + ns.yyyy;\n    vec4 h = 1.0 - abs(x) - abs(y);\n    vec4 b0 = vec4(x.xy, y.xy);\n    vec4 b1 = vec4(x.zw, y.zw);\n    vec4 s0 = floor(b0) * 2.0 + 1.0;\n    vec4 s1 = floor(b1) * 2.0 + 1.0;\n    vec4 sh = -step(h, vec4(0.0));\n    vec4 a0 = b0.xzyw + s0.xzyw * sh.xxyy;\n    vec4 a1 = b1.xzyw + s1.xzyw * sh.zzww;\n    vec3 p0 = vec3(a0.xy, h.x);\n    vec3 p1 = vec3(a0.zw, h.y);\n    vec3 p2 = vec3(a1.xy, h.z);\n    vec3 p3 = vec3(a1.zw, h.w);\n    vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2,p2), dot(p3,p3)));\n    p0 *= norm.x;\n    p1 *= norm.y;\n    p2 *= norm.z;\n    p3 *= norm.w;\n    vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n    m = m * m;\n    return 42.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));\n  }\n\n  void main() {\n    vUv = uv;\n\n    // Create displacement based on audio frequencies\n    float noise = snoise(position * 0.5 + uTime * 0.2);\n    float bassDisp = uBass * 1.5 * noise;\n    float midDisp = uMid * 0.8 * sin(position.y * 3.0 + uTime);\n    float trebleDisp = uTreble * 0.4 * sin(position.x * 5.0 + uTime * 2.0);\n\n    vDisplacement = bassDisp + midDisp * 0.5 + trebleDisp * 0.3;\n\n    // Base subtle animation even without audio\n    float baseAnimation = 0.1 * sin(uTime * 0.5 + position.x) * cos(uTime * 0.3 + position.y);\n\n    vec3 newPosition = position + normal * (vDisplacement + baseAnimation);\n\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);\n  }\n",
+              fragmentShader:
+                "\n  uniform vec3 uColorPrimary;\n  uniform vec3 uColorSecondary;\n  uniform vec3 uColorAccent;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTime;\n  uniform float uOpacity;\n\n  varying vec2 vUv;\n  varying float vDisplacement;\n\n  void main() {\n    // Mix colors based on audio and UV position\n    vec3 color = mix(uColorPrimary, uColorSecondary, vUv.y + uMid * 0.3);\n    color = mix(color, uColorAccent, abs(vDisplacement) * 0.5 + uBass * 0.2);\n\n    // Add subtle pulse\n    float pulse = 0.8 + 0.2 * sin(uTime * 2.0 + uBass * 10.0);\n    color *= pulse;\n\n    gl_FragColor = vec4(color, uOpacity);\n  }\n",
+              uniforms: d,
+              wireframe: !0,
+              transparent: !0,
+              side: pt.DoubleSide,
+              depthWrite: !1,
+            })
+          )
+        );
+      }
+      function gt(e) {
+        let { mousePosition: t } = e;
+        const { camera: a } = Object(At.c)();
+        return (
+          Object(At.b)(() => {
+            const e = 3 * t.current.x,
+              l = 2 * -t.current.y;
+            (a.position.x += 0.03 * (e - a.position.x)),
+              (a.position.y += 0.03 * (l - a.position.y)),
+              a.lookAt(0, 0, 0);
+          }),
+          null
+        );
+      }
+      function Et(e) {
+        let { theme: t, frequencyData: a } = e;
+        const n = Object(l.useRef)(),
+          c = Object(l.useMemo)(() => {
+            const e = new Float32Array(600);
+            for (let t = 0; t < 200; t++)
+              (e[3 * t] = 30 * (Math.random() - 0.5)),
+                (e[3 * t + 1] = 30 * (Math.random() - 0.5)),
+                (e[3 * t + 2] = 30 * (Math.random() - 0.5));
+            return e;
+          }, []),
+          i = Object(l.useMemo)(() => {
+            var e;
+            return new pt.Color(
+              (null === (e = t.visualizer) || void 0 === e ? void 0 : e.secondary) ||
+                t.highlight ||
+                "#A6E1FA"
+            );
+          }, [t]);
+        return (
+          Object(At.b)((e) => {
+            if (!n.current) return;
+            const t = a.current.bass || 0;
+            (n.current.rotation.y = 0.02 * e.clock.elapsedTime),
+              (n.current.rotation.x = 0.01 * e.clock.elapsedTime);
+            const l = 1 + 0.3 * t;
+            n.current.scale.setScalar(l);
+          }),
+          r.a.createElement(
+            "points",
+            { ref: n },
+            r.a.createElement(
+              "bufferGeometry",
+              null,
+              r.a.createElement("bufferAttribute", {
+                attach: "attributes-position",
+                count: 200,
+                array: c,
+                itemSize: 3,
+              })
+            ),
+            r.a.createElement("pointsMaterial", {
+              size: 0.08,
+              color: i,
+              transparent: !0,
+              opacity: 0.6,
+              sizeAttenuation: !0,
+            })
+          )
+        );
+      }
+      function yt(e) {
+        let { theme: t, getFrequencyData: a, isPlaying: n } = e;
+        const c = Object(l.useRef)({ bass: 0, mid: 0, treble: 0, average: 0 }),
+          i = Object(l.useRef)({ x: 0, y: 0 }),
+          s = Object(l.useRef)();
+        Object(l.useEffect)(() => {
+          let e;
+          const t = () => {
+            a && (c.current = a()), (e = requestAnimationFrame(t));
+          };
+          return t(), () => cancelAnimationFrame(e);
+        }, [a]),
+          Object(l.useEffect)(() => {
+            const e = (e) => {
+              i.current = {
+                x: (e.clientX / window.innerWidth) * 2 - 1,
+                y: (e.clientY / window.innerHeight) * 2 - 1,
+              };
+            };
+            return (
+              window.addEventListener("mousemove", e),
+              () => window.removeEventListener("mousemove", e)
+            );
+          }, []);
+        return r.a.createElement(
+          "div",
+          { ref: s, className: "audio-visualizer ".concat(n ? "playing" : "idle") },
+          r.a.createElement(
+            At.a,
+            {
+              camera: { position: [0, 0, 15], fov: 75 },
+              gl: { antialias: !0, alpha: !0, powerPreference: "high-performance" },
+              dpr: [1, 1.5],
+            },
+            r.a.createElement("color", { attach: "background", args: ["transparent"] }),
+            r.a.createElement(gt, { mousePosition: i }),
+            [
+              { scale: 1, zPosition: -8 },
+              { scale: 0.6, zPosition: -2 },
+              { scale: 0.3, zPosition: 4 },
+            ].map((e, a) =>
+              r.a.createElement(ft, {
+                key: a,
+                frequencyData: c,
+                theme: t,
+                layerIndex: a,
+                scale: e.scale,
+                zPosition: e.zPosition,
+              })
+            ),
+            r.a.createElement(Et, { theme: t, frequencyData: c }),
+            r.a.createElement("ambientLight", { intensity: 0.5 })
+          )
+        );
+      }
+      const ut = [0, 10],
+        xt = [10, 100],
+        bt = [100, 512];
+      var vt = function () {
         const [e, t] = Object(l.useState)(() => {
             const e = localStorage.getItem("darkMode");
             return null !== e
               ? JSON.parse(e)
               : window.matchMedia("(prefers-color-scheme: dark)").matches;
           }),
-          a = e ? st : it;
+          a = e ? st : it,
+          { isPlaying: n, needsInteraction: c, toggle: i, getFrequencyData: s } = (function (e) {
+            const [t, a] = Object(l.useState)(!1),
+              [r, n] = Object(l.useState)(!1),
+              [c, i] = Object(l.useState)(!1),
+              s = Object(l.useRef)(null),
+              o = Object(l.useRef)(null),
+              m = Object(l.useRef)(null),
+              d = Object(l.useRef)(null),
+              h = Object(l.useRef)(null),
+              A = Object(l.useRef)(!1),
+              p = Object(l.useRef)(!1),
+              f = Object(l.useCallback)(() => {
+                if (A.current) return s.current;
+                try {
+                  const t = new Audio(e);
+                  (t.crossOrigin = "anonymous"),
+                    (t.loop = !0),
+                    (t.preload = "auto"),
+                    (s.current = t);
+                  const l = new (window.AudioContext || window.webkitAudioContext)();
+                  o.current = l;
+                  const r = l.createAnalyser();
+                  (r.fftSize = 2048),
+                    (r.smoothingTimeConstant = 0.8),
+                    (m.current = r),
+                    (h.current = new Uint8Array(r.frequencyBinCount));
+                  const c = l.createMediaElementSource(t);
+                  return (
+                    c.connect(r),
+                    r.connect(l.destination),
+                    (d.current = c),
+                    t.addEventListener("play", () => {
+                      a(!0), i(!1);
+                    }),
+                    t.addEventListener("pause", () => {
+                      a(!1);
+                    }),
+                    t.addEventListener("ended", () => {
+                      (t.currentTime = 0), t.play();
+                    }),
+                    (A.current = !0),
+                    n(!0),
+                    t
+                  );
+                } catch (t) {
+                  return console.warn("Audio initialization error:", t), null;
+                }
+              }, [e]),
+              g = Object(l.useCallback)(() => {
+                if (!m.current || !h.current)
+                  return { bass: 0, mid: 0, treble: 0, average: 0, raw: new Uint8Array(0) };
+                m.current.getByteFrequencyData(h.current);
+                const e = h.current,
+                  t = (t, a) => {
+                    let l = 0;
+                    const r = Math.min(a, e.length);
+                    for (let n = t; n < r; n++) l += e[n];
+                    return l / (r - t) / 255;
+                  };
+                return {
+                  bass: t(...ut),
+                  mid: t(...xt),
+                  treble: t(...bt),
+                  average: t(0, e.length),
+                  raw: e,
+                };
+              }, []),
+              E = Object(l.useCallback)(async () => {
+                let e = s.current;
+                if ((e || (e = f()), e)) {
+                  if (o.current && "suspended" === o.current.state)
+                    try {
+                      await o.current.resume();
+                    } catch (t) {
+                      console.warn("AudioContext resume failed:", t);
+                    }
+                  try {
+                    await e.play(), localStorage.removeItem("musicPlayerPaused"), i(!1);
+                  } catch (t) {
+                    console.warn("Audio play failed:", t), i(!0);
+                  }
+                }
+              }, [f]),
+              y = Object(l.useCallback)(() => {
+                s.current && s.current.pause(), localStorage.setItem("musicPlayerPaused", "true");
+              }, []),
+              u = Object(l.useCallback)(() => {
+                t ? y() : E();
+              }, [t, y, E]);
+            return (
+              Object(l.useEffect)(() => {
+                const e = "true" === localStorage.getItem("musicPlayerPaused");
+                f(),
+                  e ||
+                    p.current ||
+                    ((p.current = !0),
+                    E().catch(() => {
+                      i(!0);
+                    }));
+              }, [f, E]),
+              Object(l.useEffect)(() => {
+                if ("true" === localStorage.getItem("musicPlayerPaused")) return;
+                const e = () => {
+                    !t && s.current && E(), a();
+                  },
+                  a = () => {
+                    document.removeEventListener("click", e),
+                      document.removeEventListener("keydown", e),
+                      document.removeEventListener("touchstart", e),
+                      document.removeEventListener("scroll", e);
+                  };
+                return (
+                  document.addEventListener("click", e, { once: !0 }),
+                  document.addEventListener("keydown", e, { once: !0 }),
+                  document.addEventListener("touchstart", e, { once: !0 }),
+                  document.addEventListener("scroll", e, { once: !0 }),
+                  a
+                );
+              }, [t, E]),
+              Object(l.useEffect)(
+                () => () => {
+                  s.current && s.current.pause(), o.current && o.current.close();
+                },
+                []
+              ),
+              {
+                isPlaying: t,
+                isReady: r,
+                needsInteraction: c,
+                play: E,
+                pause: y,
+                toggle: u,
+                getFrequencyData: g,
+                audioElement: s.current,
+              }
+            );
+          })("/audio/Khruangbin - People Everywhere (Still Alive).mp3");
         return (
           Object(l.useEffect)(() => {
             localStorage.setItem("darkMode", JSON.stringify(e));
           }, [e]),
           r.a.createElement(
-            J.a,
+            V.a,
             { theme: a },
             r.a.createElement(
               r.a.Fragment,
               null,
               r.a.createElement(mt, null),
-              r.a.createElement(ht, {
+              r.a.createElement(yt, { theme: a, getFrequencyData: s, isPlaying: n }),
+              r.a.createElement(dt, {
                 isDarkMode: e,
                 toggleTheme: () => {
                   t(!e);
                 },
               }),
-              r.a.createElement(dt, { theme: a }),
-              r.a.createElement("div", null, r.a.createElement(ct, { theme: a }))
+              r.a.createElement(ht, { theme: a, isPlaying: n, needsInteraction: c, onToggle: i }),
+              r.a.createElement(
+                "div",
+                { style: { position: "relative", zIndex: 1 } },
+                r.a.createElement(ct, { theme: a })
+              )
             )
           )
         );
@@ -7223,13 +7535,13 @@
           "[::1]" === window.location.hostname ||
           window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
       );
-      a(150);
-      const pt = new m.a();
+      a(162);
+      const Mt = new m.a();
       c.a.render(
         r.a.createElement(
           o.a,
-          { value: pt },
-          r.a.createElement(i.a, { theme: s.a }, r.a.createElement(At, null))
+          { value: Mt },
+          r.a.createElement(i.a, { theme: s.a }, r.a.createElement(vt, null))
         ),
         document.getElementById("root")
       ),
@@ -7239,6 +7551,6 @@
           });
     },
   ]),
-  [[52, 1, 2]],
+  [[58, 1, 2]],
 ]);
-//# sourceMappingURL=main.2888a21c.chunk.js.map
+//# sourceMappingURL=main.027e797f.chunk.js.map
