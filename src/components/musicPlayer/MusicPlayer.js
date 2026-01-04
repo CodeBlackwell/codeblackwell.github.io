@@ -5,12 +5,18 @@ const SOUNDCLOUD_TRACK_URL =
   "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive";
 
 export default function MusicPlayer({ theme }) {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true); // Assume playing since auto_play=true
   const [isLoaded, setIsLoaded] = useState(false);
   const iframeRef = useRef(null);
   const widgetRef = useRef(null);
 
   useEffect(() => {
+    // Check if user previously paused - if so, don't autoplay
+    const userPaused = localStorage.getItem("musicPlayerPaused") === "true";
+    if (userPaused) {
+      setIsPlaying(false);
+    }
+
     // Wait for SC.Widget to be available
     const initWidget = () => {
       if (window.SC && iframeRef.current) {
@@ -19,11 +25,11 @@ export default function MusicPlayer({ theme }) {
         widgetRef.current.bind(window.SC.Widget.Events.READY, () => {
           setIsLoaded(true);
 
-          // Autoplay by default unless user explicitly paused
-          const userPaused = localStorage.getItem("musicPlayerPaused");
-          if (userPaused !== "true") {
-            widgetRef.current.play();
+          // If user previously paused, pause the widget
+          if (userPaused) {
+            widgetRef.current.pause();
           }
+          // Otherwise, auto_play=true in the URL handles autoplay
         });
 
         widgetRef.current.bind(window.SC.Widget.Events.PLAY, () => {
