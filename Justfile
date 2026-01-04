@@ -25,9 +25,13 @@ dev-open:
 build:
     npm run build
 
-# Deploy to GitHub Pages (builds and pushes to gh-pages branch)
+# Deploy to GitHub Pages (builds, copies to docs/, pushes to master)
 deploy: build
-    npm run deploy
+    rm -rf docs/
+    cp -r build/ docs/
+    git add docs/
+    git commit -m "Build for deployment" --allow-empty
+    git push origin master
     @echo "✅ Deployed to https://codeblackwell.github.io"
 
 # Quick deploy - build and deploy in one command
@@ -50,8 +54,13 @@ commit message:
 push message: (commit message)
     git push origin master
 
-# Full release: commit, push to master, then deploy to gh-pages
-release message: (push message) deploy
+# Full release: commit source, build, copy to docs/, push to master
+release message: (commit message) build
+    rm -rf docs/
+    cp -r build/ docs/
+    git add docs/
+    git commit -m "Build for deployment" --allow-empty
+    git push origin master
     @echo "🚀 Released and deployed!"
 
 # ─────────────────────────────────────────────────────────────

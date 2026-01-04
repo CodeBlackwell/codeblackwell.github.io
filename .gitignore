@@ -10,7 +10,7 @@ lerna-debug.log*
 # Dependencies
 node_modules/
 
-# Build output
+# Build output (docs/ is tracked for GitHub Pages deployment from master)
 build/
 dist/
 dist-ssr/
