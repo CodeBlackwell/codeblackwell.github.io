@@ -1854,9 +1854,10 @@ body {
 }
 .music-player-iframe {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
+  left: -9999px;
+  top: -9999px;
+  width: 300px;
+  height: 150px;
   pointer-events: none;
 }
 .music-player-tooltip {
@@ -6357,4 +6358,4 @@ body {
 .fas {
   font-weight: 900;
 }
-/*# sourceMappingURL=main.bde1b7c6.chunk.css.map */
+/*# sourceMappingURL=main.3ca1bf06.chunk.css.map */

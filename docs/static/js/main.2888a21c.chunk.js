@@ -7093,32 +7093,32 @@
       function dt(e) {
         let { theme: t } = e;
         const [a, n] = Object(l.useState)(!1),
-          [c, i] = Object(l.useState)(!1),
-          [s, o] = Object(l.useState)(!0),
-          m = Object(l.useRef)(null),
-          h = Object(l.useRef)(null);
+          [, c] = Object(l.useState)(!1),
+          [i, s] = Object(l.useState)(!0),
+          o = Object(l.useRef)(null),
+          m = Object(l.useRef)(null);
         Object(l.useEffect)(() => {
           const e = "true" === localStorage.getItem("musicPlayerPaused"),
             t = () => {
               window.SC && window.SC.Widget
                 ? (() => {
-                    if (window.SC && window.SC.Widget && m.current)
+                    if (window.SC && window.SC.Widget && o.current)
                       try {
-                        (h.current = window.SC.Widget(m.current)),
-                          h.current.bind(window.SC.Widget.Events.READY, () => {
-                            i(!0), e || h.current.play();
+                        (m.current = window.SC.Widget(o.current)),
+                          m.current.bind(window.SC.Widget.Events.READY, () => {
+                            c(!0), e || m.current.play();
                           }),
-                          h.current.bind(window.SC.Widget.Events.PLAY, () => {
-                            n(!0), o(!1);
+                          m.current.bind(window.SC.Widget.Events.PLAY, () => {
+                            n(!0), s(!1);
                           }),
-                          h.current.bind(window.SC.Widget.Events.PAUSE, () => {
+                          m.current.bind(window.SC.Widget.Events.PAUSE, () => {
                             n(!1);
                           }),
-                          h.current.bind(window.SC.Widget.Events.FINISH, () => {
-                            h.current.seekTo(0), h.current.play();
+                          m.current.bind(window.SC.Widget.Events.FINISH, () => {
+                            m.current.seekTo(0), m.current.play();
                           }),
-                          h.current.bind(window.SC.Widget.Events.PLAY_PROGRESS, () => {
-                            o(!1);
+                          m.current.bind(window.SC.Widget.Events.PLAY_PROGRESS, () => {
+                            s(!1);
                           });
                       } catch (t) {
                         console.warn("SoundCloud widget init error:", t);
@@ -7129,14 +7129,14 @@
             a = setTimeout(t, 300);
           return () => clearTimeout(a);
         }, []);
-        const d = () => {
-            h.current &&
-              (o(!1),
+        const h = () => {
+            m.current &&
+              (s(!1),
               a
-                ? (h.current.pause(), localStorage.setItem("musicPlayerPaused", "true"))
-                : (h.current.play(), localStorage.removeItem("musicPlayerPaused")));
+                ? (m.current.pause(), localStorage.setItem("musicPlayerPaused", "true"))
+                : (m.current.play(), localStorage.removeItem("musicPlayerPaused")));
           },
-          A = "https://w.soundcloud.com/player/?url=".concat(
+          d = "https://w.soundcloud.com/player/?url=".concat(
             encodeURIComponent(
               "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive"
             ),
@@ -7146,10 +7146,10 @@
           "div",
           { className: "music-player", style: { color: t.text } },
           r.a.createElement("iframe", {
-            ref: m,
+            ref: o,
             className: "music-player-iframe",
             title: "SoundCloud Player",
-            src: A,
+            src: d,
             allow: "autoplay",
             scrolling: "no",
             frameBorder: "no",
@@ -7159,10 +7159,10 @@
             {
               className: "music-player-button "
                 .concat(a ? "playing" : "", " ")
-                .concat(s && !a ? "needs-click" : ""),
-              onClick: d,
+                .concat(i && !a ? "needs-click" : ""),
+              onClick: h,
               onKeyDown: (e) => {
-                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), d());
+                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), h());
               },
               "aria-label": a ? "Pause music" : "Play music",
               title: a ? "Pause" : "Click to enable audio",
@@ -7170,7 +7170,7 @@
             },
             r.a.createElement("i", { className: "fa-solid ".concat(a ? "fa-pause" : "fa-music") })
           ),
-          s &&
+          i &&
             !a &&
             r.a.createElement(
               "div",
@@ -7241,4 +7241,4 @@
   ]),
   [[52, 1, 2]],
 ]);
-//# sourceMappingURL=main.21785671.chunk.js.map
+//# sourceMappingURL=main.2888a21c.chunk.js.map
