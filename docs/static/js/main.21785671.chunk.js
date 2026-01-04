@@ -7092,40 +7092,51 @@
       a(149);
       function dt(e) {
         let { theme: t } = e;
-        const [a, n] = Object(l.useState)(!0),
+        const [a, n] = Object(l.useState)(!1),
           [c, i] = Object(l.useState)(!1),
-          s = Object(l.useRef)(null),
-          o = Object(l.useRef)(null);
+          [s, o] = Object(l.useState)(!0),
+          m = Object(l.useRef)(null),
+          h = Object(l.useRef)(null);
         Object(l.useEffect)(() => {
-          const e = "true" === localStorage.getItem("musicPlayerPaused");
-          e && n(!1);
-          const t = setTimeout(() => {
-            window.SC &&
-              s.current &&
-              ((o.current = window.SC.Widget(s.current)),
-              o.current.bind(window.SC.Widget.Events.READY, () => {
-                i(!0), e && o.current.pause();
-              }),
-              o.current.bind(window.SC.Widget.Events.PLAY, () => {
-                n(!0);
-              }),
-              o.current.bind(window.SC.Widget.Events.PAUSE, () => {
-                n(!1);
-              }),
-              o.current.bind(window.SC.Widget.Events.FINISH, () => {
-                o.current.seekTo(0), o.current.play();
-              }));
-          }, 500);
-          return () => clearTimeout(t);
+          const e = "true" === localStorage.getItem("musicPlayerPaused"),
+            t = () => {
+              window.SC && window.SC.Widget
+                ? (() => {
+                    if (window.SC && window.SC.Widget && m.current)
+                      try {
+                        (h.current = window.SC.Widget(m.current)),
+                          h.current.bind(window.SC.Widget.Events.READY, () => {
+                            i(!0), e || h.current.play();
+                          }),
+                          h.current.bind(window.SC.Widget.Events.PLAY, () => {
+                            n(!0), o(!1);
+                          }),
+                          h.current.bind(window.SC.Widget.Events.PAUSE, () => {
+                            n(!1);
+                          }),
+                          h.current.bind(window.SC.Widget.Events.FINISH, () => {
+                            h.current.seekTo(0), h.current.play();
+                          }),
+                          h.current.bind(window.SC.Widget.Events.PLAY_PROGRESS, () => {
+                            o(!1);
+                          });
+                      } catch (t) {
+                        console.warn("SoundCloud widget init error:", t);
+                      }
+                  })()
+                : setTimeout(t, 200);
+            },
+            a = setTimeout(t, 300);
+          return () => clearTimeout(a);
         }, []);
-        const m = () => {
-            o.current &&
-              c &&
-              (a
-                ? (o.current.pause(), localStorage.setItem("musicPlayerPaused", "true"))
-                : (o.current.play(), localStorage.removeItem("musicPlayerPaused")));
+        const d = () => {
+            h.current &&
+              (o(!1),
+              a
+                ? (h.current.pause(), localStorage.setItem("musicPlayerPaused", "true"))
+                : (h.current.play(), localStorage.removeItem("musicPlayerPaused")));
           },
-          h = "https://w.soundcloud.com/player/?url=".concat(
+          A = "https://w.soundcloud.com/player/?url=".concat(
             encodeURIComponent(
               "https://soundcloud.com/latenighttales/khruangbin-people-everywhere-still-alive"
             ),
@@ -7135,10 +7146,10 @@
           "div",
           { className: "music-player", style: { color: t.text } },
           r.a.createElement("iframe", {
-            ref: s,
+            ref: m,
             className: "music-player-iframe",
             title: "SoundCloud Player",
-            src: h,
+            src: A,
             allow: "autoplay",
             scrolling: "no",
             frameBorder: "no",
@@ -7148,17 +7159,27 @@
             {
               className: "music-player-button "
                 .concat(a ? "playing" : "", " ")
-                .concat(c ? "" : "loading"),
-              onClick: m,
+                .concat(s && !a ? "needs-click" : ""),
+              onClick: d,
               onKeyDown: (e) => {
-                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), m());
+                ("Enter" !== e.key && " " !== e.key) || (e.preventDefault(), d());
               },
               "aria-label": a ? "Pause music" : "Play music",
-              title: a ? "Pause" : "Play",
+              title: a ? "Pause" : "Click to enable audio",
               style: { color: t.text, borderColor: t.text },
             },
             r.a.createElement("i", { className: "fa-solid ".concat(a ? "fa-pause" : "fa-music") })
           ),
+          s &&
+            !a &&
+            r.a.createElement(
+              "div",
+              {
+                className: "music-player-prompt",
+                style: { color: t.text, backgroundColor: t.body },
+              },
+              "Click to enable audio"
+            ),
           r.a.createElement(
             "div",
             { className: "music-player-tooltip" },
@@ -7220,4 +7241,4 @@
   ]),
   [[52, 1, 2]],
 ]);
-//# sourceMappingURL=main.446629ca.chunk.js.map
+//# sourceMappingURL=main.21785671.chunk.js.map
