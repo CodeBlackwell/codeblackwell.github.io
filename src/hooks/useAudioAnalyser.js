@@ -25,7 +25,7 @@ export function useAudioAnalyser(audioSrc) {
 
     try {
       const audio = new Audio(audioSrc);
-      audio.crossOrigin = "anonymous";
+      // Note: Don't set crossOrigin for same-origin audio - it taints the data
       audio.loop = true;
       audio.preload = "auto";
       audioRef.current = audio;
