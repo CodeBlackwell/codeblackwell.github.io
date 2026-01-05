@@ -3,51 +3,52 @@
   Array(28).concat([
     function (e, t, a) {
       var l = {
-        "./address_image.svg": 95,
-        "./animated_logo.svg": 96,
-        "./blogs_image.svg": 97,
-        "./cloud_infrastructure.svg": 98,
-        "./codeInLogo.png": 99,
-        "./contactMail.png": 100,
-        "./coursera_logo.png": 101,
-        "./data_science.svg": 102,
-        "./deeplearning_ai_logo.png": 103,
-        "./delhivery_logo.png": 104,
-        "./developerActivity.svg": 105,
-        "./dsc_logo.png": 106,
-        "./education.svg": 107,
-        "./experience.svg": 108,
-        "./feelingProud.svg": 109,
-        "./freecopy_logo.png": 110,
-        "./fullstack.svg": 111,
-        "./gcp_logo.png": 112,
-        "./github_logo.png": 113,
-        "./googleAssistant.jpg": 114,
-        "./googleAssistant.svg": 115,
-        "./google_logo.png": 116,
-        "./ibm_logo.png": 117,
-        "./iiitk_logo.png": 118,
-        "./intel_logo.jpg": 119,
-        "./iu_logo.png": 120,
-        "./jsFramework.svg": 121,
-        "./legato_logo.png": 122,
-        "./manOnTable.svg": 123,
-        "./microsoft_logo.png": 124,
-        "./mozilla_logo.png": 125,
-        "./muffito_logo.png": 126,
-        "./nextuLogo.jpg": 127,
-        "./nptel_logo.png": 128,
-        "./portfolio.gif": 129,
-        "./profile_avatar.png": 130,
-        "./programmer.svg": 131,
-        "./projects_image.svg": 132,
-        "./pwa.png": 133,
-        "./saayaHealthLogo.png": 134,
-        "./stanford_logo.png": 135,
-        "./talksCardBack.svg": 136,
-        "./talksCardBackAlt.svg": 137,
-        "./tiktok_logo.png": 138,
-        "./ui_ux_design.svg": 139,
+        "./LeAvatar.png": 95,
+        "./address_image.svg": 96,
+        "./animated_logo.svg": 97,
+        "./blogs_image.svg": 98,
+        "./cloud_infrastructure.svg": 99,
+        "./codeInLogo.png": 100,
+        "./contactMail.png": 101,
+        "./coursera_logo.png": 102,
+        "./data_science.svg": 103,
+        "./deeplearning_ai_logo.png": 104,
+        "./delhivery_logo.png": 105,
+        "./developerActivity.svg": 106,
+        "./dsc_logo.png": 107,
+        "./education.svg": 108,
+        "./experience.svg": 109,
+        "./feelingProud.svg": 110,
+        "./freecopy_logo.png": 111,
+        "./fullstack.svg": 112,
+        "./gcp_logo.png": 113,
+        "./github_logo.png": 114,
+        "./googleAssistant.jpg": 115,
+        "./googleAssistant.svg": 116,
+        "./google_logo.png": 117,
+        "./ibm_logo.png": 118,
+        "./iiitk_logo.png": 119,
+        "./intel_logo.jpg": 120,
+        "./iu_logo.png": 121,
+        "./jsFramework.svg": 122,
+        "./legato_logo.png": 123,
+        "./manOnTable.svg": 124,
+        "./microsoft_logo.png": 125,
+        "./mozilla_logo.png": 126,
+        "./muffito_logo.png": 127,
+        "./nextuLogo.jpg": 128,
+        "./nptel_logo.png": 129,
+        "./portfolio.gif": 130,
+        "./profile_avatar.png": 131,
+        "./programmer.svg": 132,
+        "./projects_image.svg": 133,
+        "./pwa.png": 134,
+        "./saayaHealthLogo.png": 135,
+        "./stanford_logo.png": 136,
+        "./talksCardBack.svg": 137,
+        "./talksCardBackAlt.svg": 138,
+        "./tiktok_logo.png": 139,
+        "./ui_ux_design.svg": 140,
       };
       function r(e) {
         var t = n(e);
@@ -101,7 +102,7 @@
     ,
     ,
     function (e, t, a) {
-      e.exports = a(164);
+      e.exports = a(165);
     },
     ,
     ,
@@ -139,6 +140,9 @@
     function (e, t, a) {},
     function (e, t, a) {},
     function (e, t, a) {},
+    function (e, t, a) {
+      e.exports = a.p + "static/media/LeAvatar.20b1bf23.png";
+    },
     function (e, t, a) {
       e.exports = a.p + "static/media/address_image.137185a8.svg";
     },
@@ -313,10 +317,10 @@
         r = a.n(l),
         n = a(12),
         c = a.n(n),
-        i = a(182),
-        s = a(165),
+        i = a(183),
+        s = a(166),
         o = a(17),
-        m = a(180),
+        m = a(181),
         d = (a(63), a(64), a(8)),
         h = a(6),
         A = (a(65), a(3));
@@ -723,7 +727,7 @@
         },
         j = {
           title: "Contact Me",
-          profile_image_path: "profile_avatar.png",
+          profile_image_path: "LeAvatar.png",
           description:
             "I'm always open to discussing new projects, AI/ML opportunities, or interesting technical challenges. Feel free to reach out via email or connect on social media.",
         },
@@ -1498,8 +1502,8 @@
         );
       }
       a(45), a(87);
-      var ee = a(179),
-        te = a(177);
+      var ee = a(180),
+        te = a(178);
       class ae extends r.a.Component {
         render() {
           return r.a.createElement(
@@ -4035,7 +4039,7 @@
         }
       }
       var we = Me;
-      a(140), a(141);
+      a(141), a(142);
       class Ce extends l.Component {
         render() {
           const e = this.props.certificate,
@@ -4120,7 +4124,7 @@
         }
       }
       var Ne = Ze;
-      a(142);
+      a(143);
       class Se extends r.a.Component {
         render() {
           return r.a.createElement(
@@ -4466,7 +4470,7 @@
           );
         }
       }
-      a(143);
+      a(144);
       class Be extends l.Component {
         render() {
           const e = this.props.theme;
@@ -4516,7 +4520,7 @@
         }
       }
       var He = Be;
-      a(144);
+      a(145);
       class je extends l.Component {
         render() {
           var e;
@@ -4698,8 +4702,8 @@
         }
       }
       var Le = je,
-        De = (a(145), a(183)),
-        Fe = a(181);
+        De = (a(146), a(184)),
+        Fe = a(182);
       class Oe extends l.Component {
         render() {
           const e = this.props.theme,
@@ -4748,7 +4752,7 @@
         }
       }
       var Qe = Oe;
-      a(147);
+      a(148);
       class ze extends l.Component {
         render() {
           const e = this.props.theme;
@@ -5778,7 +5782,7 @@
           );
         }
       }
-      a(148);
+      a(149);
       const qe = j,
         Ve = L,
         Je = D,
@@ -5996,7 +6000,7 @@
         }
       }
       var Ye = We;
-      a(149);
+      a(150);
       class Ke extends l.Component {
         render() {
           return r.a.createElement(
@@ -6037,7 +6041,7 @@
         }
       }
       var _e = Ke;
-      a(150);
+      a(151);
       function $e(e) {
         let { repo: t, theme: a } = e;
         return r.a.createElement(
@@ -6096,7 +6100,7 @@
           )
         );
       }
-      a(151);
+      a(152);
       function et(e) {
         let { pub: t, theme: a } = e;
         return r.a.createElement(
@@ -6146,7 +6150,7 @@
         );
       }
       var tt = a(54);
-      a(152);
+      a(153);
       class at extends l.Component {
         render() {
           const e = this.props.theme;
@@ -6907,7 +6911,7 @@
         }
       }
       var rt = lt;
-      a(153);
+      a(154);
       class nt extends l.Component {
         render() {
           const e = this.props.theme;
@@ -7059,7 +7063,7 @@
           return t.text;
         }
       );
-      a(154);
+      a(155);
       var dt = function (e) {
         let { isDarkMode: t, toggleTheme: a } = e;
         return r.a.createElement(
@@ -7111,7 +7115,7 @@
               )
         );
       };
-      a(155);
+      a(156);
       function ht(e) {
         let { theme: t, isPlaying: a, needsInteraction: l, onToggle: n } = e;
         return r.a.createElement(
@@ -7152,7 +7156,7 @@
       }
       var At = a(23),
         pt = a(4);
-      a(156);
+      a(157);
       function ft(e) {
         let { frequencyData: t, theme: a, layerIndex: n, scale: c, zPosition: i } = e;
         const s = Object(l.useRef)(),
@@ -7535,7 +7539,7 @@
           "[::1]" === window.location.hostname ||
           window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
       );
-      a(162);
+      a(163);
       const Mt = new m.a();
       c.a.render(
         r.a.createElement(
@@ -7553,4 +7557,4 @@
   ]),
   [[58, 1, 2]],
 ]);
-//# sourceMappingURL=main.027e797f.chunk.js.map
+//# sourceMappingURL=main.0cc78ce6.chunk.js.map
