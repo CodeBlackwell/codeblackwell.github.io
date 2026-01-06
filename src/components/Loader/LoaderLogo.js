@@ -6,7 +6,7 @@ class LogoLoader extends React.Component {
     const theme = this.props.theme;
     return (
       <div className="logo-container">
-        <div className="logo-name" style={{ color: theme.body }}>
+        <div className="logo-name" style={{ color: theme.text }}>
           <span className="logo-first">LeChristopher</span>
           <span className="logo-last">Blackwell</span>
         </div>
@@ -14,7 +14,7 @@ class LogoLoader extends React.Component {
           Full-Stack Engineer & AI Specialist
         </div>
         <div className="logo-loader">
-          <div className="loader-bar" style={{ backgroundColor: theme.body }}></div>
+          <div className="loader-bar" style={{ backgroundColor: theme.text }}></div>
         </div>
       </div>
     );

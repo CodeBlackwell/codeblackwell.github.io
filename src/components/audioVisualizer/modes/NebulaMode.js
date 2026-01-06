@@ -5,7 +5,7 @@ import * as THREE from "three";
 import { nebulaVertexShader, nebulaFragmentShader } from "./shaders/nebula";
 
 // Audio-reactive mesh component
-function AudioMesh({ frequencyData, theme, layerIndex, scale, zPosition, opacity }) {
+function AudioMesh({ frequencyData, theme, layerIndex, scale, zPosition, opacity, isDarkMode }) {
   const meshRef = useRef();
   const materialRef = useRef();
 
@@ -32,8 +32,9 @@ function AudioMesh({ frequencyData, theme, layerIndex, scale, zPosition, opacity
       uOpacity: { value: (theme.visualizer?.opacity || 0.7) * opacity },
       uHueShift: { value: 0 },
       uSaturation: { value: 1 },
+      uDarkModeIntensity: { value: isDarkMode ? 1.0 : 0.0 },
     }),
-    [colors, theme.visualizer, opacity]
+    [colors, theme.visualizer, opacity, isDarkMode]
   );
 
   // Animation frame - update uniforms
@@ -55,6 +56,9 @@ function AudioMesh({ frequencyData, theme, layerIndex, scale, zPosition, opacity
 
     // Update opacity for transitions
     materialRef.current.uniforms.uOpacity.value = (theme.visualizer?.opacity || 0.7) * opacity;
+
+    // Update dark mode intensity
+    materialRef.current.uniforms.uDarkModeIntensity.value = isDarkMode ? 1.0 : 0.0;
 
     // Subtle rotation based on audio
     if (meshRef.current) {
@@ -172,7 +176,13 @@ function Particles({ theme, frequencyData, opacity }) {
 }
 
 // Main Nebula Mode component
-export default function NebulaMode({ frequencyData, theme, mousePosition, opacity = 1 }) {
+export default function NebulaMode({
+  frequencyData,
+  theme,
+  mousePosition,
+  opacity = 1,
+  isDarkMode = false,
+}) {
   // Depth layers configuration
   const layers = [
     { scale: 1.0, zPosition: -8 }, // Back layer - bass responsive
@@ -193,13 +203,14 @@ export default function NebulaMode({ frequencyData, theme, mousePosition, opacit
           scale={layer.scale}
           zPosition={layer.zPosition}
           opacity={opacity}
+          isDarkMode={isDarkMode}
         />
       ))}
 
       <Particles theme={theme} frequencyData={frequencyData} opacity={opacity} />
 
-      {/* Ambient light for subtle glow effect */}
-      <ambientLight intensity={0.5} />
+      {/* Ambient light - brighter in dark mode for enhanced glow */}
+      <ambientLight intensity={isDarkMode ? 0.7 : 0.5} />
     </group>
   );
 }

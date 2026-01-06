@@ -28,7 +28,11 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
+    document.body.classList.toggle("dark-mode", isDarkMode);
   }, [isDarkMode]);
+
+  // Visualizer is more prominent in dark mode
+  const visualizerOpacity = isDarkMode ? 1.0 : opacity;
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -45,7 +49,8 @@ function App() {
           getFrequencyData={getFrequencyData}
           isPlaying={isPlaying}
           currentMode={currentMode}
-          opacity={opacity}
+          opacity={visualizerOpacity}
+          isDarkMode={isDarkMode}
         />
 
         <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />

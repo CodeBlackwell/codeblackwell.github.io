@@ -12,6 +12,7 @@ export default function AudioVisualizer({
   isPlaying,
   currentMode,
   opacity = 1,
+  isDarkMode = false,
 }) {
   const frequencyDataRef = useRef({ bass: 0, mid: 0, treble: 0, average: 0 });
   const mousePositionRef = useRef({ x: 0, y: 0 });
@@ -51,6 +52,7 @@ export default function AudioVisualizer({
       frequencyData: frequencyDataRef,
       theme,
       opacity,
+      isDarkMode,
     };
 
     switch (currentMode) {
@@ -66,7 +68,9 @@ export default function AudioVisualizer({
   return (
     <div
       ref={containerRef}
-      className={`audio-visualizer ${isPlaying ? "playing" : "idle"}`}
+      className={`audio-visualizer ${isPlaying ? "playing" : "idle"} ${
+        isDarkMode ? "dark-mode-enhanced" : ""
+      }`}
       style={{ opacity }}
     >
       <Canvas
@@ -76,12 +80,16 @@ export default function AudioVisualizer({
           alpha: true,
           powerPreference: "high-performance",
         }}
-        dpr={[1, 1.5]}
+        dpr={isDarkMode ? [1, 2] : [1, 1.5]}
       >
-        <color attach="background" args={["transparent"]} />
+        <color attach="background" args={[isDarkMode ? "#030308" : "transparent"]} />
 
-        {/* Bloom post-processing */}
-        <BloomController frequencyData={frequencyDataRef} enabled={isPlaying} />
+        {/* Bloom post-processing - enhanced in dark mode */}
+        <BloomController
+          frequencyData={frequencyDataRef}
+          enabled={isPlaying}
+          intensity={isDarkMode ? 1.5 : 1.0}
+        />
 
         {/* Render current visualization mode */}
         {renderMode()}

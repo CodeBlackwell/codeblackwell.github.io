@@ -120,3 +120,27 @@
     font-size: 14px;
   }
 }
+
+/* Dark mode glassmorphism */
+.dark-mode .repo-card-div {
+  background: rgba(10, 10, 20, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #e8e8ff;
+}
+
+.dark-mode .repo-card-div:hover {
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.dark-mode .repo-name {
+  color: #e8e8ff;
+}
+
+.dark-mode .repo-stats,
+.dark-mode .repo-creation-date {
+  color: #9898c8;
+}

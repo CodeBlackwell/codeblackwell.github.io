@@ -146,3 +146,43 @@
     font-size: 12px;
   }
 }
+
+/* Dark mode glassmorphism header */
+.dark-mode .header {
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 0 0 16px 16px;
+  margin-top: 0;
+  max-width: 100%;
+  padding: 15px 5%;
+}
+
+.dark-mode .header .menu {
+  background: rgba(10, 10, 20, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.dark-mode .header li a {
+  border-radius: 8px;
+  transition: background 0.3s ease, text-shadow 0.3s ease;
+}
+
+.dark-mode .header li a:hover {
+  background: rgba(139, 92, 246, 0.2);
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.dark-mode .header .logo-name {
+  text-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+}
+
+.dark-mode .header .menu-icon .navicon,
+.dark-mode .header .menu-icon .navicon:before,
+.dark-mode .header .menu-icon .navicon:after {
+  background: #e8e8ff;
+}

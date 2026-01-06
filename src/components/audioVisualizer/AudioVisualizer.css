@@ -43,3 +43,43 @@
     display: none;
   }
 }
+
+/* Dark mode enhanced visualizer - Deep Space theme */
+.audio-visualizer.dark-mode-enhanced {
+  filter: blur(0px) brightness(calc(1.15 + var(--bloom-intensity, 0.2)));
+}
+
+.audio-visualizer.dark-mode-enhanced.idle {
+  opacity: 0.7;
+  filter: blur(0px) brightness(1.1);
+}
+
+.audio-visualizer.dark-mode-enhanced.playing {
+  opacity: 1;
+  filter: blur(0px) brightness(calc(1.2 + var(--bloom-intensity, 0.3)));
+}
+
+/* Cosmic vignette overlay for dark mode */
+.audio-visualizer.dark-mode-enhanced::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 50%,
+    rgba(59, 7, 100, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+/* Show simplified visualizer on mobile in dark mode */
+@media (max-width: 768px) {
+  .audio-visualizer.dark-mode-enhanced {
+    display: block;
+    opacity: 0.5;
+  }
+}

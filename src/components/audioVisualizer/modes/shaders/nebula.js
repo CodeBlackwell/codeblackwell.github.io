@@ -49,6 +49,7 @@ export const nebulaFragmentShader = `
   uniform float uOpacity;
   uniform float uHueShift;
   uniform float uSaturation;
+  uniform float uDarkModeIntensity;
 
   varying vec2 vUv;
   varying float vDisplacement;
@@ -66,25 +67,35 @@ export const nebulaFragmentShader = `
 
     // Displacement affects saturation and brightness
     float dispEffect = abs(vDisplacement) * 2.0;
-    float saturation = 0.7 + dispEffect * 0.3 + uMid * 0.2;
-    float brightness = 0.6 + dispEffect * 0.4 + uBass * 0.3;
+
+    // Enhanced saturation and brightness for dark mode
+    float saturation = 0.7 + dispEffect * 0.3 + uMid * 0.2 + uDarkModeIntensity * 0.1;
+    float brightness = 0.6 + dispEffect * 0.4 + uBass * 0.3 + uDarkModeIntensity * 0.15;
 
     // Create vibrant color from HSV
     vec3 color = hsv2rgb(vec3(audioHue, clamp(saturation, 0.5, 1.0), clamp(brightness, 0.4, 1.0)));
 
-    // Add cyan/magenta accents at peaks
+    // Add cyan/magenta accents at peaks - more prominent in dark mode
     float peakGlow = smoothstep(0.3, 0.8, dispEffect);
-    vec3 accentColor = hsv2rgb(vec3(fract(audioHue + 0.5), 0.9, 1.0)); // Complementary color
-    color = mix(color, accentColor, peakGlow * 0.4);
+    vec3 accentColor = hsv2rgb(vec3(fract(audioHue + 0.5), 0.9, 1.0));
+    color = mix(color, accentColor, peakGlow * (0.4 + uDarkModeIntensity * 0.2));
 
-    // Pulsing glow synced to bass
-    float pulse = 0.85 + 0.15 * sin(uTime * 3.0 + uBass * 15.0);
+    // Cosmic purple/pink blend for dark mode
+    vec3 cosmicPurple = vec3(0.545, 0.361, 0.965); // #8b5cf6
+    vec3 cosmicPink = vec3(0.753, 0.518, 0.988);   // #c084fc
+    float cosmicBlend = sin(vUv.x * 3.14159 + uTime * 0.3) * 0.5 + 0.5;
+    color = mix(color, mix(cosmicPurple, cosmicPink, cosmicBlend), uDarkModeIntensity * 0.2);
+
+    // Pulsing glow synced to bass - stronger in dark mode
+    float pulseStrength = 0.15 + uDarkModeIntensity * 0.1;
+    float pulse = (1.0 - pulseStrength) + pulseStrength * sin(uTime * 3.0 + uBass * 15.0);
     color *= pulse;
 
-    // Edge glow effect
+    // Edge glow effect - cosmic purple in dark mode
     float edgeFactor = 1.0 - abs(vUv.x - 0.5) * 2.0;
     edgeFactor *= 1.0 - abs(vUv.y - 0.5) * 2.0;
-    color += vec3(0.1, 0.2, 0.4) * (1.0 - edgeFactor) * uMid * 0.5;
+    vec3 edgeGlow = mix(vec3(0.1, 0.2, 0.4), vec3(0.3, 0.1, 0.5), uDarkModeIntensity);
+    color += edgeGlow * (1.0 - edgeFactor) * uMid * 0.5;
 
     gl_FragColor = vec4(color, uOpacity);
   }
