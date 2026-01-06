@@ -1,0 +1,133 @@
+.passion-card {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  flex: 0 0 30%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: inherit;
+}
+
+.passion-card:hover {
+  box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.passion-card-content {
+  position: relative;
+  width: 100%;
+}
+
+.passion-card-header {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-top: 4px solid;
+}
+
+.passion-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.passion-card:hover .passion-card-image {
+  transform: scale(1.05);
+}
+
+.passion-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.passion-card:hover .passion-card-overlay {
+  opacity: 1;
+}
+
+.passion-card-body {
+  padding: 20px;
+}
+
+.passion-card-title {
+  font-family: "Google Sans Medium";
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+.passion-card-description {
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+/* Instagram embed container */
+.passion-card-instagram {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.passion-card-instagram .instagram-media {
+  margin: 0 !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+
+/* TikTok embed container */
+.passion-card-tiktok {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.passion-card-tiktok .tiktok-embed {
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1380px) {
+  .passion-card {
+    width: 45%;
+    flex: 0 0 45%;
+  }
+
+  .passion-card-title {
+    font-size: 20px;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .passion-card {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .passion-card-header {
+    height: 180px;
+  }
+
+  .passion-card-title {
+    font-size: 18px;
+  }
+
+  .passion-card-description {
+    font-size: 13px;
+  }
+}

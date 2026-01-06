@@ -514,6 +514,61 @@ const contactPageData = {
   },
 };
 
+// Beyond The Keys Page - Personal Passions
+const beyondPageData = {
+  title: "Beyond The Keys",
+  subtitle: "What Fuels My Fire Outside of Code",
+  description:
+    "Life is more than lines of code. These passions keep me balanced, creative, and constantly growing.",
+  passions: [
+    {
+      id: "flow-arts",
+      name: "Flow Arts",
+      description: "Finding meditation in motion through poi, staff, and object manipulation.",
+      image_path: "passions/flow-arts.jpg",
+      instagram_url: "", // Add Instagram reel/post URL here
+      tiktok_url: "", // Add TikTok video URL here
+      color_code: "#9b5de5",
+    },
+    {
+      id: "martial-arts",
+      name: "Martial Arts",
+      description: "Discipline of body and mind through continuous training and improvement.",
+      image_path: "passions/martial-arts.jpg",
+      instagram_url: "",
+      tiktok_url: "",
+      color_code: "#dc2f02",
+    },
+    {
+      id: "fire-dancing",
+      name: "Fire Dancing",
+      description: "Where flow arts meets primal element - trust, focus, and performance artistry.",
+      image_path: "passions/fire-dancing.jpg",
+      instagram_url: "",
+      tiktok_url: "",
+      color_code: "#ff6b35",
+    },
+    {
+      id: "outdoors",
+      name: "Outdoors",
+      description: "Hiking, camping, and reconnecting with nature for perspective and peace.",
+      image_path: "passions/outdoors.jpg",
+      instagram_url: "",
+      tiktok_url: "",
+      color_code: "#55a630",
+    },
+    {
+      id: "travel",
+      name: "Travel",
+      description: "Exploring cultures, cuisines, and perspectives that expand the mind.",
+      image_path: "passions/travel.jpg",
+      instagram_url: "",
+      tiktok_url: "",
+      color_code: "#0e6ba8",
+    },
+  ],
+};
+
 export {
   settings,
   seo,
@@ -528,4 +583,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  beyondPageData,
 };

@@ -1,0 +1,92 @@
+.beyond-main {
+  width: 100%;
+}
+
+.basic-beyond {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.beyond-heading-div {
+  display: flex;
+  justify-content: center;
+}
+
+.beyond-heading-text-div {
+  text-align: center;
+  max-width: 800px;
+}
+
+.beyond-heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.beyond-heading-sub-text {
+  font-size: 30px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.beyond-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}
+
+.passions-cards-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 1380px) {
+  .beyond-heading-text {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+
+  .beyond-heading-sub-text {
+    font-size: 25px;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .beyond-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .beyond-heading-sub-text {
+    font-size: 20px;
+  }
+
+  .beyond-header-detail-text {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .passions-cards-div {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+}
