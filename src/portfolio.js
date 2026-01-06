@@ -524,7 +524,8 @@ const beyondPageData = {
     {
       id: "flow-arts",
       name: "Flow Arts",
-      description: "Finding meditation in motion through poi, staff, and object manipulation.",
+      description:
+        "There's magic in creating so much from so little. A staff is just a stick. A slackline is 3 inches of elastic between trees. Poi? Balls on string. Yet within these simple tools lives infinite expression.",
       image_path: "passions/flow-arts.jpg",
       video_path: "passions/flow-arts.mp4",
       instagram_url: "",
@@ -534,7 +535,8 @@ const beyondPageData = {
     {
       id: "martial-arts",
       name: "Martial Arts",
-      description: "Discipline of body and mind through continuous training and improvement.",
+      description:
+        "Kung Fu: adroitness acquired over time with great effort. Not a fighting style, but a philosophy. The discipline to show up, the humility to learn, and the patience to trust the process.",
       image_path: "passions/martial-arts.jpg",
       video_path: "passions/martial-arts.mp4",
       instagram_url: "",
@@ -544,7 +546,8 @@ const beyondPageData = {
     {
       id: "fire-dancing",
       name: "Fire Dancing",
-      description: "Where flow arts meets primal element - trust, focus, and performance artistry.",
+      description:
+        "Inspire and be inspired. Feel joy and spread joy. I've always been a dancer. I've always been fascinated with fire. Combining the two just seemed like a natural progression.",
       image_path: "passions/fire-dancing.jpg",
       video_path: "passions/fire-dancing.mp4",
       instagram_url: "",
@@ -554,7 +557,8 @@ const beyondPageData = {
     {
       id: "outdoors",
       name: "Outdoors",
-      description: "Hiking, camping, and reconnecting with nature for perspective and peace.",
+      description:
+        "The place I love most? Anywhere. Everywhere. Mountains, forests, deserts, coastlines - each landscape offers its own lessons. Nature has a way of putting everything into perspective.",
       image_path: "passions/outdoors.jpg",
       video_path: "passions/outdoors.mp4",
       instagram_url: "",
@@ -564,7 +568,8 @@ const beyondPageData = {
     {
       id: "travel",
       name: "Travel",
-      description: "Exploring cultures, cuisines, and perspectives that expand the mind.",
+      description:
+        "The best part about travel is the people. Every place has its own culture, activities, cuisines, and norms. There are so many ways to be a beautiful person and build beautiful community. I treasure opportunities to truly learn how others do things.",
       image_path: "passions/travel.jpg",
       video_path: "passions/travel.mp4",
       instagram_url: "",

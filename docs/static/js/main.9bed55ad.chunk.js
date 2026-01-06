@@ -760,8 +760,8 @@
           avatar_image_path: "address_image.svg",
           location_map_link: "https://maps.app.goo.gl/San-Francisco",
         },
-        O = { title: "", subtitle: "" },
-        T = {
+        T = { title: "", subtitle: "" },
+        O = {
           title: "Beyond The Keys",
           subtitle: "What Fuels My Fire Outside of Code",
           description:
@@ -771,7 +771,7 @@
               id: "flow-arts",
               name: "Flow Arts",
               description:
-                "Finding meditation in motion through poi, staff, and object manipulation.",
+                "There's magic in creating so much from so little. A staff is just a stick. A slackline is 3 inches of elastic between trees. Poi? Balls on string. Yet within these simple tools lives infinite expression.",
               image_path: "passions/flow-arts.jpg",
               video_path: "passions/flow-arts.mp4",
               instagram_url: "",
@@ -782,7 +782,7 @@
               id: "martial-arts",
               name: "Martial Arts",
               description:
-                "Discipline of body and mind through continuous training and improvement.",
+                "Kung Fu: adroitness acquired over time with great effort. Not a fighting style, but a philosophy. The discipline to show up, the humility to learn, and the patience to trust the process.",
               image_path: "passions/martial-arts.jpg",
               video_path: "passions/martial-arts.mp4",
               instagram_url: "",
@@ -793,7 +793,7 @@
               id: "fire-dancing",
               name: "Fire Dancing",
               description:
-                "Where flow arts meets primal element - trust, focus, and performance artistry.",
+                "Inspire and be inspired. Feel joy and spread joy. I've always been a dancer. I've always been fascinated with fire. Combining the two just seemed like a natural progression.",
               image_path: "passions/fire-dancing.jpg",
               video_path: "passions/fire-dancing.mp4",
               instagram_url: "",
@@ -804,7 +804,7 @@
               id: "outdoors",
               name: "Outdoors",
               description:
-                "Hiking, camping, and reconnecting with nature for perspective and peace.",
+                "The place I love most? Anywhere. Everywhere. Mountains, forests, deserts, coastlines - each landscape offers its own lessons. Nature has a way of putting everything into perspective.",
               image_path: "passions/outdoors.jpg",
               video_path: "passions/outdoors.mp4",
               instagram_url: "",
@@ -814,7 +814,8 @@
             {
               id: "travel",
               name: "Travel",
-              description: "Exploring cultures, cuisines, and perspectives that expand the mind.",
+              description:
+                "The best part about travel is the people. Every place has its own culture, activities, cuisines, and norms. There are so many ways to be a beautiful person and build beautiful community. I treasure opportunities to truly learn how others do things.",
               image_path: "passions/travel.jpg",
               video_path: "passions/travel.mp4",
               instagram_url: "",
@@ -856,7 +857,7 @@
           name: g,
           url: null === A || void 0 === A || null === (l = A.og) || void 0 === l ? void 0 : l.url,
           email: u,
-          telephone: null === (r = O) || void 0 === r ? void 0 : r.subtitle,
+          telephone: null === (r = T) || void 0 === r ? void 0 : r.subtitle,
           sameAs: f,
           jobTitle: E.title,
           worksFor: { "@type": "Organization", name: E.company },
@@ -899,7 +900,7 @@
         Q = (e) => {
           e.target.style.backgroundColor = "transparent";
         };
-      class U extends l.Component {
+      class q extends l.Component {
         render() {
           const e = this.props.theme,
             t = f ? "/splash" : "home";
@@ -1039,13 +1040,13 @@
           );
         }
       }
-      var q,
-        G = U,
+      var U,
+        G = q,
         V = (a(82), a(26)),
         J = (a(83), a(18));
       const X = J.d.span(
-        q ||
-          (q = Object(V.a)([
+        U ||
+          (U = Object(V.a)([
             "\n  i {\n    background-color: ",
             ";\n  }\n  &:hover i {\n    background-color: ",
             ";\n    transition: 0.3s ease-in;\n  }\n",
@@ -4782,8 +4783,8 @@
         }
       }
       var Le = De,
-        Oe = (a(146), a(187)),
-        Te = a(185);
+        Te = (a(146), a(187)),
+        Oe = a(185);
       class Fe extends l.Component {
         render() {
           const e = this.props.theme,
@@ -4792,11 +4793,11 @@
             "div",
             { className: "experience-accord" },
             n.a.createElement(
-              Oe.a,
+              Te.a,
               { initialState: { expanded: t } },
               this.props.sections.map((t, a) =>
                 n.a.createElement(
-                  Te.a,
+                  Oe.a,
                   {
                     className: "accord-panel",
                     title: t.title,
@@ -5318,8 +5319,8 @@
           );
         }
       }
-      var Ue = Qe;
-      class qe extends l.Component {
+      var qe = Qe;
+      class Ue extends l.Component {
         render() {
           const e = this.props.theme;
           return n.a.createElement(
@@ -5866,7 +5867,7 @@
       const Ve = j,
         Je = D,
         Xe = L,
-        We = O;
+        We = T;
       class Ye extends l.Component {
         render() {
           const e = this.props.theme;
@@ -6016,7 +6017,7 @@
                   n.a.createElement(
                     "div",
                     { className: "blog-heading-img-div" },
-                    n.a.createElement(qe, { theme: e })
+                    n.a.createElement(Ue, { theme: e })
                   )
                 )
               ),
@@ -7167,12 +7168,12 @@
                     n.a.createElement(
                       "h1",
                       { className: "beyond-heading-text", style: { color: e.text } },
-                      T.title
+                      O.title
                     ),
                     n.a.createElement(
                       "h3",
                       { className: "beyond-heading-sub-text", style: { color: e.secondaryText } },
-                      T.subtitle
+                      O.subtitle
                     ),
                     n.a.createElement(
                       "p",
@@ -7180,7 +7181,7 @@
                         className: "beyond-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      T.description
+                      O.description
                     )
                   )
                 )
@@ -7188,7 +7189,7 @@
               n.a.createElement(
                 "div",
                 { className: "passions-cards-div" },
-                T.passions.map((t) => n.a.createElement(it, { key: t.id, passion: t, theme: e }))
+                O.passions.map((t) => n.a.createElement(it, { key: t.id, passion: t, theme: e }))
               )
             ),
             n.a.createElement(pe, { theme: this.props.theme }),
@@ -7260,7 +7261,7 @@
                 path: "/experience",
                 exact: !0,
                 render: (e) =>
-                  n.a.createElement(Ue, Object.assign({}, e, { theme: this.props.theme })),
+                  n.a.createElement(qe, Object.assign({}, e, { theme: this.props.theme })),
               }),
               n.a.createElement(h.b, {
                 path: "/education",
@@ -7348,7 +7349,7 @@
       const gt = Object(J.c)(
           ft ||
             (ft = Object(V.a)([
-              "\n  /* Cosmic text glow for headers */\n  h1, h2, h3 {\n    text-shadow: 0 0 20px rgba(139, 92, 246, 0.3);\n  }\n\n  /* Links get subtle glow on hover */\n  a {\n    transition: text-shadow 0.3s ease, color 0.3s ease;\n  }\n\n  a:hover {\n    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);\n  }\n\n  /* Cosmic scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n\n  ::-webkit-scrollbar-track {\n    background: rgba(10, 10, 20, 0.8);\n  }\n\n  ::-webkit-scrollbar-thumb {\n    background: linear-gradient(\n      180deg,\n      rgba(139, 92, 246, 0.6),\n      rgba(192, 132, 252, 0.6)\n    );\n    border-radius: 4px;\n  }\n\n  ::-webkit-scrollbar-thumb:hover {\n    background: linear-gradient(\n      180deg,\n      rgba(139, 92, 246, 0.8),\n      rgba(192, 132, 252, 0.8)\n    );\n  }\n\n  /* Cosmic selection */\n  ::selection {\n    background: rgba(139, 92, 246, 0.4);\n    color: #ffffff;\n  }\n",
+              "\n  /* Cosmic text glow for headers */\n  h1,\n  h2,\n  h3 {\n    text-shadow: 0 0 20px rgba(139, 92, 246, 0.3);\n  }\n\n  /* Links get subtle glow on hover */\n  a {\n    transition: text-shadow 0.3s ease, color 0.3s ease;\n  }\n\n  a:hover {\n    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);\n  }\n\n  /* Cosmic scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n\n  ::-webkit-scrollbar-track {\n    background: rgba(10, 10, 20, 0.8);\n  }\n\n  ::-webkit-scrollbar-thumb {\n    background: linear-gradient(180deg, rgba(139, 92, 246, 0.6), rgba(192, 132, 252, 0.6));\n    border-radius: 4px;\n  }\n\n  ::-webkit-scrollbar-thumb:hover {\n    background: linear-gradient(180deg, rgba(139, 92, 246, 0.8), rgba(192, 132, 252, 0.8));\n  }\n\n  /* Cosmic selection */\n  ::selection {\n    background: rgba(139, 92, 246, 0.4);\n    color: #ffffff;\n  }\n",
             ]))
         ),
         ut = Object(J.b)(
@@ -7703,7 +7704,7 @@
             Nt,
             "\n\n  void main() {\n    // Height-based color gradient - much more sensitive normalization\n    // Elevation typically ranges from -2 to +2, so use tighter range\n    float normalizedHeight = (vElevation + 1.5) / 3.0;\n    // Apply contrast curve to spread out the middle values\n    normalizedHeight = clamp(normalizedHeight, 0.0, 1.0);\n    normalizedHeight = pow(normalizedHeight, 0.7); // Boost contrast\n\n    // Direct Blue to Red gradient (no purple middle)\n    vec3 lowColor = vec3(0.1, 0.3, 1.0);   // Deep Blue\n    vec3 highColor = vec3(1.0, 0.1, 0.05); // Bright Red\n\n    // Simple linear interpolation for clearer gradient\n    vec3 color = mix(lowColor, highColor, normalizedHeight);\n\n    // Add glow effect at peaks\n    float peakGlow = smoothstep(0.6, 1.0, normalizedHeight);\n    color += peakGlow * vec3(1.0, 0.5, 0.2) * 0.3 * (1.0 + uBass);\n\n    // Subtle pulse with audio\n    float pulse = 0.9 + 0.1 * sin(uTime * 1.5 + vElevation * 2.0);\n    color *= pulse;\n\n    // Bass boosts saturation, treble shifts slightly\n    vec3 hsv = rgb2hsv(color);\n    hsv.y = clamp(hsv.y * (0.9 + uBass * 0.3), 0.0, 1.0);\n    hsv.z = clamp(hsv.z * (0.9 + uMid * 0.2), 0.0, 1.0);\n    color = hsv2rgb(hsv);\n\n    // Grid lines for wireframe effect\n    float gridX = smoothstep(0.02, 0.03, abs(fract(vUv.x * 24.0) - 0.5));\n    float gridY = smoothstep(0.02, 0.03, abs(fract(vUv.y * 24.0) - 0.5));\n    float grid = min(gridX, gridY);\n\n    // Combine color with grid - grid lines are brighter\n    color = mix(color * 1.3, color * 0.7, 1.0 - grid);\n\n    gl_FragColor = vec4(color, uOpacity);\n  }\n"
           );
-      function Ot(e) {
+      function Tt(e) {
         let { frequencyData: t, theme: a, opacity: r } = e;
         const c = Object(l.useRef)(),
           i = Object(l.useRef)(),
@@ -7785,7 +7786,7 @@
           )
         );
       }
-      function Tt(e) {
+      function Ot(e) {
         let { theme: t, frequencyData: a, opacity: r } = e;
         const c = Object(l.useRef)(),
           i = Object(l.useMemo)(() => {
@@ -7844,8 +7845,8 @@
         return n.a.createElement(
           "group",
           null,
-          n.a.createElement(Ot, { frequencyData: t, theme: a, opacity: l }),
-          n.a.createElement(Tt, { theme: a, frequencyData: t, opacity: l }),
+          n.a.createElement(Tt, { frequencyData: t, theme: a, opacity: l }),
+          n.a.createElement(Ot, { theme: a, frequencyData: t, opacity: l }),
           n.a.createElement("ambientLight", { intensity: 0.6 }),
           n.a.createElement("directionalLight", { position: [5, 10, 5], intensity: 0.4 })
         );
@@ -7960,8 +7961,8 @@
           )
         );
       }
-      const Ut = [0, 10],
-        qt = [10, 100],
+      const qt = [0, 10],
+        Ut = [10, 100],
         Gt = [100, 512];
       function Vt() {
         const [e, t] = Object(l.useState)(vt),
@@ -8020,7 +8021,7 @@
       var Jt = function () {
         const [e, t] = Object(l.useState)(() => {
             const e = localStorage.getItem("darkMode");
-            return null !== e && JSON.parse(e);
+            return null === e || JSON.parse(e);
           }),
           a = e ? pt : ht,
           { isPlaying: r, needsInteraction: c, toggle: i, getFrequencyData: o } = (function (e) {
@@ -8080,8 +8081,8 @@
                     return l / (n - t) / 255;
                   };
                 return {
-                  bass: t(...Ut),
-                  mid: t(...qt),
+                  bass: t(...qt),
+                  mid: t(...Ut),
                   treble: t(...Gt),
                   average: t(0, e.length),
                   raw: e,
@@ -8217,4 +8218,4 @@
   ]),
   [[58, 1, 2]],
 ]);
-//# sourceMappingURL=main.bae7132e.chunk.js.map
+//# sourceMappingURL=main.9bed55ad.chunk.js.map
