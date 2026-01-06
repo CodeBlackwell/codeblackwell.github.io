@@ -6994,14 +6994,29 @@
       var rt = nt;
       a(154);
       class ct extends l.Component {
+        constructor(e) {
+          super(e),
+            (this.handleMouseEnter = () => {
+              const { passion: e, onHover: t } = this.props;
+              t && t(e.id);
+            }),
+            (this.handleMouseLeave = () => {
+              const { onHover: e } = this.props;
+              e && e(null);
+            }),
+            (this.videoRef = n.a.createRef());
+        }
         componentDidMount() {
           this.processEmbeds();
         }
         componentDidUpdate(e) {
-          const { passion: t } = this.props,
-            a = e.passion;
-          (t.instagram_url === a.instagram_url && t.tiktok_url === a.tiktok_url) ||
-            this.processEmbeds();
+          const { passion: t, isActive: a } = this.props,
+            l = e.passion;
+          (t.instagram_url === l.instagram_url && t.tiktok_url === l.tiktok_url) ||
+            this.processEmbeds(),
+            a !== e.isActive &&
+              this.videoRef.current &&
+              (a ? this.videoRef.current.play() : this.videoRef.current.pause());
         }
         processEmbeds() {
           const { passion: e } = this.props;
@@ -7029,8 +7044,8 @@
               n.a.createElement(
                 "video",
                 {
+                  ref: this.videoRef,
                   className: "passion-card-image",
-                  autoPlay: !0,
                   loop: !0,
                   muted: !0,
                   playsInline: !0,
@@ -7120,7 +7135,11 @@
             { bottom: !0, duration: 2e3, distance: "40px" },
             n.a.createElement(
               "div",
-              { className: "passion-card" },
+              {
+                className: "passion-card",
+                onMouseEnter: this.handleMouseEnter,
+                onMouseLeave: this.handleMouseLeave,
+              },
               n.a.createElement(
                 "div",
                 { className: "passion-card-content" },
@@ -7147,8 +7166,16 @@
       var it = ct;
       a(155);
       class ot extends l.Component {
+        constructor() {
+          super(...arguments),
+            (this.state = { activePassionId: null }),
+            (this.handlePassionHover = (e) => {
+              this.setState({ activePassionId: e });
+            });
+        }
         render() {
-          const e = this.props.theme;
+          const e = this.props.theme,
+            { activePassionId: t } = this.state;
           return n.a.createElement(
             "div",
             { className: "beyond-main" },
@@ -7189,7 +7216,15 @@
               n.a.createElement(
                 "div",
                 { className: "passions-cards-div" },
-                O.passions.map((t) => n.a.createElement(it, { key: t.id, passion: t, theme: e }))
+                O.passions.map((a) =>
+                  n.a.createElement(it, {
+                    key: a.id,
+                    passion: a,
+                    theme: e,
+                    isActive: t === a.id,
+                    onHover: this.handlePassionHover,
+                  })
+                )
               )
             ),
             n.a.createElement(pe, { theme: this.props.theme }),
@@ -8218,4 +8253,4 @@
   ]),
   [[58, 1, 2]],
 ]);
-//# sourceMappingURL=main.9bed55ad.chunk.js.map
+//# sourceMappingURL=main.116b4a20.chunk.js.map

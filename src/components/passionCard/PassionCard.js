@@ -3,12 +3,17 @@ import "./PassionCard.css";
 import { Fade } from "react-reveal";
 
 class PassionCard extends Component {
+  constructor(props) {
+    super(props);
+    this.videoRef = React.createRef();
+  }
+
   componentDidMount() {
     this.processEmbeds();
   }
 
   componentDidUpdate(prevProps) {
-    const { passion } = this.props;
+    const { passion, isActive } = this.props;
     const prevPassion = prevProps.passion;
 
     if (
@@ -17,7 +22,30 @@ class PassionCard extends Component {
     ) {
       this.processEmbeds();
     }
+
+    // Handle video play/pause based on isActive
+    if (isActive !== prevProps.isActive && this.videoRef.current) {
+      if (isActive) {
+        this.videoRef.current.play();
+      } else {
+        this.videoRef.current.pause();
+      }
+    }
   }
+
+  handleMouseEnter = () => {
+    const { passion, onHover } = this.props;
+    if (onHover) {
+      onHover(passion.id);
+    }
+  };
+
+  handleMouseLeave = () => {
+    const { onHover } = this.props;
+    if (onHover) {
+      onHover(null);
+    }
+  };
 
   processEmbeds() {
     const { passion } = this.props;
@@ -55,7 +83,7 @@ class PassionCard extends Component {
           className="passion-card-header passion-card-video"
           style={{ borderTopColor: passion.color_code }}
         >
-          <video className="passion-card-image" autoPlay loop muted playsInline>
+          <video ref={this.videoRef} className="passion-card-image" loop muted playsInline>
             <source src={process.env.PUBLIC_URL + "/" + passion.video_path} type="video/mp4" />
           </video>
           <div
@@ -133,7 +161,11 @@ class PassionCard extends Component {
 
     return (
       <Fade bottom duration={2000} distance="40px">
-        <div className="passion-card">
+        <div
+          className="passion-card"
+          onMouseEnter={this.handleMouseEnter}
+          onMouseLeave={this.handleMouseLeave}
+        >
           <div className="passion-card-content">
             {this.renderMedia()}
             <div className="passion-card-body">

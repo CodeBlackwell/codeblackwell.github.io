@@ -8,8 +8,17 @@ import "./BeyondComponent.css";
 import { beyondPageData } from "../../portfolio.js";
 
 class Beyond extends Component {
+  state = {
+    activePassionId: null,
+  };
+
+  handlePassionHover = (passionId) => {
+    this.setState({ activePassionId: passionId });
+  };
+
   render() {
     const theme = this.props.theme;
+    const { activePassionId } = this.state;
     return (
       <div className="beyond-main">
         <Header theme={theme} />
@@ -34,7 +43,13 @@ class Beyond extends Component {
           </Fade>
           <div className="passions-cards-div">
             {beyondPageData.passions.map((passion) => (
-              <PassionCard key={passion.id} passion={passion} theme={theme} />
+              <PassionCard
+                key={passion.id}
+                passion={passion}
+                theme={theme}
+                isActive={activePassionId === passion.id}
+                onHover={this.handlePassionHover}
+              />
             ))}
           </div>
         </div>
