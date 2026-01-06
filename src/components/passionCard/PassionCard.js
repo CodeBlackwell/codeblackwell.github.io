@@ -40,12 +40,7 @@ class PassionCard extends Component {
     }
   };
 
-  handleMouseLeave = () => {
-    const { onHover } = this.props;
-    if (onHover) {
-      onHover(null);
-    }
-  };
+  // Video keeps playing after mouse leaves - only stops when another card is hovered
 
   processEmbeds() {
     const { passion } = this.props;
@@ -161,11 +156,7 @@ class PassionCard extends Component {
 
     return (
       <Fade bottom duration={2000} distance="40px">
-        <div
-          className="passion-card"
-          onMouseEnter={this.handleMouseEnter}
-          onMouseLeave={this.handleMouseLeave}
-        >
+        <div className="passion-card" onMouseEnter={this.handleMouseEnter}>
           <div className="passion-card-content">
             {this.renderMedia()}
             <div className="passion-card-body">

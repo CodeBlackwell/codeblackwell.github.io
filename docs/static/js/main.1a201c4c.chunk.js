@@ -7000,10 +7000,6 @@
               const { passion: e, onHover: t } = this.props;
               t && t(e.id);
             }),
-            (this.handleMouseLeave = () => {
-              const { onHover: e } = this.props;
-              e && e(null);
-            }),
             (this.videoRef = n.a.createRef());
         }
         componentDidMount() {
@@ -7135,11 +7131,7 @@
             { bottom: !0, duration: 2e3, distance: "40px" },
             n.a.createElement(
               "div",
-              {
-                className: "passion-card",
-                onMouseEnter: this.handleMouseEnter,
-                onMouseLeave: this.handleMouseLeave,
-              },
+              { className: "passion-card", onMouseEnter: this.handleMouseEnter },
               n.a.createElement(
                 "div",
                 { className: "passion-card-content" },
@@ -8253,4 +8245,4 @@
   ]),
   [[58, 1, 2]],
 ]);
-//# sourceMappingURL=main.116b4a20.chunk.js.map
+//# sourceMappingURL=main.1a201c4c.chunk.js.map
