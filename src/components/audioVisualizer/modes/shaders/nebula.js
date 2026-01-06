@@ -15,18 +15,24 @@ export const nebulaVertexShader = `
   void main() {
     vUv = uv;
 
-    // Create displacement based on audio frequencies
-    float noise = snoise(position * 0.5 + uTime * 0.2);
-    float bassDisp = uBass * 1.5 * noise;
-    float midDisp = uMid * 0.8 * sin(position.y * 3.0 + uTime);
-    float trebleDisp = uTreble * 0.4 * sin(position.x * 5.0 + uTime * 2.0);
+    // Multi-layer noise for organic movement
+    float noise1 = snoise(position * 0.5 + uTime * 0.2);
+    float noise2 = snoise(position * 1.0 + uTime * 0.4 + 10.0);
+    float noise3 = snoise(position * 2.0 + uTime * 0.8 + 20.0);
 
-    vDisplacement = bassDisp + midDisp * 0.5 + trebleDisp * 0.3;
+    // Bass creates big waves, treble adds fine detail
+    float bassDisp = uBass * 2.5 * noise1;
+    float midDisp = uMid * 1.2 * noise2;
+    float trebleDisp = uTreble * 0.6 * noise3;
 
-    // Base subtle animation even without audio
-    float baseAnimation = 0.1 * sin(uTime * 0.5 + position.x) * cos(uTime * 0.3 + position.y);
+    // Combine with weighted sum
+    vDisplacement = bassDisp + midDisp * 0.6 + trebleDisp * 0.3;
 
-    vec3 newPosition = position + normal * (vDisplacement + baseAnimation);
+    // Breathing animation even without audio
+    float breathe = 0.15 * sin(uTime * 0.4 + length(position) * 0.5);
+    float ripple = 0.1 * sin(length(position.xy) * 2.0 - uTime * 1.5);
+
+    vec3 newPosition = position + normal * (vDisplacement + breathe + ripple);
 
     gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
   }
@@ -51,19 +57,34 @@ export const nebulaFragmentShader = `
   ${hsvToRgb}
 
   void main() {
-    // Mix colors based on audio and UV position
-    vec3 color = mix(uColorPrimary, uColorSecondary, vUv.y + uMid * 0.3);
-    color = mix(color, uColorAccent, abs(vDisplacement) * 0.5 + uBass * 0.2);
+    // Dynamic rainbow gradient based on position and time
+    float hueBase = vUv.x * 0.3 + vUv.y * 0.3 + uTime * 0.05;
 
-    // Add subtle pulse
-    float pulse = 0.8 + 0.2 * sin(uTime * 2.0 + uBass * 10.0);
+    // Audio modulates the hue - bass shifts red, treble shifts blue
+    float audioHue = hueBase + uBass * 0.15 - uTreble * 0.1;
+    audioHue = fract(audioHue); // Keep in 0-1 range
+
+    // Displacement affects saturation and brightness
+    float dispEffect = abs(vDisplacement) * 2.0;
+    float saturation = 0.7 + dispEffect * 0.3 + uMid * 0.2;
+    float brightness = 0.6 + dispEffect * 0.4 + uBass * 0.3;
+
+    // Create vibrant color from HSV
+    vec3 color = hsv2rgb(vec3(audioHue, clamp(saturation, 0.5, 1.0), clamp(brightness, 0.4, 1.0)));
+
+    // Add cyan/magenta accents at peaks
+    float peakGlow = smoothstep(0.3, 0.8, dispEffect);
+    vec3 accentColor = hsv2rgb(vec3(fract(audioHue + 0.5), 0.9, 1.0)); // Complementary color
+    color = mix(color, accentColor, peakGlow * 0.4);
+
+    // Pulsing glow synced to bass
+    float pulse = 0.85 + 0.15 * sin(uTime * 3.0 + uBass * 15.0);
     color *= pulse;
 
-    // Apply frequency-based hue shift and saturation
-    vec3 hsv = rgb2hsv(color);
-    hsv.x = fract(hsv.x + uHueShift * 0.1); // Treble shifts hue
-    hsv.y = clamp(hsv.y * uSaturation, 0.0, 1.0); // Bass controls saturation
-    color = hsv2rgb(hsv);
+    // Edge glow effect
+    float edgeFactor = 1.0 - abs(vUv.x - 0.5) * 2.0;
+    edgeFactor *= 1.0 - abs(vUv.y - 0.5) * 2.0;
+    color += vec3(0.1, 0.2, 0.4) * (1.0 - edgeFactor) * uMid * 0.5;
 
     gl_FragColor = vec4(color, uOpacity);
   }

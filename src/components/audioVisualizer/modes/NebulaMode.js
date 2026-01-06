@@ -107,37 +107,45 @@ function ParallaxCamera({ mousePosition }) {
   return null;
 }
 
-// Ambient particles for additional depth
+// Ambient particles for additional depth - now with rainbow colors
 function Particles({ theme, frequencyData, opacity }) {
   const particlesRef = useRef();
-  const count = 200;
+  const count = 300;
 
-  const positions = useMemo(() => {
+  // Generate positions and colors
+  const { positions, colors } = useMemo(() => {
     const pos = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      pos[i * 3] = (Math.random() - 0.5) * 30;
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 30;
-      pos[i * 3 + 2] = (Math.random() - 0.5) * 30;
-    }
-    return pos;
-  }, []);
+    const col = new Float32Array(count * 3);
 
-  const color = useMemo(
-    () => new THREE.Color(theme.visualizer?.secondary || theme.highlight || "#A6E1FA"),
-    [theme]
-  );
+    for (let i = 0; i < count; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 35;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 35;
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 35;
+
+      // Rainbow colors based on position
+      const hue = (i / count + Math.random() * 0.1) % 1.0;
+      const color = new THREE.Color();
+      color.setHSL(hue, 0.8, 0.6);
+      col[i * 3] = color.r;
+      col[i * 3 + 1] = color.g;
+      col[i * 3 + 2] = color.b;
+    }
+    return { positions: pos, colors: col };
+  }, []);
 
   useFrame((state) => {
     if (!particlesRef.current) return;
 
     const data = frequencyData.current;
     const bass = data.bass || 0;
+    const mid = data.mid || 0;
 
-    particlesRef.current.rotation.y = state.clock.elapsedTime * 0.02;
-    particlesRef.current.rotation.x = state.clock.elapsedTime * 0.01;
+    // Faster rotation with audio
+    particlesRef.current.rotation.y = state.clock.elapsedTime * 0.03 + mid * 0.1;
+    particlesRef.current.rotation.x = state.clock.elapsedTime * 0.015;
 
     // Pulse size with bass
-    const scale = 1 + bass * 0.3;
+    const scale = 1 + bass * 0.4;
     particlesRef.current.scale.setScalar(scale);
   });
 
@@ -150,12 +158,13 @@ function Particles({ theme, frequencyData, opacity }) {
           array={positions}
           itemSize={3}
         />
+        <bufferAttribute attach="attributes-color" count={count} array={colors} itemSize={3} />
       </bufferGeometry>
       <pointsMaterial
-        size={0.08}
-        color={color}
+        size={0.12}
+        vertexColors
         transparent
-        opacity={0.6 * opacity}
+        opacity={0.7 * opacity}
         sizeAttenuation
       />
     </points>
