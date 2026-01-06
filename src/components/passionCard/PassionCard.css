@@ -39,6 +39,17 @@
   transform: scale(1.05);
 }
 
+/* Video styling */
+.passion-card-video video.passion-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.passion-card:hover .passion-card-video video {
+  transform: scale(1.05);
+}
+
 .passion-card-overlay {
   position: absolute;
   top: 0;
@@ -130,4 +141,26 @@
   .passion-card-description {
     font-size: 13px;
   }
+}
+
+/* Dark mode glassmorphism */
+.dark-mode .passion-card {
+  background: rgba(10, 10, 20, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .passion-card:hover {
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.dark-mode .passion-card-header {
+  border-top-color: rgba(139, 92, 246, 0.6);
+}
+
+.dark-mode .passion-card-overlay {
+  background: rgba(59, 7, 100, 0.7);
 }

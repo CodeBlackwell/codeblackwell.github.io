@@ -526,8 +526,9 @@ const beyondPageData = {
       name: "Flow Arts",
       description: "Finding meditation in motion through poi, staff, and object manipulation.",
       image_path: "passions/flow-arts.jpg",
-      instagram_url: "", // Add Instagram reel/post URL here
-      tiktok_url: "", // Add TikTok video URL here
+      video_path: "passions/flow-arts.mp4",
+      instagram_url: "",
+      tiktok_url: "",
       color_code: "#9b5de5",
     },
     {
@@ -535,6 +536,7 @@ const beyondPageData = {
       name: "Martial Arts",
       description: "Discipline of body and mind through continuous training and improvement.",
       image_path: "passions/martial-arts.jpg",
+      video_path: "passions/martial-arts.mp4",
       instagram_url: "",
       tiktok_url: "",
       color_code: "#dc2f02",
@@ -544,6 +546,7 @@ const beyondPageData = {
       name: "Fire Dancing",
       description: "Where flow arts meets primal element - trust, focus, and performance artistry.",
       image_path: "passions/fire-dancing.jpg",
+      video_path: "passions/fire-dancing.mp4",
       instagram_url: "",
       tiktok_url: "",
       color_code: "#ff6b35",
@@ -553,6 +556,7 @@ const beyondPageData = {
       name: "Outdoors",
       description: "Hiking, camping, and reconnecting with nature for perspective and peace.",
       image_path: "passions/outdoors.jpg",
+      video_path: "passions/outdoors.mp4",
       instagram_url: "",
       tiktok_url: "",
       color_code: "#55a630",
@@ -562,6 +566,7 @@ const beyondPageData = {
       name: "Travel",
       description: "Exploring cultures, cuisines, and perspectives that expand the mind.",
       image_path: "passions/travel.jpg",
+      video_path: "passions/travel.mp4",
       instagram_url: "",
       tiktok_url: "",
       color_code: "#0e6ba8",

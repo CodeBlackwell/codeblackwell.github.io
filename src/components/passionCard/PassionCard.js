@@ -48,7 +48,26 @@ class PassionCard extends Component {
   renderMedia() {
     const { passion } = this.props;
 
-    // Priority: TikTok > Instagram > Image
+    // Priority: Video > TikTok > Instagram > Image
+    if (passion.video_path) {
+      return (
+        <div
+          className="passion-card-header passion-card-video"
+          style={{ borderTopColor: passion.color_code }}
+        >
+          <video className="passion-card-image" autoPlay loop muted playsInline>
+            <source src={process.env.PUBLIC_URL + "/" + passion.video_path} type="video/mp4" />
+          </video>
+          <div
+            className="passion-card-overlay"
+            style={{
+              background: `linear-gradient(180deg, transparent 30%, ${passion.color_code}cc 100%)`,
+            }}
+          ></div>
+        </div>
+      );
+    }
+
     if (passion.tiktok_url) {
       const videoId = this.extractTikTokId(passion.tiktok_url);
       if (videoId) {
