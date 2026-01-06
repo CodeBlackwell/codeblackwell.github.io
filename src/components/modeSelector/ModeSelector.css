@@ -1,0 +1,93 @@
+/* ModeSelector - Glassmorphism style matching MusicPlayer */
+
+.mode-selector {
+  position: fixed;
+  bottom: 7.5rem; /* Stack above music player (5rem + 48px + gap) */
+  left: 1.5rem;
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mode-selector-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: inherit;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.mode-selector-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mode-selector-button:active {
+  transform: scale(1.05);
+}
+
+.mode-selector-button:focus {
+  box-shadow: 0 0 0 2px currentColor;
+}
+
+/* Tooltip */
+.mode-selector-tooltip {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.mode-selector:hover .mode-selector-tooltip {
+  opacity: 1;
+}
+
+/* Mobile: hide for performance (same as visualizer) */
+@media (max-width: 768px) {
+  .mode-selector {
+    display: none;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .mode-selector {
+    display: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mode-selector {
+    bottom: 6.5rem;
+    left: 1rem;
+  }
+
+  .mode-selector-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}

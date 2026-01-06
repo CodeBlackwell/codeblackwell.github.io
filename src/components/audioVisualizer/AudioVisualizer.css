@@ -6,18 +6,23 @@
   height: 100vh;
   z-index: 0;
   pointer-events: none;
-  transition: opacity 0.8s ease;
-  /* CSS glow effect to simulate bloom */
-  filter: blur(0.5px) brightness(1.1);
+  /* CSS glow effect to simulate bloom - uses CSS variable set by BloomController */
+  filter: blur(0.5px) brightness(calc(1 + var(--bloom-intensity, 0.1)));
 }
 
 .audio-visualizer canvas {
   display: block;
 }
 
+/* Transition for opacity changes during mode switching */
+.audio-visualizer {
+  transition: filter 0.1s ease;
+}
+
 /* Subtle animation when not playing */
 .audio-visualizer.idle {
   opacity: 0.4;
+  filter: blur(0.5px) brightness(1.05);
 }
 
 /* Full visibility when playing */

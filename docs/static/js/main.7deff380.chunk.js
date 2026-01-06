@@ -102,7 +102,7 @@
     ,
     ,
     function (e, t, a) {
-      e.exports = a(165);
+      e.exports = a(168);
     },
     ,
     ,
@@ -303,11 +303,14 @@
     function (e, t, a) {},
     function (e, t, a) {},
     function (e, t, a) {},
+    function (e, t, a) {},
+    function (e, t, a) {},
     ,
     ,
     ,
     ,
     ,
+    function (e, t, a) {},
     function (e, t, a) {},
     ,
     function (e, t, a) {
@@ -315,17 +318,17 @@
       a.r(t);
       var l = a(0),
         r = a.n(l),
-        n = a(12),
+        n = a(13),
         c = a.n(n),
-        i = a(183),
-        s = a(166),
-        o = a(17),
-        m = a(181),
-        d = (a(63), a(64), a(8)),
+        i = a(186),
+        o = a(169),
+        s = a(18),
+        m = a(184),
+        d = (a(63), a(64), a(7)),
         h = a(6),
-        A = (a(65), a(3));
-      const p = !0,
-        f = {
+        p = (a(65), a(3));
+      const f = !0,
+        A = {
           title: "LeChristopher Blackwell | Full-Stack Engineer & AI Specialist",
           description:
             "Full-stack engineer with 8+ years of experience specializing in AI/ML integration, data warehousing, and scalable web applications. IBM Generative AI certified. Passionate about LLMs, prompt engineering, and building intelligent systems.",
@@ -337,13 +340,13 @@
         },
         g = "LeChristopher Blackwell",
         E = "LeChristopherBlackwell",
-        y = "codeblackwell",
-        u =
+        u = "codeblackwell",
+        y =
           "Building the future with AI \u2014 Full-stack engineer specializing in LLMs, data pipelines, and scalable web applications. Passionate about prompt engineering, machine learning, and turning complex problems into elegant solutions.",
         x = "./LeChristopher_Blackwell_Resume.pdf",
-        b = "https://github.com/codeblackwell/codeblackwell.github.io",
-        v = "https://github.com/codeblackwell",
-        M = [
+        v = "https://github.com/codeblackwell/codeblackwell.github.io",
+        b = "https://github.com/codeblackwell",
+        w = [
           {
             name: "Github",
             link: "https://github.com/codeblackwell",
@@ -369,7 +372,7 @@
             backgroundColor: "#D14836",
           },
         ],
-        w = {
+        M = {
           data: [
             {
               title: "AI & Machine Learning",
@@ -547,7 +550,7 @@
             },
           ],
         },
-        Z = {
+        N = {
           certifications: [
             {
               title: "IBM Generative AI Engineering",
@@ -583,7 +586,7 @@
             },
           ],
         },
-        N = {
+        Z = {
           title: "Experience",
           subtitle: "Work, Internships & Volunteerships",
           description:
@@ -747,7 +750,7 @@
             },
           ],
         },
-        D = {
+        O = {
           title: "Location",
           subtitle: "San Francisco, CA, USA",
           locality: "San Francisco",
@@ -758,17 +761,69 @@
           avatar_image_path: "address_image.svg",
           location_map_link: "https://maps.app.goo.gl/San-Francisco",
         },
-        F = { title: "", subtitle: "" };
-      var O = a(46);
-      var Q = function () {
-        var e, t, a, l, n, c, i, s, o, m, d, h, A;
-        let p = [];
-        M.filter((e) => !(e.link.startsWith("tel") || e.link.startsWith("mailto"))).forEach((e) => {
-          p.push(e.link);
+        D = { title: "", subtitle: "" },
+        T = {
+          title: "Beyond The Keys",
+          subtitle: "What Fuels My Fire Outside of Code",
+          description:
+            "Life is more than lines of code. These passions keep me balanced, creative, and constantly growing.",
+          passions: [
+            {
+              id: "flow-arts",
+              name: "Flow Arts",
+              description:
+                "Finding meditation in motion through poi, staff, and object manipulation.",
+              image_path: "passions/flow-arts.jpg",
+              instagram_url: "",
+              color_code: "#9b5de5",
+            },
+            {
+              id: "martial-arts",
+              name: "Martial Arts",
+              description:
+                "Discipline of body and mind through continuous training and improvement.",
+              image_path: "passions/martial-arts.jpg",
+              instagram_url: "",
+              color_code: "#dc2f02",
+            },
+            {
+              id: "fire-dancing",
+              name: "Fire Dancing",
+              description:
+                "Where flow arts meets primal element - trust, focus, and performance artistry.",
+              image_path: "passions/fire-dancing.jpg",
+              instagram_url: "",
+              color_code: "#ff6b35",
+            },
+            {
+              id: "outdoors",
+              name: "Outdoors",
+              description:
+                "Hiking, camping, and reconnecting with nature for perspective and peace.",
+              image_path: "passions/outdoors.jpg",
+              instagram_url: "",
+              color_code: "#55a630",
+            },
+            {
+              id: "travel",
+              name: "Travel",
+              description: "Exploring cultures, cuisines, and perspectives that expand the mind.",
+              image_path: "passions/travel.jpg",
+              instagram_url: "",
+              color_code: "#0e6ba8",
+            },
+          ],
+        };
+      var z = a(46);
+      var F = function () {
+        var e, t, a, l, n, c, i, o, s, m, d, h, p;
+        let f = [];
+        w.filter((e) => !(e.link.startsWith("tel") || e.link.startsWith("mailto"))).forEach((e) => {
+          f.push(e.link);
         });
-        let E = M.find((e) => e.link.startsWith("mailto")).link.substring("mailto:".length),
-          y =
-            null === (e = N.sections) ||
+        let E = w.find((e) => e.link.startsWith("mailto")).link.substring("mailto:".length),
+          u =
+            null === (e = Z.sections) ||
             void 0 === e ||
             null === (t = e.find((e) => e.work)) ||
             void 0 === t ||
@@ -776,9 +831,9 @@
             void 0 === a
               ? void 0
               : a.at(0),
-          u = [];
-        Z.certifications.forEach((e) => {
-          u.push({
+          y = [];
+        N.certifications.forEach((e) => {
+          y.push({
             "@context": "https://schema.org",
             "@type": "EducationalOccupationalCredential",
             url: e.certificate_link,
@@ -790,59 +845,59 @@
           "@context": "https://schema.org/",
           "@type": "Person",
           name: g,
-          url: null === f || void 0 === f || null === (l = f.og) || void 0 === l ? void 0 : l.url,
+          url: null === A || void 0 === A || null === (l = A.og) || void 0 === l ? void 0 : l.url,
           email: E,
-          telephone: null === (n = F) || void 0 === n ? void 0 : n.subtitle,
-          sameAs: p,
-          jobTitle: y.title,
-          worksFor: { "@type": "Organization", name: y.company },
+          telephone: null === (n = D) || void 0 === n ? void 0 : n.subtitle,
+          sameAs: f,
+          jobTitle: u.title,
+          worksFor: { "@type": "Organization", name: u.company },
           address: {
             "@type": "PostalAddress",
-            addressLocality: null === (c = D) || void 0 === c ? void 0 : c.locality,
-            addressRegion: null === (i = D) || void 0 === i ? void 0 : i.region,
-            addressCountry: null === (s = D) || void 0 === s ? void 0 : s.country,
-            postalCode: null === (o = D) || void 0 === o ? void 0 : o.postalCode,
-            streetAddress: null === (m = D) || void 0 === m ? void 0 : m.streetAddress,
+            addressLocality: null === (c = O) || void 0 === c ? void 0 : c.locality,
+            addressRegion: null === (i = O) || void 0 === i ? void 0 : i.region,
+            addressCountry: null === (o = O) || void 0 === o ? void 0 : o.country,
+            postalCode: null === (s = O) || void 0 === s ? void 0 : s.postalCode,
+            streetAddress: null === (m = O) || void 0 === m ? void 0 : m.streetAddress,
           },
-          hasCredential: u,
+          hasCredential: y,
         };
         return r.a.createElement(
-          O.a,
+          z.a,
           null,
-          r.a.createElement("title", null, f.title),
-          r.a.createElement("meta", { name: "description", content: f.description }),
+          r.a.createElement("title", null, A.title),
+          r.a.createElement("meta", { name: "description", content: A.description }),
           r.a.createElement("meta", {
             property: "og:title",
             content:
-              null === f || void 0 === f || null === (d = f.og) || void 0 === d ? void 0 : d.title,
+              null === A || void 0 === A || null === (d = A.og) || void 0 === d ? void 0 : d.title,
           }),
           r.a.createElement("meta", {
             property: "og:type",
             content:
-              null === f || void 0 === f || null === (h = f.og) || void 0 === h ? void 0 : h.type,
+              null === A || void 0 === A || null === (h = A.og) || void 0 === h ? void 0 : h.type,
           }),
           r.a.createElement("meta", {
             property: "og:url",
             content:
-              null === f || void 0 === f || null === (A = f.og) || void 0 === A ? void 0 : A.url,
+              null === A || void 0 === A || null === (p = A.og) || void 0 === p ? void 0 : p.url,
           }),
           r.a.createElement("script", { type: "application/ld+json" }, JSON.stringify(x))
         );
       };
-      const z = (e, t) => {
+      const Q = (e, t) => {
           e.target.style.backgroundColor = t;
         },
-        T = (e) => {
+        q = (e) => {
           e.target.style.backgroundColor = "transparent";
         };
-      class U extends l.Component {
+      class P extends l.Component {
         render() {
           const e = this.props.theme,
-            t = p ? "/splash" : "home";
+            t = f ? "/splash" : "home";
           return r.a.createElement(
-            A.Fade,
+            p.Fade,
             { top: !0, duration: 1e3, distance: "20px" },
-            r.a.createElement(Q, null),
+            r.a.createElement(F, null),
             r.a.createElement(
               "div",
               null,
@@ -883,8 +938,8 @@
                         tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => z(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseEnter: (t) => Q(t, e.highlight),
+                        onMouseOut: (e) => q(e),
                       },
                       "Home"
                     )
@@ -899,8 +954,8 @@
                         tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => z(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseEnter: (t) => Q(t, e.highlight),
+                        onMouseOut: (e) => q(e),
                       },
                       "Education"
                     )
@@ -915,8 +970,8 @@
                         tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => z(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseEnter: (t) => Q(t, e.highlight),
+                        onMouseOut: (e) => q(e),
                       },
                       "Experience"
                     )
@@ -931,10 +986,26 @@
                         tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => z(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseEnter: (t) => Q(t, e.highlight),
+                        onMouseOut: (e) => q(e),
                       },
                       "Projects"
+                    )
+                  ),
+                  r.a.createElement(
+                    "li",
+                    null,
+                    r.a.createElement(
+                      d.c,
+                      {
+                        to: "/beyond",
+                        tag: d.b,
+                        activeStyle: { fontWeight: "bold" },
+                        style: { color: e.text },
+                        onMouseEnter: (t) => Q(t, e.highlight),
+                        onMouseOut: (e) => q(e),
+                      },
+                      "Beyond The Keys"
                     )
                   ),
                   r.a.createElement(
@@ -947,8 +1018,8 @@
                         tag: d.b,
                         activeStyle: { fontWeight: "bold" },
                         style: { color: e.text },
-                        onMouseEnter: (t) => z(t, e.highlight),
-                        onMouseOut: (e) => T(e),
+                        onMouseEnter: (t) => Q(t, e.highlight),
+                        onMouseOut: (e) => q(e),
                       },
                       "Contact Me"
                     )
@@ -959,13 +1030,13 @@
           );
         }
       }
-      var P,
-        G = U,
-        q = (a(82), a(29)),
-        V = (a(83), a(19));
-      const J = V.c.span(
-        P ||
-          (P = Object(q.a)([
+      var U,
+        G = P,
+        V = (a(82), a(29)),
+        J = (a(83), a(20));
+      const X = J.c.span(
+        U ||
+          (U = Object(V.a)([
             "\n  i {\n    background-color: ",
             ";\n  }\n  &:hover i {\n    background-color: ",
             ";\n    transition: 0.3s ease-in;\n  }\n",
@@ -976,11 +1047,11 @@
           return t.text;
         }
       );
-      function X(e) {
+      function W(e) {
         return r.a.createElement(
           "div",
           { className: "social-media-div" },
-          M.map((t, a) =>
+          w.map((t, a) =>
             r.a.createElement(
               "a",
               {
@@ -991,7 +1062,7 @@
                 rel: "noopener noreferrer",
               },
               r.a.createElement(
-                J,
+                X,
                 Object.assign({}, t, e),
                 r.a.createElement("i", { className: "fab ".concat(t.fontAwesomeIcon) })
               )
@@ -1000,7 +1071,7 @@
         );
       }
       a(86);
-      function W(e) {
+      function Y(e) {
         let { text: t, className: a, href: l, newTab: n, theme: c, download: i } = e;
         return r.a.createElement(
           "div",
@@ -1032,7 +1103,7 @@
           )
         );
       }
-      const Y = {
+      const K = {
         skin: { main: "#8D5524", shadow: "#6B4423", midTone: "#7A4A22", highlight: "#A66B3A" },
         hair: { black: "#2D2D2D", darkBrown: "#3D2314", brown: "#5D3A1A" },
         clothing: {
@@ -1044,7 +1115,7 @@
         },
         background: { lightBlue: "#E3F2FD", lightPurple: "#EDE7F6", lightGreen: "#E8F5E9" },
       };
-      class K extends l.Component {
+      class _ extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -1191,15 +1262,15 @@
               d:
                 "M326.54375,190.06386s3.4534,28.7784-9.20909,31.08068,11.51136,41.4409,11.51136,41.4409l57.55681,6.90682-13.81364-46.04545s-9.20909-3.45341-3.4534-26.47613S326.54375,190.06386,326.54375,190.06386Z",
               transform: "translate(-244.40605 -115.15866)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("polygon", {
               points: "47.028 569.318 51.633 632.631 75.806 632.631 68.9 569.318 47.028 569.318",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("polygon", {
               points: "224.303 449.6 227.756 502.552 254.233 491.041 243.872 447.298 224.303 449.6",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1217,7 +1288,7 @@
               cx: "108.03826",
               cy: "59.36486",
               r: "34.53409",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1241,7 +1312,7 @@
               d:
                 "M406.54771,357.55418l-27.62727,51.80113s-40.28976,41.4409-17.267,46.04545,35.68522-37.9875,35.68522-37.9875l29.92955-42.592Z",
               transform: "translate(-244.40605 -115.15866)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1265,7 +1336,7 @@
               d:
                 "M254.59773,380.5769l48.34772,74.82386s29.92954,37.98749,39.13863,20.72045-32.23181-46.04545-32.23181-46.04545L278.77159,372.519Z",
               transform: "translate(-244.40605 -115.15866)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1442,11 +1513,11 @@
           );
         }
       }
-      var _ = K;
-      function $(e) {
+      var $ = _;
+      function ee(e) {
         const t = e.theme;
         return r.a.createElement(
-          A.Fade,
+          p.Fade,
           { bottom: !0, duration: 2e3, distance: "40px" },
           r.a.createElement(
             "div",
@@ -1465,27 +1536,27 @@
                     { className: "greeting-text", style: { color: t.text } },
                     g
                   ),
-                  y &&
+                  u &&
                     r.a.createElement(
                       "h2",
                       { className: "greeting-nickname", style: { color: t.text } },
                       "( ",
-                      y,
+                      u,
                       " )"
                     ),
                   r.a.createElement(
                     "p",
                     { className: "greeting-text-p subTitle", style: { color: t.secondaryText } },
-                    u
+                    y
                   ),
-                  r.a.createElement(X, { theme: t }),
+                  r.a.createElement(W, { theme: t }),
                   r.a.createElement(
                     "div",
                     { className: "portfolio-repo-btn-div" },
-                    r.a.createElement(W, {
+                    r.a.createElement(Y, {
                       text: "\u2b50 Star Me On Github",
                       newTab: !0,
-                      href: b,
+                      href: v,
                       theme: t,
                       className: "portfolio-repo-btn",
                     })
@@ -1495,16 +1566,16 @@
               r.a.createElement(
                 "div",
                 { className: "greeting-image-div" },
-                r.a.createElement(_, { theme: t })
+                r.a.createElement($, { theme: t })
               )
             )
           )
         );
       }
       a(45), a(87);
-      var ee = a(180),
-        te = a(178);
-      class ae extends r.a.Component {
+      var te = a(183),
+        ae = a(181);
+      class le extends r.a.Component {
         render() {
           return r.a.createElement(
             "div",
@@ -1517,12 +1588,12 @@
                 { className: "dev-icons" },
                 this.props.logos.map((e) =>
                   r.a.createElement(
-                    ee.a,
+                    te.a,
                     {
                       key: e.skillName,
                       placement: "top",
                       overlay: r.a.createElement(
-                        te.a,
+                        ae.a,
                         { id: "tooltip-top" },
                         r.a.createElement("strong", null, e.skillName)
                       ),
@@ -1553,8 +1624,8 @@
           );
         }
       }
-      var le = ae;
-      class re extends l.Component {
+      var re = le;
+      class ne extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -1730,7 +1801,7 @@
               d:
                 "M971.62443,175.593s-4.08028,30.31061,6.41186,33.808,7.57765,30.31062,7.57765,30.31062l-31.47641,23.89875-27.979,2.33159-6.99476-36.13958L923.244,220.476s15.73821-18.65268,4.66318-37.88826S971.62443,175.593,971.62443,175.593Z",
               transform: "translate(-40 -34.59967)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1788,7 +1859,7 @@
               cx: "904.51974",
               cy: "136.03869",
               r: "36.13958",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1812,7 +1883,7 @@
               d:
                 "M1059.64179,395.92783S1042.1549,428.57,1039.82331,434.399s-18.65269,45.46593-41.96854,36.72248,22.733-51.29489,22.733-51.29489l10.49213-35.55668S1058.476,378.44094,1059.64179,395.92783Z",
               transform: "translate(-40 -34.59967)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1917,7 +1988,7 @@
               d:
                 "M764.3076,212.28192c10.62848.46211,18.52575,10.10069,17.376,20.67691-1.04159,9.58175-4.884,21.50465-16.98745,26.08434-21.56716,8.16055-20.40137-37.88827-16.3211-39.637C751.09528,218.24042,755.36985,211.89333,764.3076,212.28192Z",
               transform: "translate(-40 -34.59967)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -1928,7 +1999,7 @@
           );
         }
       }
-      class ne extends l.Component {
+      class ce extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -2130,7 +2201,7 @@
               d:
                 "M241.91491,314.67894s30.77895-14.70576,30.28646-2.00541-31.02521,21.05594-31.02521,21.05594Z",
               transform: "translate(-50.625 -133.8148)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2154,7 +2225,7 @@
               d:
                 "M127.58939,187.8209s-16.922,26.37263-23.51842,32.47656,11.9616,19.543,11.9616,19.543l33.2153,4.46789s-.41786-30.2249,1.29281-33.33842S127.58939,187.8209,127.58939,187.8209Z",
               transform: "translate(-50.625 -133.8148)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2184,7 +2255,7 @@
               d:
                 "M145.764,403.451s33.65163,5.58313,25.971,15.7098-37.49194-.51979-37.49194-.51979Z",
               transform: "translate(-50.625 -133.8148)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2202,7 +2273,7 @@
               cx: "100.65442",
               cy: "58.10462",
               r: "34.95222",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2225,7 +2296,7 @@
           );
         }
       }
-      class ce extends l.Component {
+      class ie extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -2326,7 +2397,7 @@
             r.a.createElement("path", {
               d:
                 "M298.5,290.83h22a16.76,16.76,0,0,1,16.76,16.76v46.33a27.76,27.76,0,0,1-27.76,27.76h0a27.76,27.76,0,0,1-27.76-27.76V307.59A16.76,16.76,0,0,1,298.5,290.83Z",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d: "M449.33,453.67a116.17,116.17,0,0,0,55.52,0V414.13H449.33Z",
@@ -2338,7 +2409,7 @@
               cx: "309.5",
               cy: "217.64",
               r: "116.09",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2363,14 +2434,14 @@
               cy: "217.64",
               rx: "10.1",
               ry: "18.93",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("ellipse", {
               cx: "194.67",
               cy: "217.64",
               rx: "10.1",
               ry: "18.93",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2398,13 +2469,13 @@
               cx: "404.08",
               cy: "619.68",
               r: "27.76",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("circle", {
               cx: "214.91",
               cy: "619.68",
               r: "27.76",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement(
               "g",
@@ -2566,7 +2637,7 @@
           );
         }
       }
-      class ie extends l.Component {
+      class oe extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -2704,7 +2775,7 @@
             }),
             r.a.createElement("polygon", {
               points: "55.12 454.7 109.58 338.79 328.95 355.9 349.17 454.7 55.12 454.7",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("polygon", {
               points: "55.12 464.81 55.12 454.7 349.17 454.7 349.17 469.48 55.12 464.81",
@@ -2778,7 +2849,7 @@
               d:
                 "M239.09,556.44s-5.19,8.17-19.89,4.41-34.15,10.46-28.6,17.48,41.34-2,41.34-2l13.73-2.78-.9-11.43Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2812,7 +2883,7 @@
               d:
                 "M248,590.66l-7.7-.15-9-.19S188.8,593.59,189.63,580s33.52-18.36,38.07-14.46c3.45,2.95,11.43,5.33,15.07,6.3,1.16.31,1.87.48,1.87.48Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d: "M248,590.66l-7.7-.15c-3.07-10.55.49-16.36,2.51-18.64,1.16.31,1.87.48,1.87.48Z",
@@ -2828,7 +2899,7 @@
               d:
                 "M350.09,489.28l-9.48,18s-1.45-18.23-5.67-26.82c-1.08-2.2-2.34-3.76-3.81-4.23-4-1.26,19-26.47,19-26.47.77.16,5.17,3,10.56,6.67,5.93,4,13.07,8.88,17.87,12C387.67,474.24,350.09,489.28,350.09,489.28Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -2903,7 +2974,7 @@
             r.a.createElement("path", {
               d: "M361.85,446.79a33.66,33.66,0,1,1-33.66-33.66A33.59,33.59,0,0,1,361.85,446.79Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d: "M341.1,496.79s-7,8.5-5.88,14.06h8.49l6.21-7Z",
@@ -3143,7 +3214,7 @@
             }),
             r.a.createElement("polygon", {
               points: "611.46 376.3 733.18 353.14 1132.19 379.27 1038.97 407.17 611.46 376.3",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("polygon", {
               points:
@@ -3336,18 +3407,18 @@
               d:
                 "M769,455.7a23.32,23.32,0,0,0-3.84,5.94c-.15.33-.3.65-.44,1-4.42,10-5.92,24.15-5.92,24.15s-2.74-1.23-6.62-3.15c-7.23-3.58-18.39-9.54-22.9-14.29-2-2.15-2.72-4.05-1.06-5.38.36-.29.73-.62,1.1-1a31.8,31.8,0,0,0,3.49-4.14c1.44-2,2.86-4.23,4.2-6.52.79-1.34,1.54-2.69,2.24-4l.28-.52c3-5.69,5.19-10.55,5.19-10.55s1,.32,2.62.89C754.81,440.8,775.38,448.91,769,455.7Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
                 "M905.88,687.39s1.22,9.06,2.77,18.62l-3.55-.18q-14.24-.74-28.51-1.89c-5.4-12.51-11-27.36-11-27.59s-.17-5.12-.36-10.58c-.06-1.92-.13-3.9-.19-5.76h0c-.1-2.82-.19-5.36-.24-6.94,0-1.08-.06-1.72-.06-1.72s-5.14.9-9.76,1.53l-2.05.27c-1.06.13-2,.23-2.85.29a7.33,7.33,0,0,1-2.21,0c-1.58-.61,1.7-16,1.7-16l8.16-19.75,2.28-5.5,1-.25c.49-.12,1.15-.26,1.94-.41,7.79-1.43,28.6-3.25,32.13,17.29,4.37,25.37,5,31.07,5,31.07Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d: "M913.77,728H911.3a0,0,0,0,1,0,0h2.44Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -3364,7 +3435,7 @@
               d:
                 "M905.1,705.83q-14.24-.74-28.51-1.89l-3.6-.29-1.59-.13c-4.48-10.81-8.46-21.38-8.46-21.57s-.17-5.12-.36-10.58c-.23-6.82-.49-14.42-.49-14.42l-.67.11-.28.05-.12,0-.24,0-1.61.27-.88.14c-1.59.26-3.51.55-5.39.82l-.42.06-1.1.14-1,.12h0c-.77.1-1.5.18-2.16.24l-.81.07a7,7,0,0,1-2.21,0c-1.58-.61,1.7-16,1.7-16l10.44-25.25.36-.1c.55-.14,1.71-.41,3.28-.68.59-.1,1.24-.2,1.94-.29,9.06-1.16,26.3-.83,29.49,17.7,4.37,25.37,5,31.07,5,31.07L903.24,693S904,698.7,905.1,705.83Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -3414,7 +3485,7 @@
               d:
                 "M811,538.11s25.73-1.09,28.28-1.94,25.12-3.76,25.12-3.76,66.88,4.73,47.83,10.44-44.91,3.27-44.91,3.27-25.25,6.56-29.13,10-32.53,3.52-32.53,3.52Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -3450,7 +3521,7 @@
               d:
                 "M795,431.55a30.1,30.1,0,0,1-29.82,30.09h-.29a30.05,30.05,0,0,1-22.58-10.2,30.66,30.66,0,0,1-2.76-3.65A30.11,30.11,0,1,1,795,431.55Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -3503,7 +3574,7 @@
               d:
                 "M913.19,550.13c-19.06,5.7-44.91,3.28-44.91,3.28s-25.25,6.55-29.13,10c-2.5,2.19-15.27,3-24,3.33-4.85.18-8.48.19-8.48.19L812,545.4l3.08-.14c6.91-.32,23.2-1.14,25.2-1.81,2.55-.85,25.12-3.76,25.12-3.76S932.24,544.42,913.19,550.13Z",
               transform: "translate(-17.96 -172.03)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -3705,25 +3776,25 @@
       }
       function se(e) {
         return "DataScienceImg" === e.fileName
-          ? r.a.createElement(re, { theme: e.theme })
-          : "FullStackImg" === e.fileName
           ? r.a.createElement(ne, { theme: e.theme })
-          : "CloudInfraImg" === e.fileName
+          : "FullStackImg" === e.fileName
           ? r.a.createElement(ce, { theme: e.theme })
-          : r.a.createElement(ie, { theme: e.theme });
+          : "CloudInfraImg" === e.fileName
+          ? r.a.createElement(ie, { theme: e.theme })
+          : r.a.createElement(oe, { theme: e.theme });
       }
-      class oe extends l.Component {
+      class me extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
             "div",
             null,
-            w.data.map((t, a) =>
+            M.data.map((t, a) =>
               r.a.createElement(
                 "div",
                 { key: a, className: "skills-main-div" },
                 r.a.createElement(
-                  A.Fade,
+                  p.Fade,
                   { left: !0, duration: 2e3 },
                   r.a.createElement(
                     "div",
@@ -3735,7 +3806,7 @@
                   "div",
                   { className: "skills-text-div" },
                   r.a.createElement(
-                    A.Fade,
+                    p.Fade,
                     { right: !0, duration: 1e3 },
                     r.a.createElement(
                       "h1",
@@ -3744,12 +3815,12 @@
                     )
                   ),
                   r.a.createElement(
-                    A.Fade,
+                    p.Fade,
                     { right: !0, duration: 1500 },
-                    r.a.createElement(le, { logos: t.softwareSkills })
+                    r.a.createElement(re, { logos: t.softwareSkills })
                   ),
                   r.a.createElement(
-                    A.Fade,
+                    p.Fade,
                     { right: !0, duration: 2e3 },
                     r.a.createElement(
                       "div",
@@ -3773,8 +3844,8 @@
           );
         }
       }
-      var me = oe;
-      function de(e) {
+      var de = me;
+      function he(e) {
         const t = e.theme;
         return r.a.createElement(
           "div",
@@ -3783,7 +3854,7 @@
             "div",
             { className: "skills-header-div" },
             r.a.createElement(
-              A.Fade,
+              p.Fade,
               { bottom: !0, duration: 2e3, distance: "20px" },
               r.a.createElement(
                 "h1",
@@ -3792,16 +3863,16 @@
               )
             )
           ),
-          r.a.createElement(me, { theme: t })
+          r.a.createElement(de, { theme: t })
         );
       }
       a(89);
-      function he(e) {
+      function pe(e) {
         return r.a.createElement(
           "div",
           { className: "footer-div" },
           r.a.createElement(
-            A.Fade,
+            p.Fade,
             null,
             r.a.createElement(
               "p",
@@ -3815,7 +3886,7 @@
         );
       }
       a(90);
-      function Ae(e) {
+      function fe(e) {
         let { theme: t } = e;
         window.onscroll = function () {
           document.body.scrollTop > 30 || document.documentElement.scrollTop > 30
@@ -3853,22 +3924,22 @@
           })
         );
       }
-      class pe extends l.Component {
+      class Ae extends l.Component {
         render() {
           return r.a.createElement(
             "div",
             null,
             r.a.createElement(G, { theme: this.props.theme }),
-            r.a.createElement($, { theme: this.props.theme }),
-            r.a.createElement(de, { theme: this.props.theme }),
+            r.a.createElement(ee, { theme: this.props.theme }),
             r.a.createElement(he, { theme: this.props.theme }),
-            r.a.createElement(Ae, { theme: this.props.theme })
+            r.a.createElement(pe, { theme: this.props.theme }),
+            r.a.createElement(fe, { theme: this.props.theme })
           );
         }
       }
-      var fe = pe;
+      var ge = Ae;
       a(91), a(92);
-      class ge extends r.a.Component {
+      class Ee extends r.a.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -3896,7 +3967,7 @@
           );
         }
       }
-      var Ee = ge;
+      var ue = Ee;
       function ye(e) {
         return r.a.createElement(
           "div",
@@ -3904,11 +3975,11 @@
           r.a.createElement(
             "div",
             { className: "screen", style: { backgroundColor: e.theme.splashBg } },
-            r.a.createElement(Ee, { id: "logo", theme: e.theme })
+            r.a.createElement(ue, { id: "logo", theme: e.theme })
           )
         );
       }
-      class ue extends l.Component {
+      class xe extends l.Component {
         constructor(e) {
           super(e), (this.state = { redirect: !1 });
         }
@@ -3924,7 +3995,7 @@
             : r.a.createElement(ye, { theme: this.props.theme });
         }
       }
-      var xe = ue;
+      var ve = xe;
       a(93), a(94);
       class be extends l.Component {
         render() {
@@ -3935,7 +4006,7 @@
             { className: "degree-card" },
             e.logo_path &&
               r.a.createElement(
-                A.Flip,
+                p.Flip,
                 { left: !0, duration: 2e3 },
                 r.a.createElement(
                   "div",
@@ -3948,7 +4019,7 @@
                 )
               ),
             r.a.createElement(
-              A.Fade,
+              p.Fade,
               { right: !0, duration: 2e3, distance: "40px" },
               r.a.createElement(
                 "div",
@@ -4010,7 +4081,7 @@
           );
         }
       }
-      var ve = be;
+      var we = be;
       class Me extends l.Component {
         render() {
           const e = this.props.theme;
@@ -4021,7 +4092,7 @@
               "div",
               { className: "educations-header-div" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 2e3, distance: "20px" },
                 r.a.createElement(
                   "h1",
@@ -4033,19 +4104,19 @@
             r.a.createElement(
               "div",
               { className: "educations-body-div" },
-              k.degrees.map((t) => r.a.createElement(ve, { degree: t, theme: e }))
+              k.degrees.map((t) => r.a.createElement(we, { degree: t, theme: e }))
             )
           );
         }
       }
-      var we = Me;
+      var Ce = Me;
       a(141), a(142);
-      class Ce extends l.Component {
+      class ke extends l.Component {
         render() {
           const e = this.props.certificate,
             t = this.props.theme;
           return r.a.createElement(
-            A.Fade,
+            p.Fade,
             { bottom: !0, duration: 2e3, distance: "20px" },
             r.a.createElement(
               "div",
@@ -4095,7 +4166,7 @@
           );
         }
       }
-      var ke = Ce;
+      var Ne = ke;
       class Ze extends l.Component {
         render() {
           const e = this.props.theme;
@@ -4106,7 +4177,7 @@
               "div",
               { className: "certs-header-div" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 2e3, distance: "20px" },
                 r.a.createElement(
                   "h1",
@@ -4118,14 +4189,14 @@
             r.a.createElement(
               "div",
               { className: "certs-body-div" },
-              Z.certifications.map((t) => r.a.createElement(ke, { certificate: t, theme: e }))
+              N.certifications.map((t) => r.a.createElement(Ne, { certificate: t, theme: e }))
             )
           );
         }
       }
-      var Ne = Ze;
+      var Se = Ze;
       a(143);
-      class Se extends r.a.Component {
+      class Ie extends r.a.Component {
         render() {
           return r.a.createElement(
             "div",
@@ -4135,13 +4206,13 @@
               { className: "dev-icons" },
               this.props.logos.map((e) =>
                 r.a.createElement(
-                  ee.a,
+                  te.a,
                   {
                     key: e.siteName,
                     placement: "top",
                     style: { marginBottom: "5px" },
                     overlay: r.a.createElement(
-                      te.a,
+                      ae.a,
                       { id: "tooltip-top" },
                       r.a.createElement("strong", null, e.siteName)
                     ),
@@ -4175,8 +4246,8 @@
           );
         }
       }
-      var Ie = Se;
-      class Re extends l.Component {
+      var Re = Ie;
+      class Be extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -4471,7 +4542,7 @@
         }
       }
       a(144);
-      class Be extends l.Component {
+      class He extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -4482,7 +4553,7 @@
               "div",
               { className: "basic-education" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 2e3, distance: "40px" },
                 r.a.createElement(
                   "div",
@@ -4490,7 +4561,7 @@
                   r.a.createElement(
                     "div",
                     { className: "heading-img-div" },
-                    r.a.createElement(Re, { theme: e })
+                    r.a.createElement(Be, { theme: e })
                   ),
                   r.a.createElement(
                     "div",
@@ -4505,23 +4576,23 @@
                       { className: "heading-sub-text", style: { color: e.text } },
                       "Basic Qualification and Certifcations"
                     ),
-                    r.a.createElement(Ie, { logos: C.competitiveSites })
+                    r.a.createElement(Re, { logos: C.competitiveSites })
                   )
                 )
               ),
-              r.a.createElement(we, { theme: this.props.theme }),
-              Z.certifications.length > 0
-                ? r.a.createElement(Ne, { theme: this.props.theme })
+              r.a.createElement(Ce, { theme: this.props.theme }),
+              N.certifications.length > 0
+                ? r.a.createElement(Se, { theme: this.props.theme })
                 : null
             ),
-            r.a.createElement(he, { theme: this.props.theme }),
-            r.a.createElement(Ae, { theme: this.props.theme })
+            r.a.createElement(pe, { theme: this.props.theme }),
+            r.a.createElement(fe, { theme: this.props.theme })
           );
         }
       }
-      var He = Be;
+      var je = He;
       a(145);
-      class je extends l.Component {
+      class Le extends l.Component {
         render() {
           var e;
           const t = this.props.experience,
@@ -4532,7 +4603,7 @@
             "div",
             { className: "experience-list-item", style: { marginTop: 0 === l ? 30 : 50 } },
             r.a.createElement(
-              A.Fade,
+              p.Fade,
               { left: !0, duration: 2e3, distance: "40px" },
               r.a.createElement(
                 "div",
@@ -4588,7 +4659,7 @@
                 })
             ),
             r.a.createElement(
-              A.Fade,
+              p.Fade,
               { right: !0, duration: 2e3, distance: "40px" },
               r.a.createElement(
                 "div",
@@ -4701,10 +4772,10 @@
           );
         }
       }
-      var Le = je,
-        De = (a(146), a(184)),
-        Fe = a(182);
-      class Oe extends l.Component {
+      var Oe = Le,
+        De = (a(146), a(187)),
+        Te = a(185);
+      class ze extends l.Component {
         render() {
           const e = this.props.theme,
             t = this.props.sections.map((e, t) => String(t));
@@ -4716,7 +4787,7 @@
               { initialState: { expanded: t } },
               this.props.sections.map((t, a) =>
                 r.a.createElement(
-                  Fe.a,
+                  Te.a,
                   {
                     className: "accord-panel",
                     title: t.title,
@@ -4738,7 +4809,7 @@
                     },
                   },
                   t.experiences.map((a, l) =>
-                    r.a.createElement(Le, {
+                    r.a.createElement(Oe, {
                       index: l,
                       totalCards: t.experiences.length,
                       experience: a,
@@ -4751,9 +4822,9 @@
           );
         }
       }
-      var Qe = Oe;
+      var Fe = ze;
       a(148);
-      class ze extends l.Component {
+      class Qe extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5025,13 +5096,13 @@
               d:
                 "M431.06,222.25a8.63,8.63,0,0,0-1.15,2.94c-.25,2.05,1,3.93,2,5.72a31.15,31.15,0,0,1,2.93,7.3,12,12,0,0,1,.43,4.87,11.75,11.75,0,0,1-1.3,3.5c-1.93,3.72-4.79,7.16-8.68,8.71a15.29,15.29,0,0,1-9.39.38,28.51,28.51,0,0,1-8.59-4.08,26.11,26.11,0,0,1-5.88-5.1,35.25,35.25,0,0,1-4.06-7c-2.08-4.35-4.19-9-3.81-13.77a4.6,4.6,0,0,1,.24-1.27,6.83,6.83,0,0,1,1.34-2,26.1,26.1,0,0,0,6.12-18.15l14.57,3.31c3.21.73,6.42,1.46,9.59,2.37,2.6.75,6.6,1.79,8.29,4.11S432.21,220.13,431.06,222.25Z",
               transform: "translate(-53 -70)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("circle", {
               cx: "370.26",
               cy: "123.29",
               r: "26.48",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5079,7 +5150,7 @@
               d:
                 "M370.06,405.51c.3.22.64.52.56.88s-.37.45-.63.6a7.76,7.76,0,0,0-2.88,3.9,108.85,108.85,0,0,0-4.34,11.49,50.37,50.37,0,0,0-7.84-9.15c-2.28-2.1-4.83-4.09-6.05-6.93,0-.08,5.24-3.95,5.72-4.37,1.47-1.31,3.32-4.94,4.84-5.74,1.72-.9,3.36,2.63,4.67,4.05A39.72,39.72,0,0,0,370.06,405.51Z",
               transform: "translate(-53 -70)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5091,7 +5162,7 @@
               d:
                 "M621.14,204.8a131.36,131.36,0,0,1,4,16.73c.72,4.24,1.14,8.95-1.29,12.49,9.26-13.93,18.93-28.28,33-37.27A30.13,30.13,0,0,1,649,173.51c.08-.84-11.55,3.55-12.44,4.05-4.08,2.27-7.82,5.09-11.8,7.52-2.06,1.25-10.64,4.21-10.72,6,0,1.15,3.41,4.67,4.05,5.88A45.67,45.67,0,0,1,621.14,204.8Z",
               transform: "translate(-53 -70)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5127,7 +5198,7 @@
               cx: "575.55",
               cy: "94.77",
               r: "36.13",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5145,7 +5216,7 @@
               d:
                 "M641.91,381.22a98,98,0,0,1-13.27-.42c-3.27-.32-6.61-.8-9.8,0a10.2,10.2,0,0,0-3.81,1.87,2.87,2.87,0,0,0,1.63,5l3.42.3c2.17.19,4.43.41,6.12,2a3.82,3.82,0,0,1,1.24,2.41c.21,2.33-1.81,3.6-3.62,4.57a28.69,28.69,0,0,0-7.06,4.7,9.78,9.78,0,0,0-2.93,6,1.16,1.16,0,0,0,1.7,1.07c4-2,6.61-7.93,11-6.94a17.82,17.82,0,0,0-9.66,7.43,4.48,4.48,0,0,0,6,6.33,19.78,19.78,0,0,0,1.88-1.25,46.21,46.21,0,0,0,7.93-8.24c-3.2,6.75-6.44,14.65-2.76,21.36a2.13,2.13,0,0,0,2,1.18c1.16-.12,1.5-1.21,1.69-2.17.6-3.09.75-6.35,2.27-9.1,3.52-6.38,12.2-7,18.81-10.11,7.93-3.68,13.36-11.6,15.55-20.06a15.42,15.42,0,0,0,.39-7.62c-1.47-5.69-8.49-7-13-4.25C652.1,378.79,648.89,381,641.91,381.22Z",
               transform: "translate(-53 -70)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5186,7 +5257,7 @@
           );
         }
       }
-      class Te extends l.Component {
+      class qe extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5197,7 +5268,7 @@
               "div",
               { className: "basic-experience" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 2e3, distance: "40px" },
                 r.a.createElement(
                   "div",
@@ -5205,7 +5276,7 @@
                   r.a.createElement(
                     "div",
                     { className: "experience-heading-img-div" },
-                    r.a.createElement(ze, { theme: e })
+                    r.a.createElement(Qe, { theme: e })
                   ),
                   r.a.createElement(
                     "div",
@@ -5213,12 +5284,12 @@
                     r.a.createElement(
                       "h1",
                       { className: "experience-heading-text", style: { color: e.text } },
-                      N.title
+                      Z.title
                     ),
                     r.a.createElement(
                       "h3",
                       { className: "experience-heading-sub-text", style: { color: e.text } },
-                      N.subtitle
+                      Z.subtitle
                     ),
                     r.a.createElement(
                       "p",
@@ -5226,20 +5297,20 @@
                         className: "experience-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      N.description
+                      Z.description
                     )
                   )
                 )
               )
             ),
-            r.a.createElement(Qe, { sections: N.sections, theme: e }),
-            r.a.createElement(he, { theme: this.props.theme, onToggle: this.props.onToggle }),
-            r.a.createElement(Ae, { theme: this.props.theme })
+            r.a.createElement(Fe, { sections: Z.sections, theme: e }),
+            r.a.createElement(pe, { theme: this.props.theme, onToggle: this.props.onToggle }),
+            r.a.createElement(fe, { theme: this.props.theme })
           );
         }
       }
-      var Ue = Te;
-      class Pe extends l.Component {
+      var Pe = qe;
+      class Ue extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5429,7 +5500,7 @@
               d:
                 "M792.56281,219.0309s18.90356,24.22018,16.54061,41.35153S848.092,236.753,848.092,236.753s-14.17767-29.53681-6.4981-43.71448S792.56281,219.0309,792.56281,219.0309Z",
               transform: "translate(-69.5 -78.57247)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5441,7 +5512,7 @@
               d:
                 "M816.783,739.46945s-9.45177,15.35914-11.224,15.94988,8.861,21.85723,8.861,21.85723L839.231,769.597l13.58693-11.224-2.95368-15.35914Z",
               transform: "translate(-69.5 -78.57247)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5465,7 +5536,7 @@
               cx: "739.60342",
               cy: "110.33089",
               r: "38.98859",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5477,7 +5548,7 @@
               d:
                 "M792.56281,412.79236l-32.49049,48.44036s-34.26269,31.309-21.85723,45.48669S783.111,465.36788,783.111,465.36788l35.44417-40.17006Z",
               transform: "translate(-69.5 -78.57247)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -5674,7 +5745,7 @@
               d:
                 "M812.98846,307.62988c-.601,5.35454-4.68512,9.66782-6.19838,14.83911-2.27768,7.7835,1.66077,16.13589,7.04821,22.19775a49.15912,49.15912,0,0,0,34.23364,16.25457,14.60026,14.60026,0,0,0,5.66011-.61688,12.11641,12.11641,0,0,0,4.30628-2.94292c4.05725-4.07387,6.23518-9.71852,7.10314-15.40222s.53065-11.47415.19125-17.21371a9.72062,9.72062,0,0,0-.636-3.472,8.89613,8.89613,0,0,0-2.23473-2.74725,52.06975,52.06975,0,0,0-9.58988-6.96645,11.00876,11.00876,0,0,1-4.01838-3.07487,9.93708,9.93708,0,0,1-1.24216-3.68133l-1.05945-5.39888a10.60905,10.60905,0,0,0-1.55586-4.37644c-1.8716-2.52476-5.4517-2.86835-8.5921-2.99154L824.899,291.5855c-3.57876-.14039-8.29422-1.16664-11.78788-.46381-3.26239.65631-2.17872,3.66262-1.58611,6.4A46.26659,46.26659,0,0,1,812.98846,307.62988Z",
               transform: "translate(-93.27537 -144.85931)",
-              fill: Y.skin.shadow,
+              fill: K.skin.shadow,
             }),
             r.a.createElement("path", {
               d:
@@ -5722,7 +5793,7 @@
               cx: "732.13079",
               cy: "134.92476",
               r: "25.93155",
-              fill: Y.skin.shadow,
+              fill: K.skin.shadow,
             }),
             r.a.createElement("path", {
               d:
@@ -5734,19 +5805,19 @@
               d:
                 "M728.73036,365.58731a30.61494,30.61494,0,0,1-5.45448,2.80657,17.92956,17.92956,0,0,0-5.225,2.53569,8.18837,8.18837,0,0,0-1.81691,2.24485,9.98315,9.98315,0,0,0,9.20559,14.874,20.03948,20.03948,0,0,0,6.80747-2.02969L750.537,378.0931c3.09565-1.34144,6.4396-2.91352,7.90276-5.95353a1.38319,1.38319,0,0,0,.17808-.945,1.56222,1.56222,0,0,0-.75125-.78974,40.867,40.867,0,0,1-10.64992-10.04237c-.75039-1.01881-1.66855-3.42442-2.72925-4.03525C740.616,354.09772,731.82906,363.57634,728.73036,365.58731Z",
               transform: "translate(-93.27537 -144.85931)",
-              fill: Y.skin.shadow,
+              fill: K.skin.shadow,
             }),
             r.a.createElement("path", {
               d:
                 "M924.25781,359.0838l6.74313,7.70291c1.44763,1.65367,2.89681,3.30926,4.21639,5.06681a59.14092,59.14092,0,0,1,7.723,14.54934c1.46575,3.8462,2.6823,7.94307,2.17011,12.02711a29.422,29.422,0,0,1-1.68654,6.11657,76.14173,76.14173,0,0,1-4.582,11.03557,62.86551,62.86551,0,0,1-5.15612,7.72692,180.44049,180.44049,0,0,1-17.09361,19.55227c-2.3053,2.28206-3.27208,5.972-4.27559,9.0567-1.851,5.68971-6.25533,10.12119-10.51445,14.32343a29.23729,29.23729,0,0,1-4.51458,3.885,14.70454,14.70454,0,0,1-8.21614,2.33991,9.01809,9.01809,0,0,1-3.70077-.76608c-2.91461-1.38405-4.39595-4.75441-4.69958-7.96663a16.94606,16.94606,0,0,1,1.41791-8.52067c3.86944-8.57162,13.806-12.286,20.8296-18.54016,4.11852-3.66733,7.268-8.27388,10.37423-12.83053a44.3482,44.3482,0,0,0,5.24664-9.19651c1.56856-4.1853.958-9.14,2.32838-13.39438.57924-1.79831,1.60907-3.42206,2.23191-5.20575s.77965-3.90108-.3099-5.44457a7.91291,7.91291,0,0,0-3.053-2.23512c-4.48682-2.27727-9.512-5.208-10.37073-10.16587a10.89135,10.89135,0,0,1,2.009-7.7643,32.34965,32.34965,0,0,1,5.658-5.9298C918.99542,362.77078,922.29542,360.819,924.25781,359.0838Z",
               transform: "translate(-93.27537 -144.85931)",
-              fill: Y.skin.shadow,
+              fill: K.skin.shadow,
             }),
             r.a.createElement("path", {
               d:
                 "M724.40132,376.33985c-1.19067-2.40519-2.67924-4.85908-5.08185-6.055a9.3643,9.3643,0,0,0-7.38681-.031,27.77387,27.77387,0,0,0-6.48258,3.92l-5.81223,4.2845a14.30746,14.30746,0,0,0-3.45068,3.18519,13.445,13.445,0,0,0-1.79721,4.9309,35.24648,35.24648,0,0,0-.91381,12.19665c.92237,6.55436,4.874,12.27645,9.2235,17.26569,2.71786,3.11763,6.07342,6.26381,10.20727,6.39679,1.78442.0574,3.76894-.64595,4.51109-2.26973a5.66071,5.66071,0,0,0,.4029-2.02241c.44655-7.31074-2.16868-14.45162-5.21837-21.11087a13.53562,13.53562,0,0,1-1.68258-5.67278,1.55649,1.55649,0,0,1,.24848-.95008,1.60487,1.60487,0,0,1,.99225-.48447c4.17406-.82563,11.36369,2.417,14.29187-2.21832C728.35084,384.69994,725.7503,379.06485,724.40132,376.33985Z",
               transform: "translate(-93.27537 -144.85931)",
-              fill: Y.skin.shadow,
+              fill: K.skin.shadow,
             }),
             r.a.createElement("path", {
               d:
@@ -5783,11 +5854,11 @@
         }
       }
       a(149);
-      const qe = j,
-        Ve = L,
-        Je = D,
-        Xe = F;
-      class We extends l.Component {
+      const Ve = j,
+        Je = L,
+        Xe = O,
+        We = D;
+      class Ye extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -5798,7 +5869,7 @@
               "div",
               { className: "basic-contact" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 1e3, distance: "40px" },
                 r.a.createElement(
                   "div",
@@ -5807,7 +5878,7 @@
                     "div",
                     { className: "contact-heading-img-div" },
                     r.a.createElement("img", {
-                      src: a(28)("./".concat(qe.profile_image_path)),
+                      src: a(28)("./".concat(Ve.profile_image_path)),
                       alt: "",
                     })
                   ),
@@ -5817,7 +5888,7 @@
                     r.a.createElement(
                       "h1",
                       { className: "contact-heading-text", style: { color: e.text } },
-                      qe.title
+                      Ve.title
                     ),
                     r.a.createElement(
                       "p",
@@ -5825,13 +5896,13 @@
                         className: "contact-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      qe.description
+                      Ve.description
                     ),
-                    r.a.createElement(X, { theme: e }),
+                    r.a.createElement(W, { theme: e }),
                     r.a.createElement(
                       "div",
                       { className: "resume-btn-div" },
-                      r.a.createElement(W, {
+                      r.a.createElement(Y, {
                         text: "Download My Resume",
                         newTab: !1,
                         href: x,
@@ -5843,7 +5914,7 @@
                 )
               ),
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 1e3, distance: "40px" },
                 r.a.createElement(
                   "div",
@@ -5854,7 +5925,7 @@
                     r.a.createElement(
                       "h1",
                       { className: "blog-heading-text", style: { color: e.text } },
-                      Ve.title
+                      Je.title
                     ),
                     r.a.createElement(
                       "p",
@@ -5862,25 +5933,25 @@
                         className: "blog-header-detail-text subTitle",
                         style: { color: e.secondaryText },
                       },
-                      Ve.subtitle
+                      Je.subtitle
                     ),
                     r.a.createElement(
                       "div",
                       { className: "blogsite-btn-div" },
-                      r.a.createElement(W, {
+                      r.a.createElement(Y, {
                         text: "Read My Blog",
                         newTab: !0,
-                        href: Ve.link,
+                        href: Je.link,
                         theme: e,
                       })
                     ),
-                    Ve.posts &&
-                      Ve.posts.length > 0 &&
+                    Je.posts &&
+                      Je.posts.length > 0 &&
                       r.a.createElement(
                         "div",
                         {
                           className: "blog-posts-container ".concat(
-                            Ve.posts.length >= 4 ? "scrollable" : ""
+                            Je.posts.length >= 4 ? "scrollable" : ""
                           ),
                         },
                         r.a.createElement(
@@ -5891,7 +5962,7 @@
                         r.a.createElement(
                           "div",
                           { className: "blog-posts-list" },
-                          Ve.posts.map((t, a) =>
+                          Je.posts.map((t, a) =>
                             r.a.createElement(
                               "a",
                               {
@@ -5936,12 +6007,12 @@
                   r.a.createElement(
                     "div",
                     { className: "blog-heading-img-div" },
-                    r.a.createElement(Pe, { theme: e })
+                    r.a.createElement(Ue, { theme: e })
                   )
                 )
               ),
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 1e3, distance: "40px" },
                 r.a.createElement(
                   "div",
@@ -5957,19 +6028,6 @@
                     r.a.createElement(
                       "h1",
                       { className: "address-heading-text", style: { color: e.text } },
-                      Je.title
-                    ),
-                    r.a.createElement(
-                      "p",
-                      {
-                        className: "contact-header-detail-text subTitle",
-                        style: { color: e.secondaryText },
-                      },
-                      Je.subtitle
-                    ),
-                    r.a.createElement(
-                      "h1",
-                      { className: "address-heading-text", style: { color: e.text } },
                       Xe.title
                     ),
                     r.a.createElement(
@@ -5981,12 +6039,25 @@
                       Xe.subtitle
                     ),
                     r.a.createElement(
+                      "h1",
+                      { className: "address-heading-text", style: { color: e.text } },
+                      We.title
+                    ),
+                    r.a.createElement(
+                      "p",
+                      {
+                        className: "contact-header-detail-text subTitle",
+                        style: { color: e.secondaryText },
+                      },
+                      We.subtitle
+                    ),
+                    r.a.createElement(
                       "div",
                       { className: "address-btn-div" },
-                      r.a.createElement(W, {
+                      r.a.createElement(Y, {
                         text: "Visit on Google Maps",
                         newTab: !0,
-                        href: Je.location_map_link,
+                        href: Xe.location_map_link,
                         theme: e,
                       })
                     )
@@ -5994,14 +6065,14 @@
                 )
               )
             ),
-            r.a.createElement(he, { theme: this.props.theme, onToggle: this.props.onToggle }),
-            r.a.createElement(Ae, { theme: this.props.theme })
+            r.a.createElement(pe, { theme: this.props.theme, onToggle: this.props.onToggle }),
+            r.a.createElement(fe, { theme: this.props.theme })
           );
         }
       }
-      var Ye = We;
+      var Ke = Ye;
       a(150);
-      class Ke extends l.Component {
+      class _e extends l.Component {
         render() {
           return r.a.createElement(
             "div",
@@ -6014,12 +6085,12 @@
                 { className: "dev-icons-languages" },
                 this.props.logos.map((e) =>
                   r.a.createElement(
-                    ee.a,
+                    te.a,
                     {
                       key: e.name,
                       placement: "top",
                       overlay: r.a.createElement(
-                        te.a,
+                        ae.a,
                         { id: "tooltip-top" },
                         r.a.createElement("strong", null, e.name)
                       ),
@@ -6040,15 +6111,15 @@
           );
         }
       }
-      var _e = Ke;
+      var $e = _e;
       a(151);
-      function $e(e) {
+      function et(e) {
         let { repo: t, theme: a } = e;
         return r.a.createElement(
           "div",
           { className: "repo-card-div", style: { backgroundColor: a.highlight } },
           r.a.createElement(
-            A.Fade,
+            p.Fade,
             { bottom: !0, duration: 2e3, distance: "40px" },
             r.a.createElement(
               "div",
@@ -6094,20 +6165,20 @@
                   "Created on ",
                   t.createdAt.split("T")[0]
                 ),
-                r.a.createElement(_e, { className: "repo-languages", logos: t.languages })
+                r.a.createElement($e, { className: "repo-languages", logos: t.languages })
               )
             )
           )
         );
       }
       a(152);
-      function et(e) {
+      function tt(e) {
         let { pub: t, theme: a } = e;
         return r.a.createElement(
           "div",
           { className: "publication-card-div", style: { backgroundColor: a.highlight } },
           r.a.createElement(
-            A.Fade,
+            p.Fade,
             { bottom: !0, duration: 2e3, distance: "40px" },
             r.a.createElement(
               "div",
@@ -6149,9 +6220,9 @@
           )
         );
       }
-      var tt = a(54);
+      var at = a(54);
       a(153);
-      class at extends l.Component {
+      class lt extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -6630,7 +6701,7 @@
               d:
                 "M879.67,614.53l4,13.19,5.13,29.74,18.83,1.28,5.46-9,5.44-9s3.39-12,5.83-23.64c2.15-10.28,3.56-20.26,1.22-21.34-2.08-1-3.45-4.43-4.34-8.15-.11-.46-.22-.93-.31-1.39a73.86,73.86,0,0,1-1.25-9.56s-39.47-2.05-34,14.23a25.82,25.82,0,0,1,1.49,8.65,21.8,21.8,0,0,1-.14,2.2A18.45,18.45,0,0,1,879.67,614.53Z",
               transform: "translate(-48.1 -96.1)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -6671,7 +6742,7 @@
             r.a.createElement("path", {
               d: "M866.21,570.57a29.35,29.35,0,1,0,.64-6.1A29.35,29.35,0,0,0,866.21,570.57Z",
               transform: "translate(-48.1 -96.1)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -6683,7 +6754,7 @@
               d:
                 "M823.41,669.12s-15.64-22.56-27.3-10.38,4.74,31.91,8.59,31.27,22.17-1.67,22.17-1.67Z",
               transform: "translate(-48.1 -96.1)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("rect", {
               x: "770.4",
@@ -6708,7 +6779,7 @@
               d:
                 "M813.28,673.86c-.12,16.92,34.86,20.5,34.86,20.5l8.94,1.42,4,.64,1.67-16.54s-1.83-.27-4.12-.8c-3.39-.79-7.78-2.16-8.7-4.07C848.4,671.81,813.41,656.94,813.28,673.86Z",
               transform: "translate(-48.1 -96.1)",
-              fill: Y.skin.main,
+              fill: K.skin.main,
             }),
             r.a.createElement("path", {
               d:
@@ -6816,7 +6887,7 @@
           );
         }
       }
-      class lt extends l.Component {
+      class rt extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -6827,7 +6898,7 @@
               "div",
               { className: "basic-projects" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 2e3, distance: "40px" },
                 r.a.createElement(
                   "div",
@@ -6835,7 +6906,7 @@
                   r.a.createElement(
                     "div",
                     { className: "projects-heading-img-div" },
-                    r.a.createElement(at, { theme: e })
+                    r.a.createElement(lt, { theme: e })
                   ),
                   r.a.createElement(
                     "div",
@@ -6860,12 +6931,12 @@
             r.a.createElement(
               "div",
               { className: "repo-cards-div-main" },
-              tt.data.map((t) => r.a.createElement($e, { repo: t, theme: e }))
+              at.data.map((t) => r.a.createElement(et, { repo: t, theme: e }))
             ),
-            r.a.createElement(W, {
+            r.a.createElement(Y, {
               text: "More Projects",
               className: "project-button",
-              href: v,
+              href: b,
               newTab: !0,
               theme: e,
             }),
@@ -6874,7 +6945,7 @@
                   "div",
                   { className: "basic-projects" },
                   r.a.createElement(
-                    A.Fade,
+                    p.Fade,
                     { bottom: !0, duration: 2e3, distance: "40px" },
                     r.a.createElement(
                       "div",
@@ -6903,16 +6974,158 @@
             r.a.createElement(
               "div",
               { className: "repo-cards-div-main" },
-              H.data.map((t) => r.a.createElement(et, { pub: t, theme: e }))
+              H.data.map((t) => r.a.createElement(tt, { pub: t, theme: e }))
             ),
-            r.a.createElement(he, { theme: this.props.theme, onToggle: this.props.onToggle }),
-            r.a.createElement(Ae, { theme: this.props.theme })
+            r.a.createElement(pe, { theme: this.props.theme, onToggle: this.props.onToggle }),
+            r.a.createElement(fe, { theme: this.props.theme })
           );
         }
       }
-      var rt = lt;
+      var nt = rt;
       a(154);
-      class nt extends l.Component {
+      class ct extends l.Component {
+        componentDidMount() {
+          this.props.passion.instagram_url && window.instgrm && window.instgrm.Embeds.process();
+        }
+        componentDidUpdate(e) {
+          this.props.passion.instagram_url &&
+            this.props.passion.instagram_url !== e.passion.instagram_url &&
+            window.instgrm &&
+            window.instgrm.Embeds.process();
+        }
+        extractInstagramId(e) {
+          const t = e.match(/instagram\.com\/(p|reel)\/([A-Za-z0-9_-]+)/);
+          return t ? t[2] : null;
+        }
+        renderMedia() {
+          const { passion: e } = this.props;
+          if (e.instagram_url) {
+            if (this.extractInstagramId(e.instagram_url))
+              return r.a.createElement(
+                "div",
+                { className: "passion-card-instagram" },
+                r.a.createElement(
+                  "blockquote",
+                  {
+                    className: "instagram-media",
+                    "data-instgrm-captioned": !0,
+                    "data-instgrm-permalink": e.instagram_url,
+                    "data-instgrm-version": "14",
+                  },
+                  r.a.createElement(
+                    "a",
+                    { href: e.instagram_url, target: "_blank", rel: "noopener noreferrer" },
+                    "View on Instagram"
+                  )
+                )
+              );
+          }
+          return r.a.createElement(
+            "div",
+            { className: "passion-card-header", style: { borderTopColor: e.color_code } },
+            r.a.createElement("img", {
+              className: "passion-card-image",
+              src: "./" + e.image_path,
+              alt: e.name,
+            }),
+            r.a.createElement("div", {
+              className: "passion-card-overlay",
+              style: {
+                background: "linear-gradient(180deg, transparent 30%, ".concat(
+                  e.color_code,
+                  "cc 100%)"
+                ),
+              },
+            })
+          );
+        }
+        render() {
+          const { passion: e, theme: t } = this.props;
+          return r.a.createElement(
+            p.Fade,
+            { bottom: !0, duration: 2e3, distance: "40px" },
+            r.a.createElement(
+              "div",
+              { className: "passion-card" },
+              r.a.createElement(
+                "div",
+                { className: "passion-card-content" },
+                this.renderMedia(),
+                r.a.createElement(
+                  "div",
+                  { className: "passion-card-body" },
+                  r.a.createElement(
+                    "h2",
+                    { className: "passion-card-title", style: { color: t.text } },
+                    e.name
+                  ),
+                  r.a.createElement(
+                    "p",
+                    { className: "passion-card-description", style: { color: t.secondaryText } },
+                    e.description
+                  )
+                )
+              )
+            )
+          );
+        }
+      }
+      var it = ct;
+      a(155);
+      class ot extends l.Component {
+        render() {
+          const e = this.props.theme;
+          return r.a.createElement(
+            "div",
+            { className: "beyond-main" },
+            r.a.createElement(G, { theme: e }),
+            r.a.createElement(
+              "div",
+              { className: "basic-beyond" },
+              r.a.createElement(
+                p.Fade,
+                { bottom: !0, duration: 2e3, distance: "40px" },
+                r.a.createElement(
+                  "div",
+                  { className: "beyond-heading-div" },
+                  r.a.createElement(
+                    "div",
+                    { className: "beyond-heading-text-div" },
+                    r.a.createElement(
+                      "h1",
+                      { className: "beyond-heading-text", style: { color: e.text } },
+                      T.title
+                    ),
+                    r.a.createElement(
+                      "h3",
+                      { className: "beyond-heading-sub-text", style: { color: e.secondaryText } },
+                      T.subtitle
+                    ),
+                    r.a.createElement(
+                      "p",
+                      {
+                        className: "beyond-header-detail-text subTitle",
+                        style: { color: e.secondaryText },
+                      },
+                      T.description
+                    )
+                  )
+                )
+              ),
+              r.a.createElement(
+                "div",
+                { className: "passions-cards-div" },
+                T.passions.map((t) => r.a.createElement(it, { key: t.id, passion: t, theme: e }))
+              )
+            ),
+            r.a.createElement(pe, { theme: this.props.theme }),
+            r.a.createElement(fe, { theme: this.props.theme })
+          );
+        }
+      }
+      var st = ot;
+      a(156);
+      class mt extends l.Component {
         render() {
           const e = this.props.theme;
           return r.a.createElement(
@@ -6923,7 +7136,7 @@
               "div",
               { className: "error-class" },
               r.a.createElement(
-                A.Fade,
+                p.Fade,
                 { bottom: !0, duration: 2e3, distance: "40px" },
                 r.a.createElement("h1", null, "Woops"),
                 r.a.createElement("h1", { className: "error-404" }, "404"),
@@ -6944,12 +7157,12 @@
                 )
               )
             ),
-            r.a.createElement(he, { theme: this.props.theme }),
-            r.a.createElement(Ae, { theme: this.props.theme })
+            r.a.createElement(pe, { theme: this.props.theme }),
+            r.a.createElement(fe, { theme: this.props.theme })
           );
         }
       }
-      class ct extends l.Component {
+      class dt extends l.Component {
         render() {
           return r.a.createElement(
             d.a,
@@ -6961,52 +7174,57 @@
                 path: "/",
                 exact: !0,
                 render: (e) =>
-                  p
-                    ? r.a.createElement(xe, Object.assign({}, e, { theme: this.props.theme }))
-                    : r.a.createElement(fe, Object.assign({}, e, { theme: this.props.theme })),
+                  f
+                    ? r.a.createElement(ve, Object.assign({}, e, { theme: this.props.theme }))
+                    : r.a.createElement(ge, Object.assign({}, e, { theme: this.props.theme })),
               }),
               r.a.createElement(h.b, {
                 path: "/home",
                 render: (e) =>
-                  r.a.createElement(fe, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(ge, Object.assign({}, e, { theme: this.props.theme })),
               }),
               r.a.createElement(h.b, {
                 path: "/experience",
                 exact: !0,
                 render: (e) =>
-                  r.a.createElement(Ue, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(Pe, Object.assign({}, e, { theme: this.props.theme })),
               }),
               r.a.createElement(h.b, {
                 path: "/education",
                 render: (e) =>
-                  r.a.createElement(He, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(je, Object.assign({}, e, { theme: this.props.theme })),
               }),
               r.a.createElement(h.b, {
                 path: "/contact",
                 render: (e) =>
-                  r.a.createElement(Ye, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(Ke, Object.assign({}, e, { theme: this.props.theme })),
               }),
-              p &&
+              f &&
                 r.a.createElement(h.b, {
                   path: "/splash",
                   render: (e) =>
-                    r.a.createElement(xe, Object.assign({}, e, { theme: this.props.theme })),
+                    r.a.createElement(ve, Object.assign({}, e, { theme: this.props.theme })),
                 }),
               r.a.createElement(h.b, {
                 path: "/projects",
                 render: (e) =>
-                  r.a.createElement(rt, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(nt, Object.assign({}, e, { theme: this.props.theme })),
+              }),
+              r.a.createElement(h.b, {
+                path: "/beyond",
+                render: (e) =>
+                  r.a.createElement(st, Object.assign({}, e, { theme: this.props.theme })),
               }),
               r.a.createElement(h.b, {
                 path: "*",
                 render: (e) =>
-                  r.a.createElement(nt, Object.assign({}, e, { theme: this.props.theme })),
+                  r.a.createElement(mt, Object.assign({}, e, { theme: this.props.theme })),
               })
             )
           );
         }
       }
-      const it = {
+      const ht = {
           body: "#EDF9FE",
           text: "#001C55",
           expTxtColor: "#000a12",
@@ -7026,7 +7244,7 @@
             opacity: 0.7,
           },
         },
-        st = {
+        pt = {
           body: "#263238",
           text: "#aeaeae",
           expTxtColor: "#000a12",
@@ -7046,10 +7264,10 @@
             opacity: 0.8,
           },
         };
-      var ot;
-      const mt = Object(V.b)(
-        ot ||
-          (ot = Object(q.a)([
+      var ft;
+      const At = Object(J.b)(
+        ft ||
+          (ft = Object(V.a)([
             "\n  *,\n  *::after,\n  *::before {\n    box-sizing: border-box;\n  }\n\n  body {\n    align-items: center;\n    background: ",
             ";\n    color: ",
             ";\n    display: flex;\n    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;\n    transition: all 0.25s linear;\n    min-height: 100vh;\n    margin: 0;\n    padding: 0;\n    overflow-x: hidden;\n  }\n\n  #root {\n    width: 100%;\n    position: relative;\n    z-index: 1;\n  }\n",
@@ -7063,8 +7281,8 @@
           return t.text;
         }
       );
-      a(155);
-      var dt = function (e) {
+      a(157);
+      var gt = function (e) {
         let { isDarkMode: t, toggleTheme: a } = e;
         return r.a.createElement(
           "button",
@@ -7115,8 +7333,8 @@
               )
         );
       };
-      a(156);
-      function ht(e) {
+      a(158);
+      function Et(e) {
         let { theme: t, isPlaying: a, needsInteraction: l, onToggle: n } = e;
         return r.a.createElement(
           "div",
@@ -7154,95 +7372,129 @@
           )
         );
       }
-      var At = a(23),
-        pt = a(4);
-      a(157);
-      function ft(e) {
-        let { frequencyData: t, theme: a, layerIndex: n, scale: c, zPosition: i } = e;
+      var ut = a(11);
+      a(159);
+      const yt = "NEBULA",
+        xt = "TERRAIN",
+        vt = [yt, xt],
+        bt = {
+          [yt]: {
+            name: "Nebula",
+            icon: "fa-atom",
+            description: "Wireframe icosahedrons with particles",
+          },
+          [xt]: {
+            name: "Terrain",
+            icon: "fa-mountain",
+            description: "Audio-reactive mountain landscape",
+          },
+        };
+      var wt = a(4);
+      const Mt =
+          "\n  vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\n  vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\n  vec4 permute(vec4 x) { return mod289(((x*34.0)+1.0)*x); }\n  vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }\n\n  float snoise(vec3 v) {\n    const vec2 C = vec2(1.0/6.0, 1.0/3.0);\n    const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);\n    vec3 i = floor(v + dot(v, C.yyy));\n    vec3 x0 = v - i + dot(i, C.xxx);\n    vec3 g = step(x0.yzx, x0.xyz);\n    vec3 l = 1.0 - g;\n    vec3 i1 = min(g.xyz, l.zxy);\n    vec3 i2 = max(g.xyz, l.zxy);\n    vec3 x1 = x0 - i1 + C.xxx;\n    vec3 x2 = x0 - i2 + C.yyy;\n    vec3 x3 = x0 - D.yyy;\n    i = mod289(i);\n    vec4 p = permute(permute(permute(\n        i.z + vec4(0.0, i1.z, i2.z, 1.0))\n      + i.y + vec4(0.0, i1.y, i2.y, 1.0))\n      + i.x + vec4(0.0, i1.x, i2.x, 1.0));\n    float n_ = 0.142857142857;\n    vec3 ns = n_ * D.wyz - D.xzx;\n    vec4 j = p - 49.0 * floor(p * ns.z * ns.z);\n    vec4 x_ = floor(j * ns.z);\n    vec4 y_ = floor(j - 7.0 * x_);\n    vec4 x = x_ * ns.x + ns.yyyy;\n    vec4 y = y_ * ns.x + ns.yyyy;\n    vec4 h = 1.0 - abs(x) - abs(y);\n    vec4 b0 = vec4(x.xy, y.xy);\n    vec4 b1 = vec4(x.zw, y.zw);\n    vec4 s0 = floor(b0) * 2.0 + 1.0;\n    vec4 s1 = floor(b1) * 2.0 + 1.0;\n    vec4 sh = -step(h, vec4(0.0));\n    vec4 a0 = b0.xzyw + s0.xzyw * sh.xxyy;\n    vec4 a1 = b1.xzyw + s1.xzyw * sh.zzww;\n    vec3 p0 = vec3(a0.xy, h.x);\n    vec3 p1 = vec3(a0.zw, h.y);\n    vec3 p2 = vec3(a1.xy, h.z);\n    vec3 p3 = vec3(a1.zw, h.w);\n    vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2,p2), dot(p3,p3)));\n    p0 *= norm.x;\n    p1 *= norm.y;\n    p2 *= norm.z;\n    p3 *= norm.w;\n    vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n    m = m * m;\n    return 42.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));\n  }\n",
+        Ct =
+          "\n  vec3 hsv2rgb(vec3 c) {\n    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\n    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\n    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);\n  }\n",
+        kt =
+          "\n  vec3 rgb2hsv(vec3 c) {\n    vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\n    vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\n    vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\n    float d = q.x - min(q.w, q.y);\n    float e = 1.0e-10;\n    return vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n  }\n",
+        Nt = "\n  uniform float uTime;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTreble;\n\n  varying vec2 vUv;\n  varying float vDisplacement;\n\n  ".concat(
+          Mt,
+          "\n\n  void main() {\n    vUv = uv;\n\n    // Create displacement based on audio frequencies\n    float noise = snoise(position * 0.5 + uTime * 0.2);\n    float bassDisp = uBass * 1.5 * noise;\n    float midDisp = uMid * 0.8 * sin(position.y * 3.0 + uTime);\n    float trebleDisp = uTreble * 0.4 * sin(position.x * 5.0 + uTime * 2.0);\n\n    vDisplacement = bassDisp + midDisp * 0.5 + trebleDisp * 0.3;\n\n    // Base subtle animation even without audio\n    float baseAnimation = 0.1 * sin(uTime * 0.5 + position.x) * cos(uTime * 0.3 + position.y);\n\n    vec3 newPosition = position + normal * (vDisplacement + baseAnimation);\n\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);\n  }\n"
+        ),
+        Zt = "\n  uniform vec3 uColorPrimary;\n  uniform vec3 uColorSecondary;\n  uniform vec3 uColorAccent;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTreble;\n  uniform float uTime;\n  uniform float uOpacity;\n  uniform float uHueShift;\n  uniform float uSaturation;\n\n  varying vec2 vUv;\n  varying float vDisplacement;\n\n  "
+          .concat(kt, "\n  ")
+          .concat(
+            Ct,
+            "\n\n  void main() {\n    // Mix colors based on audio and UV position\n    vec3 color = mix(uColorPrimary, uColorSecondary, vUv.y + uMid * 0.3);\n    color = mix(color, uColorAccent, abs(vDisplacement) * 0.5 + uBass * 0.2);\n\n    // Add subtle pulse\n    float pulse = 0.8 + 0.2 * sin(uTime * 2.0 + uBass * 10.0);\n    color *= pulse;\n\n    // Apply frequency-based hue shift and saturation\n    vec3 hsv = rgb2hsv(color);\n    hsv.x = fract(hsv.x + uHueShift * 0.1); // Treble shifts hue\n    hsv.y = clamp(hsv.y * uSaturation, 0.0, 1.0); // Bass controls saturation\n    color = hsv2rgb(hsv);\n\n    gl_FragColor = vec4(color, uOpacity);\n  }\n"
+          );
+      function St(e) {
+        let { frequencyData: t, theme: a, layerIndex: n, scale: c, zPosition: i, opacity: o } = e;
         const s = Object(l.useRef)(),
-          o = Object(l.useRef)(),
-          m = Object(l.useMemo)(() => {
+          m = Object(l.useRef)(),
+          d = Object(l.useMemo)(() => {
             var e, t, l;
             return {
-              primary: new pt.Color(
+              primary: new wt.Color(
                 (null === (e = a.visualizer) || void 0 === e ? void 0 : e.primary) ||
                   a.imageHighlight ||
                   "#0E6BA8"
               ),
-              secondary: new pt.Color(
+              secondary: new wt.Color(
                 (null === (t = a.visualizer) || void 0 === t ? void 0 : t.secondary) ||
                   a.highlight ||
                   "#A6E1FA"
               ),
-              accent: new pt.Color(
+              accent: new wt.Color(
                 (null === (l = a.visualizer) || void 0 === l ? void 0 : l.accent) ||
                   a.text ||
                   "#001C55"
               ),
             };
           }, [a]),
-          d = Object(l.useMemo)(() => {
+          h = Object(l.useMemo)(() => {
             var e;
             return {
               uTime: { value: 0 },
               uBass: { value: 0 },
               uMid: { value: 0 },
               uTreble: { value: 0 },
-              uColorPrimary: { value: m.primary },
-              uColorSecondary: { value: m.secondary },
-              uColorAccent: { value: m.accent },
+              uColorPrimary: { value: d.primary },
+              uColorSecondary: { value: d.secondary },
+              uColorAccent: { value: d.accent },
               uOpacity: {
-                value: (null === (e = a.visualizer) || void 0 === e ? void 0 : e.opacity) || 0.7,
+                value:
+                  ((null === (e = a.visualizer) || void 0 === e ? void 0 : e.opacity) || 0.7) * o,
               },
+              uHueShift: { value: 0 },
+              uSaturation: { value: 1 },
             };
-          }, [m, a.visualizer]);
+          }, [d, a.visualizer, o]);
         return (
-          Object(At.b)((e) => {
-            if (!o.current) return;
-            const a = t.current,
-              { bass: l = 0, mid: r = 0, treble: c = 0 } = a;
-            (o.current.uniforms.uTime.value = e.clock.elapsedTime),
-              (o.current.uniforms.uBass.value = l * (1.5 - 0.3 * n)),
-              (o.current.uniforms.uMid.value = r * (1 + 0.1 * n)),
-              (o.current.uniforms.uTreble.value = c * (0.5 + 0.3 * n)),
+          Object(ut.b)((e) => {
+            var l;
+            if (!m.current) return;
+            const r = t.current,
+              { bass: c = 0, mid: i = 0, treble: d = 0 } = r;
+            (m.current.uniforms.uTime.value = e.clock.elapsedTime),
+              (m.current.uniforms.uBass.value = c * (1.5 - 0.3 * n)),
+              (m.current.uniforms.uMid.value = i * (1 + 0.1 * n)),
+              (m.current.uniforms.uTreble.value = d * (0.5 + 0.3 * n)),
+              (m.current.uniforms.uHueShift.value = d),
+              (m.current.uniforms.uSaturation.value = 0.7 + 0.6 * c),
+              (m.current.uniforms.uOpacity.value =
+                ((null === (l = a.visualizer) || void 0 === l ? void 0 : l.opacity) || 0.7) * o),
               s.current &&
-                ((s.current.rotation.x += 0.001 + 0.005 * l),
-                (s.current.rotation.y += 0.002 + 0.003 * r),
-                (s.current.rotation.z += 5e-4 + 0.002 * c));
+                ((s.current.rotation.x += 0.001 + 0.005 * c),
+                (s.current.rotation.y += 0.002 + 0.003 * i),
+                (s.current.rotation.z += 5e-4 + 0.002 * d));
           }),
           Object(l.useEffect)(() => {
-            var e;
-            o.current &&
-              ((o.current.uniforms.uColorPrimary.value = m.primary),
-              (o.current.uniforms.uColorSecondary.value = m.secondary),
-              (o.current.uniforms.uColorAccent.value = m.accent),
-              (o.current.uniforms.uOpacity.value =
-                (null === (e = a.visualizer) || void 0 === e ? void 0 : e.opacity) || 0.7));
-          }, [m, a.visualizer]),
+            m.current &&
+              ((m.current.uniforms.uColorPrimary.value = d.primary),
+              (m.current.uniforms.uColorSecondary.value = d.secondary),
+              (m.current.uniforms.uColorAccent.value = d.accent));
+          }, [d]),
           r.a.createElement(
             "mesh",
             { ref: s, position: [0, 0, i], scale: c },
             r.a.createElement("icosahedronGeometry", { args: [4, 20] }),
             r.a.createElement("shaderMaterial", {
-              ref: o,
-              vertexShader:
-                "\n  uniform float uTime;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTreble;\n\n  varying vec2 vUv;\n  varying float vDisplacement;\n\n  // Simplex 3D Noise\n  vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\n  vec4 mod289(vec4 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }\n  vec4 permute(vec4 x) { return mod289(((x*34.0)+1.0)*x); }\n  vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }\n\n  float snoise(vec3 v) {\n    const vec2 C = vec2(1.0/6.0, 1.0/3.0);\n    const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);\n    vec3 i = floor(v + dot(v, C.yyy));\n    vec3 x0 = v - i + dot(i, C.xxx);\n    vec3 g = step(x0.yzx, x0.xyz);\n    vec3 l = 1.0 - g;\n    vec3 i1 = min(g.xyz, l.zxy);\n    vec3 i2 = max(g.xyz, l.zxy);\n    vec3 x1 = x0 - i1 + C.xxx;\n    vec3 x2 = x0 - i2 + C.yyy;\n    vec3 x3 = x0 - D.yyy;\n    i = mod289(i);\n    vec4 p = permute(permute(permute(\n        i.z + vec4(0.0, i1.z, i2.z, 1.0))\n      + i.y + vec4(0.0, i1.y, i2.y, 1.0))\n      + i.x + vec4(0.0, i1.x, i2.x, 1.0));\n    float n_ = 0.142857142857;\n    vec3 ns = n_ * D.wyz - D.xzx;\n    vec4 j = p - 49.0 * floor(p * ns.z * ns.z);\n    vec4 x_ = floor(j * ns.z);\n    vec4 y_ = floor(j - 7.0 * x_);\n    vec4 x = x_ * ns.x + ns.yyyy;\n    vec4 y = y_ * ns.x + ns.yyyy;\n    vec4 h = 1.0 - abs(x) - abs(y);\n    vec4 b0 = vec4(x.xy, y.xy);\n    vec4 b1 = vec4(x.zw, y.zw);\n    vec4 s0 = floor(b0) * 2.0 + 1.0;\n    vec4 s1 = floor(b1) * 2.0 + 1.0;\n    vec4 sh = -step(h, vec4(0.0));\n    vec4 a0 = b0.xzyw + s0.xzyw * sh.xxyy;\n    vec4 a1 = b1.xzyw + s1.xzyw * sh.zzww;\n    vec3 p0 = vec3(a0.xy, h.x);\n    vec3 p1 = vec3(a0.zw, h.y);\n    vec3 p2 = vec3(a1.xy, h.z);\n    vec3 p3 = vec3(a1.zw, h.w);\n    vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2,p2), dot(p3,p3)));\n    p0 *= norm.x;\n    p1 *= norm.y;\n    p2 *= norm.z;\n    p3 *= norm.w;\n    vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);\n    m = m * m;\n    return 42.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));\n  }\n\n  void main() {\n    vUv = uv;\n\n    // Create displacement based on audio frequencies\n    float noise = snoise(position * 0.5 + uTime * 0.2);\n    float bassDisp = uBass * 1.5 * noise;\n    float midDisp = uMid * 0.8 * sin(position.y * 3.0 + uTime);\n    float trebleDisp = uTreble * 0.4 * sin(position.x * 5.0 + uTime * 2.0);\n\n    vDisplacement = bassDisp + midDisp * 0.5 + trebleDisp * 0.3;\n\n    // Base subtle animation even without audio\n    float baseAnimation = 0.1 * sin(uTime * 0.5 + position.x) * cos(uTime * 0.3 + position.y);\n\n    vec3 newPosition = position + normal * (vDisplacement + baseAnimation);\n\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);\n  }\n",
-              fragmentShader:
-                "\n  uniform vec3 uColorPrimary;\n  uniform vec3 uColorSecondary;\n  uniform vec3 uColorAccent;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTime;\n  uniform float uOpacity;\n\n  varying vec2 vUv;\n  varying float vDisplacement;\n\n  void main() {\n    // Mix colors based on audio and UV position\n    vec3 color = mix(uColorPrimary, uColorSecondary, vUv.y + uMid * 0.3);\n    color = mix(color, uColorAccent, abs(vDisplacement) * 0.5 + uBass * 0.2);\n\n    // Add subtle pulse\n    float pulse = 0.8 + 0.2 * sin(uTime * 2.0 + uBass * 10.0);\n    color *= pulse;\n\n    gl_FragColor = vec4(color, uOpacity);\n  }\n",
-              uniforms: d,
+              ref: m,
+              vertexShader: Nt,
+              fragmentShader: Zt,
+              uniforms: h,
               wireframe: !0,
               transparent: !0,
-              side: pt.DoubleSide,
+              side: wt.DoubleSide,
               depthWrite: !1,
             })
           )
         );
       }
-      function gt(e) {
+      function It(e) {
         let { mousePosition: t } = e;
-        const { camera: a } = Object(At.c)();
+        const { camera: a } = Object(ut.c)();
         return (
-          Object(At.b)(() => {
+          Object(ut.b)(() => {
             const e = 3 * t.current.x,
               l = 2 * -t.current.y;
             (a.position.x += 0.03 * (e - a.position.x)),
@@ -7252,10 +7504,10 @@
           null
         );
       }
-      function Et(e) {
-        let { theme: t, frequencyData: a } = e;
-        const n = Object(l.useRef)(),
-          c = Object(l.useMemo)(() => {
+      function Rt(e) {
+        let { theme: t, frequencyData: a, opacity: n } = e;
+        const c = Object(l.useRef)(),
+          i = Object(l.useMemo)(() => {
             const e = new Float32Array(600);
             for (let t = 0; t < 200; t++)
               (e[3 * t] = 30 * (Math.random() - 0.5)),
@@ -7263,61 +7515,262 @@
                 (e[3 * t + 2] = 30 * (Math.random() - 0.5));
             return e;
           }, []),
-          i = Object(l.useMemo)(() => {
+          o = Object(l.useMemo)(() => {
             var e;
-            return new pt.Color(
+            return new wt.Color(
               (null === (e = t.visualizer) || void 0 === e ? void 0 : e.secondary) ||
                 t.highlight ||
                 "#A6E1FA"
             );
           }, [t]);
         return (
-          Object(At.b)((e) => {
-            if (!n.current) return;
+          Object(ut.b)((e) => {
+            if (!c.current) return;
             const t = a.current.bass || 0;
-            (n.current.rotation.y = 0.02 * e.clock.elapsedTime),
-              (n.current.rotation.x = 0.01 * e.clock.elapsedTime);
+            (c.current.rotation.y = 0.02 * e.clock.elapsedTime),
+              (c.current.rotation.x = 0.01 * e.clock.elapsedTime);
             const l = 1 + 0.3 * t;
-            n.current.scale.setScalar(l);
+            c.current.scale.setScalar(l);
           }),
           r.a.createElement(
             "points",
-            { ref: n },
+            { ref: c },
             r.a.createElement(
               "bufferGeometry",
               null,
               r.a.createElement("bufferAttribute", {
                 attach: "attributes-position",
                 count: 200,
-                array: c,
+                array: i,
                 itemSize: 3,
               })
             ),
             r.a.createElement("pointsMaterial", {
               size: 0.08,
-              color: i,
+              color: o,
               transparent: !0,
-              opacity: 0.6,
+              opacity: 0.6 * n,
               sizeAttenuation: !0,
             })
           )
         );
       }
-      function yt(e) {
-        let { theme: t, getFrequencyData: a, isPlaying: n } = e;
-        const c = Object(l.useRef)({ bass: 0, mid: 0, treble: 0, average: 0 }),
-          i = Object(l.useRef)({ x: 0, y: 0 }),
-          s = Object(l.useRef)();
+      function Bt(e) {
+        let { frequencyData: t, theme: a, mousePosition: l, opacity: n = 1 } = e;
+        return r.a.createElement(
+          "group",
+          null,
+          r.a.createElement(It, { mousePosition: l }),
+          [
+            { scale: 1, zPosition: -8 },
+            { scale: 0.6, zPosition: -2 },
+            { scale: 0.3, zPosition: 4 },
+          ].map((e, l) =>
+            r.a.createElement(St, {
+              key: l,
+              frequencyData: t,
+              theme: a,
+              layerIndex: l,
+              scale: e.scale,
+              zPosition: e.zPosition,
+              opacity: n,
+            })
+          ),
+          r.a.createElement(Rt, { theme: a, frequencyData: t, opacity: n }),
+          r.a.createElement("ambientLight", { intensity: 0.5 })
+        );
+      }
+      const Ht = "\n  uniform float uTime;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTreble;\n\n  varying vec2 vUv;\n  varying float vElevation;\n\n  ".concat(
+          Mt,
+          "\n\n  void main() {\n    vUv = uv;\n\n    // Create terrain displacement\n    float baseNoise = snoise(vec3(position.x * 0.15, position.y * 0.15, uTime * 0.1));\n    float detailNoise = snoise(vec3(position.x * 0.4, position.y * 0.4, uTime * 0.2));\n    float fineNoise = snoise(vec3(position.x * 1.0, position.y * 1.0, uTime * 0.4));\n\n    // Audio-reactive mountain height\n    float bassHeight = uBass * 4.0 * baseNoise;\n    float midRipple = uMid * 1.5 * detailNoise;\n    float trebleDetail = uTreble * 0.5 * fineNoise;\n\n    // Create wave-like ripples from center\n    float dist = length(position.xy);\n    float ripple = sin(dist * 0.5 - uTime * 2.0) * uMid * 0.5;\n\n    vElevation = bassHeight + midRipple + trebleDetail + ripple;\n\n    // Base subtle animation\n    float baseAnimation = 0.2 * sin(uTime * 0.3 + position.x * 0.1) * cos(uTime * 0.2 + position.y * 0.1);\n\n    vec3 newPosition = position;\n    newPosition.z = vElevation + baseAnimation;\n\n    gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);\n  }\n"
+        ),
+        jt = "\n  uniform vec3 uColorPrimary;\n  uniform vec3 uColorSecondary;\n  uniform vec3 uColorAccent;\n  uniform float uBass;\n  uniform float uMid;\n  uniform float uTreble;\n  uniform float uTime;\n  uniform float uOpacity;\n  uniform float uHueShift;\n  uniform float uSaturation;\n\n  varying vec2 vUv;\n  varying float vElevation;\n\n  "
+          .concat(kt, "\n  ")
+          .concat(
+            Ct,
+            "\n\n  void main() {\n    // Height-based color gradient - much more sensitive normalization\n    // Elevation typically ranges from -2 to +2, so use tighter range\n    float normalizedHeight = (vElevation + 1.5) / 3.0;\n    // Apply contrast curve to spread out the middle values\n    normalizedHeight = clamp(normalizedHeight, 0.0, 1.0);\n    normalizedHeight = pow(normalizedHeight, 0.7); // Boost contrast\n\n    // Direct Blue to Red gradient (no purple middle)\n    vec3 lowColor = vec3(0.1, 0.3, 1.0);   // Deep Blue\n    vec3 highColor = vec3(1.0, 0.1, 0.05); // Bright Red\n\n    // Simple linear interpolation for clearer gradient\n    vec3 color = mix(lowColor, highColor, normalizedHeight);\n\n    // Add glow effect at peaks\n    float peakGlow = smoothstep(0.6, 1.0, normalizedHeight);\n    color += peakGlow * vec3(1.0, 0.5, 0.2) * 0.3 * (1.0 + uBass);\n\n    // Subtle pulse with audio\n    float pulse = 0.9 + 0.1 * sin(uTime * 1.5 + vElevation * 2.0);\n    color *= pulse;\n\n    // Bass boosts saturation, treble shifts slightly\n    vec3 hsv = rgb2hsv(color);\n    hsv.y = clamp(hsv.y * (0.9 + uBass * 0.3), 0.0, 1.0);\n    hsv.z = clamp(hsv.z * (0.9 + uMid * 0.2), 0.0, 1.0);\n    color = hsv2rgb(hsv);\n\n    // Grid lines for wireframe effect\n    float gridX = smoothstep(0.02, 0.03, abs(fract(vUv.x * 24.0) - 0.5));\n    float gridY = smoothstep(0.02, 0.03, abs(fract(vUv.y * 24.0) - 0.5));\n    float grid = min(gridX, gridY);\n\n    // Combine color with grid - grid lines are brighter\n    color = mix(color * 1.3, color * 0.7, 1.0 - grid);\n\n    gl_FragColor = vec4(color, uOpacity);\n  }\n"
+          );
+      function Lt(e) {
+        let { frequencyData: t, theme: a, opacity: n } = e;
+        const c = Object(l.useRef)(),
+          i = Object(l.useRef)(),
+          o = Object(l.useMemo)(() => {
+            var e, t, l;
+            return {
+              primary: new wt.Color(
+                (null === (e = a.visualizer) || void 0 === e ? void 0 : e.primary) ||
+                  a.imageHighlight ||
+                  "#0E6BA8"
+              ),
+              secondary: new wt.Color(
+                (null === (t = a.visualizer) || void 0 === t ? void 0 : t.secondary) ||
+                  a.highlight ||
+                  "#A6E1FA"
+              ),
+              accent: new wt.Color(
+                (null === (l = a.visualizer) || void 0 === l ? void 0 : l.accent) ||
+                  a.text ||
+                  "#001C55"
+              ),
+            };
+          }, [a]),
+          s = Object(l.useMemo)(() => {
+            var e;
+            return {
+              uTime: { value: 0 },
+              uBass: { value: 0 },
+              uMid: { value: 0 },
+              uTreble: { value: 0 },
+              uColorPrimary: { value: o.primary },
+              uColorSecondary: { value: o.secondary },
+              uColorAccent: { value: o.accent },
+              uOpacity: {
+                value:
+                  ((null === (e = a.visualizer) || void 0 === e ? void 0 : e.opacity) || 0.7) * n,
+              },
+              uHueShift: { value: 0 },
+              uSaturation: { value: 1 },
+            };
+          }, [o, a.visualizer, n]);
+        return (
+          Object(ut.b)((e) => {
+            var l;
+            if (!i.current) return;
+            const r = t.current,
+              { bass: o = 0, mid: s = 0, treble: m = 0 } = r;
+            (i.current.uniforms.uTime.value = e.clock.elapsedTime),
+              (i.current.uniforms.uBass.value = o),
+              (i.current.uniforms.uMid.value = s),
+              (i.current.uniforms.uTreble.value = m),
+              (i.current.uniforms.uHueShift.value = m),
+              (i.current.uniforms.uSaturation.value = 0.8 + 0.4 * o),
+              (i.current.uniforms.uOpacity.value =
+                ((null === (l = a.visualizer) || void 0 === l ? void 0 : l.opacity) || 0.7) * n),
+              c.current &&
+                ((c.current.rotation.z = 0.2 * e.clock.elapsedTime),
+                (c.current.rotation.x = 0.15 * o - 0.5));
+          }),
+          Object(l.useEffect)(() => {
+            i.current &&
+              ((i.current.uniforms.uColorPrimary.value = o.primary),
+              (i.current.uniforms.uColorSecondary.value = o.secondary),
+              (i.current.uniforms.uColorAccent.value = o.accent));
+          }, [o]),
+          r.a.createElement(
+            "mesh",
+            { ref: c, rotation: [0, 0, 0], position: [0, 0, -5] },
+            r.a.createElement("planeGeometry", { args: [12, 12, 64, 64] }),
+            r.a.createElement("shaderMaterial", {
+              ref: i,
+              vertexShader: Ht,
+              fragmentShader: jt,
+              uniforms: s,
+              transparent: !0,
+              side: wt.DoubleSide,
+              depthWrite: !1,
+            })
+          )
+        );
+      }
+      function Ot(e) {
+        let { theme: t, frequencyData: a, opacity: n } = e;
+        const c = Object(l.useRef)(),
+          i = Object(l.useMemo)(() => {
+            const e = new Float32Array(240);
+            for (let t = 0; t < 80; t++) {
+              const a = Math.random() * Math.PI * 2,
+                l = Math.acos(2 * Math.random() - 1),
+                r = 8 + 6 * Math.random();
+              (e[3 * t] = Math.sin(l) * Math.cos(a) * r),
+                (e[3 * t + 1] = Math.sin(l) * Math.sin(a) * r),
+                (e[3 * t + 2] = Math.cos(l) * r - 5);
+            }
+            return e;
+          }, []),
+          o = Object(l.useMemo)(() => {
+            var e;
+            return new wt.Color(
+              (null === (e = t.visualizer) || void 0 === e ? void 0 : e.accent) ||
+                t.text ||
+                "#001C55"
+            );
+          }, [t]);
+        return (
+          Object(ut.b)((e) => {
+            if (!c.current) return;
+            const t = a.current.mid || 0;
+            c.current.rotation.y = 0.01 * e.clock.elapsedTime;
+            const l = 1 + 0.2 * t;
+            c.current.scale.setScalar(l);
+          }),
+          r.a.createElement(
+            "points",
+            { ref: c },
+            r.a.createElement(
+              "bufferGeometry",
+              null,
+              r.a.createElement("bufferAttribute", {
+                attach: "attributes-position",
+                count: 80,
+                array: i,
+                itemSize: 3,
+              })
+            ),
+            r.a.createElement("pointsMaterial", {
+              size: 0.15,
+              color: o,
+              transparent: !0,
+              opacity: 0.4 * n,
+              sizeAttenuation: !0,
+            })
+          )
+        );
+      }
+      function Dt(e) {
+        let { frequencyData: t, theme: a, opacity: l = 1 } = e;
+        return r.a.createElement(
+          "group",
+          null,
+          r.a.createElement(Lt, { frequencyData: t, theme: a, opacity: l }),
+          r.a.createElement(Ot, { theme: a, frequencyData: t, opacity: l }),
+          r.a.createElement("ambientLight", { intensity: 0.6 }),
+          r.a.createElement("directionalLight", { position: [5, 10, 5], intensity: 0.4 })
+        );
+      }
+      function Tt(e) {
+        let { frequencyData: t, enabled: a = !0, onBloomUpdate: r } = e;
+        const n = Object(l.useRef)(0.5);
+        return (
+          Object(ut.b)(() => {
+            if (!a) return;
+            const e = t.current.bass || 0;
+            (n.current = 0.3 + 1.5 * e), r && r(n.current);
+          }),
+          Object(l.useEffect)(() => {
+            const e = setInterval(() => {
+              const e = n.current;
+              document.documentElement.style.setProperty("--bloom-intensity", e);
+            }, 50);
+            return () => clearInterval(e);
+          }, []),
+          null
+        );
+      }
+      function zt(e) {
+        let { theme: t, getFrequencyData: a, isPlaying: n, currentMode: c, opacity: i = 1 } = e;
+        const o = Object(l.useRef)({ bass: 0, mid: 0, treble: 0, average: 0 }),
+          s = Object(l.useRef)({ x: 0, y: 0 }),
+          m = Object(l.useRef)();
         Object(l.useEffect)(() => {
           let e;
           const t = () => {
-            a && (c.current = a()), (e = requestAnimationFrame(t));
+            a && (o.current = a()), (e = requestAnimationFrame(t));
           };
           return t(), () => cancelAnimationFrame(e);
         }, [a]),
           Object(l.useEffect)(() => {
             const e = (e) => {
-              i.current = {
+              s.current = {
                 x: (e.clientX / window.innerWidth) * 2 - 1,
                 y: (e.clientY / window.innerHeight) * 2 - 1,
               };
@@ -7329,67 +7782,140 @@
           }, []);
         return r.a.createElement(
           "div",
-          { ref: s, className: "audio-visualizer ".concat(n ? "playing" : "idle") },
+          {
+            ref: m,
+            className: "audio-visualizer ".concat(n ? "playing" : "idle"),
+            style: { opacity: i },
+          },
           r.a.createElement(
-            At.a,
+            ut.a,
             {
               camera: { position: [0, 0, 15], fov: 75 },
               gl: { antialias: !0, alpha: !0, powerPreference: "high-performance" },
               dpr: [1, 1.5],
             },
             r.a.createElement("color", { attach: "background", args: ["transparent"] }),
-            r.a.createElement(gt, { mousePosition: i }),
-            [
-              { scale: 1, zPosition: -8 },
-              { scale: 0.6, zPosition: -2 },
-              { scale: 0.3, zPosition: 4 },
-            ].map((e, a) =>
-              r.a.createElement(ft, {
-                key: a,
-                frequencyData: c,
-                theme: t,
-                layerIndex: a,
-                scale: e.scale,
-                zPosition: e.zPosition,
-              })
-            ),
-            r.a.createElement(Et, { theme: t, frequencyData: c }),
-            r.a.createElement("ambientLight", { intensity: 0.5 })
+            r.a.createElement(Tt, { frequencyData: o, enabled: n }),
+            (() => {
+              const e = { frequencyData: o, theme: t, opacity: i };
+              switch (c) {
+                case yt:
+                  return r.a.createElement(Bt, Object.assign({}, e, { mousePosition: s }));
+                case xt:
+                  return r.a.createElement(Dt, e);
+                default:
+                  return r.a.createElement(Bt, Object.assign({}, e, { mousePosition: s }));
+              }
+            })()
           )
         );
       }
-      const ut = [0, 10],
-        xt = [10, 100],
-        bt = [100, 512];
-      var vt = function () {
+      a(165);
+      function Ft(e) {
+        let { theme: t, currentMode: a, onCycle: l } = e;
+        const n = bt[a];
+        return r.a.createElement(
+          "div",
+          { className: "mode-selector" },
+          r.a.createElement(
+            "button",
+            {
+              className: "mode-selector-button",
+              onClick: l,
+              style: { color: t.text, borderColor: t.text },
+              "aria-label": "Current mode: ".concat(n.name, ". Click to cycle."),
+              title: n.name,
+            },
+            r.a.createElement("i", { className: "fa-solid ".concat(n.icon) })
+          ),
+          r.a.createElement(
+            "div",
+            { className: "mode-selector-tooltip", style: { color: t.text } },
+            n.name
+          )
+        );
+      }
+      const Qt = [0, 10],
+        qt = [10, 100],
+        Pt = [100, 512];
+      function Ut() {
+        const [e, t] = Object(l.useState)(yt),
+          [a, r] = Object(l.useState)(!1),
+          [n, c] = Object(l.useState)(1),
+          i = Object(l.useRef)(!0),
+          o = Object(l.useRef)(null),
+          s = Object(l.useRef)(null),
+          m = Object(l.useCallback)(
+            (e) => {
+              a ||
+                (r(!0),
+                c(0),
+                setTimeout(() => {
+                  t(e),
+                    c(1),
+                    setTimeout(() => {
+                      r(!1);
+                    }, 750);
+                }, 750));
+            },
+            [a]
+          ),
+          d = Object(l.useCallback)(() => {
+            const t = (function (e) {
+              const t = (vt.indexOf(e) + 1) % vt.length;
+              return vt[t];
+            })(e);
+            m(t);
+          }, [e, m]),
+          h = Object(l.useCallback)(() => {
+            o.current && clearTimeout(o.current),
+              (i.current = !1),
+              d(),
+              (o.current = setTimeout(() => {
+                i.current = !0;
+              }, 24e3));
+          }, [d]);
+        return (
+          Object(l.useEffect)(() => {
+            const e = () => {
+              s.current = setTimeout(() => {
+                i.current && !a && d(), e();
+              }, 24e3);
+            };
+            return (
+              e(),
+              () => {
+                s.current && clearTimeout(s.current), o.current && clearTimeout(o.current);
+              }
+            );
+          }, [a, d]),
+          { currentMode: e, isTransitioning: a, opacity: n, cycleMode: h, transitionToMode: m }
+        );
+      }
+      var Gt = function () {
         const [e, t] = Object(l.useState)(() => {
             const e = localStorage.getItem("darkMode");
-            return null !== e
-              ? JSON.parse(e)
-              : window.matchMedia("(prefers-color-scheme: dark)").matches;
+            return null !== e && JSON.parse(e);
           }),
-          a = e ? st : it,
-          { isPlaying: n, needsInteraction: c, toggle: i, getFrequencyData: s } = (function (e) {
+          a = e ? pt : ht,
+          { isPlaying: n, needsInteraction: c, toggle: i, getFrequencyData: o } = (function (e) {
             const [t, a] = Object(l.useState)(!1),
               [r, n] = Object(l.useState)(!1),
               [c, i] = Object(l.useState)(!1),
-              s = Object(l.useRef)(null),
               o = Object(l.useRef)(null),
+              s = Object(l.useRef)(null),
               m = Object(l.useRef)(null),
               d = Object(l.useRef)(null),
               h = Object(l.useRef)(null),
-              A = Object(l.useRef)(!1),
               p = Object(l.useRef)(!1),
-              f = Object(l.useCallback)(() => {
-                if (A.current) return s.current;
+              f = Object(l.useRef)(!1),
+              A = Object(l.useCallback)(() => {
+                if (p.current) return o.current;
                 try {
                   const t = new Audio(e);
-                  (t.crossOrigin = "anonymous"),
-                    (t.loop = !0),
-                    (t.preload = "auto"),
-                    (s.current = t);
+                  (t.loop = !0), (t.preload = "auto"), (o.current = t);
                   const l = new (window.AudioContext || window.webkitAudioContext)();
-                  o.current = l;
+                  s.current = l;
                   const r = l.createAnalyser();
                   (r.fftSize = 2048),
                     (r.smoothingTimeConstant = 0.8),
@@ -7409,7 +7935,7 @@
                     t.addEventListener("ended", () => {
                       (t.currentTime = 0), t.play();
                     }),
-                    (A.current = !0),
+                    (p.current = !0),
                     n(!0),
                     t
                   );
@@ -7429,19 +7955,19 @@
                     return l / (r - t) / 255;
                   };
                 return {
-                  bass: t(...ut),
-                  mid: t(...xt),
-                  treble: t(...bt),
+                  bass: t(...Qt),
+                  mid: t(...qt),
+                  treble: t(...Pt),
                   average: t(0, e.length),
                   raw: e,
                 };
               }, []),
               E = Object(l.useCallback)(async () => {
-                let e = s.current;
-                if ((e || (e = f()), e)) {
-                  if (o.current && "suspended" === o.current.state)
+                let e = o.current;
+                if ((e || (e = A()), e)) {
+                  if (s.current && "suspended" === s.current.state)
                     try {
-                      await o.current.resume();
+                      await s.current.resume();
                     } catch (t) {
                       console.warn("AudioContext resume failed:", t);
                     }
@@ -7451,28 +7977,28 @@
                     console.warn("Audio play failed:", t), i(!0);
                   }
                 }
-              }, [f]),
-              y = Object(l.useCallback)(() => {
-                s.current && s.current.pause(), localStorage.setItem("musicPlayerPaused", "true");
-              }, []),
+              }, [A]),
               u = Object(l.useCallback)(() => {
-                t ? y() : E();
-              }, [t, y, E]);
+                o.current && o.current.pause(), localStorage.setItem("musicPlayerPaused", "true");
+              }, []),
+              y = Object(l.useCallback)(() => {
+                t ? u() : E();
+              }, [t, u, E]);
             return (
               Object(l.useEffect)(() => {
                 const e = "true" === localStorage.getItem("musicPlayerPaused");
-                f(),
+                A(),
                   e ||
-                    p.current ||
-                    ((p.current = !0),
+                    f.current ||
+                    ((f.current = !0),
                     E().catch(() => {
                       i(!0);
                     }));
-              }, [f, E]),
+              }, [A, E]),
               Object(l.useEffect)(() => {
                 if ("true" === localStorage.getItem("musicPlayerPaused")) return;
                 const e = () => {
-                    !t && s.current && E(), a();
+                    !t && o.current && E(), a();
                   },
                   a = () => {
                     document.removeEventListener("click", e),
@@ -7490,7 +8016,7 @@
               }, [t, E]),
               Object(l.useEffect)(
                 () => () => {
-                  s.current && s.current.pause(), o.current && o.current.close();
+                  o.current && o.current.pause(), s.current && s.current.close();
                 },
                 []
               ),
@@ -7499,36 +8025,44 @@
                 isReady: r,
                 needsInteraction: c,
                 play: E,
-                pause: y,
-                toggle: u,
+                pause: u,
+                toggle: y,
                 getFrequencyData: g,
-                audioElement: s.current,
+                audioElement: o.current,
               }
             );
-          })("/audio/Khruangbin - People Everywhere (Still Alive).mp3");
+          })("/audio/Khruangbin - People Everywhere (Still Alive).mp3"),
+          { currentMode: s, opacity: m, cycleMode: d } = Ut();
         return (
           Object(l.useEffect)(() => {
             localStorage.setItem("darkMode", JSON.stringify(e));
           }, [e]),
           r.a.createElement(
-            V.a,
+            J.a,
             { theme: a },
             r.a.createElement(
               r.a.Fragment,
               null,
-              r.a.createElement(mt, null),
-              r.a.createElement(yt, { theme: a, getFrequencyData: s, isPlaying: n }),
-              r.a.createElement(dt, {
+              r.a.createElement(At, null),
+              r.a.createElement(zt, {
+                theme: a,
+                getFrequencyData: o,
+                isPlaying: n,
+                currentMode: s,
+                opacity: m,
+              }),
+              r.a.createElement(gt, {
                 isDarkMode: e,
                 toggleTheme: () => {
                   t(!e);
                 },
               }),
-              r.a.createElement(ht, { theme: a, isPlaying: n, needsInteraction: c, onToggle: i }),
+              r.a.createElement(Ft, { theme: a, currentMode: s, onCycle: d }),
+              r.a.createElement(Et, { theme: a, isPlaying: n, needsInteraction: c, onToggle: i }),
               r.a.createElement(
                 "div",
                 { style: { position: "relative", zIndex: 1 } },
-                r.a.createElement(ct, { theme: a })
+                r.a.createElement(dt, { theme: a })
               )
             )
           )
@@ -7539,13 +8073,13 @@
           "[::1]" === window.location.hostname ||
           window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
       );
-      a(163);
-      const Mt = new m.a();
+      a(166);
+      const Vt = new m.a();
       c.a.render(
         r.a.createElement(
-          o.a,
-          { value: Mt },
-          r.a.createElement(i.a, { theme: s.a }, r.a.createElement(vt, null))
+          s.a,
+          { value: Vt },
+          r.a.createElement(i.a, { theme: o.a }, r.a.createElement(Gt, null))
         ),
         document.getElementById("root")
       ),
@@ -7557,4 +8091,4 @@
   ]),
   [[58, 1, 2]],
 ]);
-//# sourceMappingURL=main.0cc78ce6.chunk.js.map
+//# sourceMappingURL=main.7deff380.chunk.js.map
