@@ -230,6 +230,12 @@ const skills = {
 };
 
 // Education Page
+const educationHeader = {
+  title: "Education",
+  description:
+    "I learn by building. When I encounter a problem, curiosity and conviction drive me to find a better way. That pursuit becomes my classroom. My education comes from implementing research papers, fine-tuning transformer models, and shipping production systems. From PEFT/LoRA optimization techniques discovered through Hugging Face documentation to penetration testing methodologies from security publications, every project in my portfolio represents applied learning. I supplement hands-on development with structured courses from Coursera and IBM, ensuring my skills stay current with industry best practices.",
+};
+
 const competitiveSites = {
   competitiveSites: [
     {
@@ -426,49 +432,72 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "I build AI-powered tools and applications that solve real problems. From prompt engineering platforms to multi-agent systems, my projects focus on leveraging cutting-edge ML/AI technology.",
+    "I specialize in building AI systems that democratize complex technology. My work spans fine-tuned LLMs with PEFT/LoRA optimization, multi-agent orchestration frameworks, and tools that bridge natural language to structured data. Each project transforms expert-level capabilities into accessible solutions—whether that's making prompt engineering intuitive, automating software development through coordinated AI agents, or turning plain English into precise database queries.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "Featured Projects",
-  description: "Open source projects and tools I've built.",
+  description:
+    "Open source tools pushing the boundaries of AI accessibility, security automation, and intelligent development.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
+      id: "crack",
+      name: "C.R.A.C.K.",
+      createdAt: "2026-01-08T00:00:00Z",
+      description:
+        "Your complete penetration testing arsenal. 1,487 commands, 32 attack chains, and 50 cheatsheets unified in CLI, Electron GUI, and Claude AI integration. Neo4j-powered attack path visualization meets intelligent reconnaissance.",
+      url: "https://github.com/CodeBlackwell/C.R.A.C.K.",
+      image: require("./assets/images/crack.jpeg"),
+    },
+    {
       id: "betterprompts",
       name: "BetterPrompts",
-      createdAt: "2025-01-01T00:00:00Z",
+      createdAt: "2025-09-10T00:00:00Z",
       description:
-        "AI-powered prompt engineering platform with microservices architecture achieving 89.3% accuracy in intent detection",
+        "Transform any prompt into perfection. 12 optimization techniques powered by fine-tuned DeBERTa-v3 that improve AI output quality by 40%. Sub-200ms response times at enterprise scale.",
       url: "https://github.com/codeblackwell/BetterPrompts",
+      image: require("./assets/images/betterprompts.jpeg"),
     },
     {
       id: "agent-blackwell",
       name: "Agent_Blackwell",
-      createdAt: "2024-12-01T00:00:00Z",
+      createdAt: "2025-09-10T00:00:00Z",
       description:
-        "Multi-expert AI orchestration system for automated software development using Agent Communication Protocol",
+        "Five minds, one mission. Orchestrates specialized AI agents—Planner, Designer, Coder, Tester, Reviewer—to automate the complete software development lifecycle with production-ready output.",
       url: "https://github.com/codeblackwell/Agent_Blackwell",
+      image: require("./assets/images/agent_blackwell.jpeg"),
+    },
+    {
+      id: "d3-gallery",
+      name: "D3 Visualization Gallery",
+      createdAt: "2025-06-26T00:00:00Z",
+      description:
+        "Teaching AI to see data. 800+ TypeScript/React components bridging natural language to interactive D3.js visualizations—the first comprehensive training dataset for LLM-powered data viz.",
+      url: "https://github.com/CodeBlackwell/d3_visualization_gallery",
+      image: require("./assets/images/d3_gallery.jpeg"),
     },
     {
       id: "aura",
       name: "A.U.R.A",
-      createdAt: "2024-10-01T00:00:00Z",
+      createdAt: "2025-06-23T00:00:00Z",
       description:
-        "4-bit quantized Text-to-JSON engine powered by StarCoder LLM fine-tuned with PEFT & LoRA",
+        "Ask questions, get answers. StarCoder fine-tuned with PEFT/LoRA converts natural language to precise JSON queries—democratizing enterprise data access for non-technical users.",
       url: "https://github.com/codeblackwell/A.U.R.A",
+      image: require("./assets/images/aura.jpeg"),
     },
     {
-      id: "poi-alchemist",
-      name: "POI_Alchemist",
-      createdAt: "2024-08-01T00:00:00Z",
+      id: "liblearner",
+      name: "LibLearner",
+      createdAt: "2024-12-04T00:00:00Z",
       description:
-        "Blazing-fast POI reconciliation engine combining OpenStreetMap and Foursquare data",
-      url: "https://github.com/codeblackwell/POI_Alchemist",
+        "Train your own intelligence. Extract code from any repository, process functions and classes, and fine-tune custom T5 models specialized on your codebase. Supports Python, JS, Jupyter, and more.",
+      url: "https://github.com/codeblackwell/LibLearner",
+      image: require("./assets/images/liblearner.jpeg"),
     },
   ],
 };
@@ -585,6 +614,7 @@ export {
   greeting,
   socialMediaLinks,
   skills,
+  educationHeader,
   competitiveSites,
   degrees,
   certifications,

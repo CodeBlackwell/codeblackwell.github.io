@@ -2,12 +2,71 @@
   color: rgb(88, 96, 105);
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
-  padding: 2rem;
+  padding: 0;
   cursor: pointer;
-  flex: 1 1 25%;
+  flex: 1 1 21%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
+
+.publication-image-div {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.publication-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.publication-card-div:hover .publication-image {
+  transform: scale(1.05);
+}
+
+.publication-card-div .publication-name-div,
+.publication-card-div .publication-description,
+.publication-card-div .publication-details {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.publication-card-div .publication-name-div {
+  padding-top: 1rem;
+}
+
+.publication-card-div .publication-details {
+  padding-bottom: 1.25rem;
+}
+
+.publication-card-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
 .publication-card-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.publication-card-div:hover::before {
+  left: 100%;
+}
+
+.publication-card-div:hover .publication-name {
+  color: #6366f1;
 }
 
 .publication-name-div {
@@ -19,13 +78,14 @@
   text-align: left;
   color: rgb(36, 41, 46);
   font-family: "Google Sans Regular";
-  margin-bottom: 0.75rem;
-  font-size: 25px;
+  margin-bottom: 0.6rem;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.5px;
   overflow: hidden;
   line-height: 1.2;
   margin: 0px;
+  transition: color 0.3s ease;
 }
 
 .publication-description {
@@ -33,9 +93,10 @@
   text-align: left;
   display: -webkit-box;
   font-family: "Google Sans Regular";
+  font-size: 14px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
 }
 
 .publication-details {
@@ -53,7 +114,7 @@
 
 @media (max-width: 1200px) {
   .publication-card-div {
-    flex: 1 1 40%;
+    flex: 1 1 34%;
   }
 }
 
@@ -62,12 +123,16 @@
     flex: 1 1 100%;
   }
 
+  .publication-image-div {
+    height: 140px;
+  }
+
   .publication-name {
     font-size: 16px;
   }
 
   .publication-description {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .publication-details {
@@ -75,6 +140,6 @@
   }
 
   .publication-creation-date {
-    font-size: 14px;
+    font-size: 13px;
   }
 }

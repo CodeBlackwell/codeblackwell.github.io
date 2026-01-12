@@ -6,8 +6,7 @@ import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
-import { competitiveSites } from "../../portfolio";
-import { certifications } from "../../portfolio";
+import { educationHeader, competitiveSites, certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -29,11 +28,14 @@ class Education extends Component {
               </div>
               <div className="heading-text-div">
                 <h1 className="heading-text" style={{ color: theme.text }}>
-                  Education
+                  {educationHeader.title}
                 </h1>
-                <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                  Basic Qualification and Certifcations
-                </h3>
+                <p
+                  className="education-header-detail-text subTitle"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {educationHeader.description}
+                </p>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>
             </div>

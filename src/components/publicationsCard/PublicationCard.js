@@ -9,12 +9,14 @@ export default function PublicationCard({ pub, theme }) {
   }
 
   return (
-    <div
-      className="publication-card-div"
-      style={{ backgroundColor: theme.highlight }}
-    >
+    <div className="publication-card-div" style={{ backgroundColor: theme.highlight }}>
       <Fade bottom duration={2000} distance="40px">
         <div key={pub.id} onClick={() => openPubinNewTab(pub.url)}>
+          {pub.image && (
+            <div className="publication-image-div">
+              <img src={pub.image} alt={pub.name} className="publication-image" />
+            </div>
+          )}
           <div className="publication-name-div">
             <p className="publication-name" style={{ color: theme.text }}>
               {pub.name}
