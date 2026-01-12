@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    revision: "9d25e6d1613855b70546d14f4a5e5298",
+    revision: "2287a7845c5ca27c4525c13bb9c75917",
     url: "./index.html",
   },
   {
-    revision: "21ee220e68a9d2ab1402",
-    url: "./static/css/main.c695c5ee.chunk.css",
+    revision: "8ddfbc9ccabd1881baa6",
+    url: "./static/css/main.7a73e18b.chunk.css",
   },
   {
-    revision: "a8d0d4da13ca086a5a0e",
-    url: "./static/js/2.69b3f27f.chunk.js",
+    revision: "3a43e2998b898999255e",
+    url: "./static/js/2.cb1df6a0.chunk.js",
   },
   {
-    revision: "21ee220e68a9d2ab1402",
-    url: "./static/js/main.5db778b6.chunk.js",
+    revision: "8ddfbc9ccabd1881baa6",
+    url: "./static/js/main.2ca7b7c6.chunk.js",
   },
   {
     revision: "bfba2a34f9928e5e0d9c",
@@ -60,8 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     url: "./static/media/address_image.137185a8.svg",
   },
   {
+    revision: "2ec8a8a7866c757d1f464e0578ea276e",
+    url: "./static/media/agent_blackwell.2ec8a8a7.jpeg",
+  },
+  {
     revision: "dcd6dee2bd7458a4a576dc131506fd83",
     url: "./static/media/animated_logo.dcd6dee2.svg",
+  },
+  {
+    revision: "11d915661ecbb5267d439199fbacb03c",
+    url: "./static/media/aura.11d91566.jpeg",
+  },
+  {
+    revision: "d0209e89ad2d56fb4b469c33eff07cde",
+    url: "./static/media/betterprompts.d0209e89.jpeg",
   },
   {
     revision: "52320b8c4cbe321d3fcb46c6f40c27c8",
@@ -78,6 +90,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     revision: "5f915405511f649dad433a6db9adbff4",
     url: "./static/media/contactMail.5f915405.png",
+  },
+  {
+    revision: "cc6fc7370fc8a27bfe507f4179d2c044",
+    url: "./static/media/crack.cc6fc737.jpeg",
+  },
+  {
+    revision: "b4d112aacca22f6c7c2c9f8a23124397",
+    url: "./static/media/d3_gallery.b4d112aa.jpeg",
   },
   {
     revision: "b67300d86bab04d036f818d47d5d03f7",
@@ -212,6 +232,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     url: "./static/media/legato_logo.c597fbde.png",
   },
   {
+    revision: "f21a8d9a342fcabcc46ad2dbf54ae378",
+    url: "./static/media/liblearner.f21a8d9a.jpeg",
+  },
+  {
     revision: "3f17ffac655cb2b77fee1e6ead94fb9c",
     url: "./static/media/manOnTable.3f17ffac.svg",
   },
@@ -222,6 +246,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     revision: "95a12a2b8c3149cce2175679755c4b4d",
     url: "./static/media/nptel_logo.95a12a2b.png",
+  },
+  {
+    revision: "414dfbd98516b39255a3e22ed90b3f7d",
+    url: "./static/media/portfolio.414dfbd9.gif",
+  },
+  {
+    revision: "eaf02c2d0158b6b4b8c2a0a0cf830a04",
+    url: "./static/media/profile_avatar.eaf02c2d.png",
   },
   {
     revision: "d86d0a613f7a987cfc6f1af06e746fa8",

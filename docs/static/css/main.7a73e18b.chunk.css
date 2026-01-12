@@ -999,6 +999,14 @@ body {
   font-family: Google Sans Regular;
   text-align: center;
 }
+.education-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
 @media (max-width: 1380px) {
   .heading-text {
     font-size: 50px;
@@ -1015,6 +1023,13 @@ body {
   }
   .heading-sub-text {
     font-size: 20px;
+  }
+  .education-header-detail-text {
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: 0;
+    line-height: normal;
+    text-align: center;
   }
   .heading-div {
     flex-direction: column;
@@ -1522,152 +1537,65 @@ body {
     letter-spacing: 1.2px;
   }
 }
-.dev-icons-languages {
-  padding-left: 0;
-  list-style: none;
-  font-size: 2rem;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: right;
-}
-.software-skill-inline-languages {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
-  font-family: Google Sans Regular;
-}
-@media (max-width: 768px) {
-  .software-skill-inline-languages {
-    margin-right: 10px;
-    margin-bottom: 0;
-  }
-}
-.repo-card-div {
-  color: #586069;
-  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  cursor: pointer;
-  flex: 1 1 25%;
-}
-.repo-card-div:hover {
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
-}
-.repo-stats {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  color: #6a737d;
-}
-.repo-left-stat {
-  flex-grow: 1;
-  display: flex;
-}
-.language-color {
-  width: 10px;
-  height: 10px;
-  background-color: #00f;
-  margin-right: 0.25rem;
-  border-radius: 100%;
-}
-.repo-left-stat span {
-  margin-right: 0.75rem;
-}
-.repo-left-stat span,
-.repo-name-div {
-  display: flex;
-  align-items: center;
-}
-.repo-svg {
-  margin-right: 0.5rem;
-  min-width: 16px;
-}
-.repo-name {
-  text-align: left;
-  color: #24292e;
-  font-family: Google Sans Regular;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  overflow: hidden;
-  line-height: 1.2;
-  margin: 0;
-}
-.repo-star-svg {
-  margin-right: 0.3rem;
-}
-.repo-description {
-  overflow: hidden;
-  text-align: left;
-  display: -webkit-box;
-  font-family: Google Sans Regular;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  margin-top: 0.8rem;
-}
-.repo-details {
-  display: flex;
-  flex-direction: row;
-}
-.repo-creation-date {
-  font-family: Google Sans Regular;
-  font-weight: 400;
-  margin: 0 auto 0 0;
-}
-.repo-languages {
-  margin-left: auto;
-  margin-right: 0;
-}
-@media (max-width: 1200px) {
-  .repo-card-div {
-    flex: 1 1 40%;
-  }
-}
-@media (max-width: 768px) {
-  .repo-card-div {
-    flex: 1 1 100%;
-  }
-  .repo-name {
-    font-size: 16px;
-  }
-  .repo-description {
-    font-size: 14px;
-  }
-  .repo-details {
-    flex-direction: column;
-  }
-  .repo-creation-date {
-    font-size: 14px;
-  }
-}
-.dark-mode .repo-card-div {
-  background: rgba(10, 10, 20, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(139, 92, 246, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  color: #e8e8ff;
-}
-.dark-mode .repo-card-div:hover {
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
-  border-color: rgba(139, 92, 246, 0.4);
-}
-.dark-mode .repo-name {
-  color: #e8e8ff;
-}
-.dark-mode .repo-creation-date,
-.dark-mode .repo-stats {
-  color: #9898c8;
-}
 .publication-card-div {
   color: #586069;
   background-color: #fff;
   box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 0;
   cursor: pointer;
-  flex: 1 1 25%;
+  flex: 1 1 21%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.publication-image-div {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.publication-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.publication-card-div:hover .publication-image {
+  transform: scale(1.05);
+}
+.publication-card-div .publication-description,
+.publication-card-div .publication-details,
+.publication-card-div .publication-name-div {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.publication-card-div .publication-name-div {
+  padding-top: 1rem;
+}
+.publication-card-div .publication-details {
+  padding-bottom: 1.25rem;
+}
+.publication-card-div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.2), transparent);
+  transition: left 0.5s ease;
 }
 .publication-card-div:hover {
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+.publication-card-div:hover:before {
+  left: 100%;
+}
+.publication-card-div:hover .publication-name {
+  color: #6366f1;
 }
 .publication-name-div {
   display: flex;
@@ -1675,11 +1603,12 @@ body {
 }
 .publication-name {
   color: #24292e;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 1.2;
   margin: 0;
+  transition: color 0.3s ease;
 }
 .publication-description,
 .publication-name {
@@ -1689,9 +1618,10 @@ body {
 }
 .publication-description {
   display: -webkit-box;
+  font-size: 14px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
 }
 .publication-details {
   display: flex;
@@ -1704,24 +1634,27 @@ body {
 }
 @media (max-width: 1200px) {
   .publication-card-div {
-    flex: 1 1 40%;
+    flex: 1 1 34%;
   }
 }
 @media (max-width: 768px) {
   .publication-card-div {
     flex: 1 1 100%;
   }
+  .publication-image-div {
+    height: 140px;
+  }
   .publication-name {
     font-size: 16px;
   }
   .publication-description {
-    font-size: 14px;
+    font-size: 13px;
   }
   .publication-details {
     flex-direction: column;
   }
   .publication-creation-date {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 .projects-main {
@@ -6810,4 +6743,4 @@ body {
 .fas {
   font-weight: 900;
 }
-/*# sourceMappingURL=main.c695c5ee.chunk.css.map */
+/*# sourceMappingURL=main.7a73e18b.chunk.css.map */
