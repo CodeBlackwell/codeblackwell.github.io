@@ -160,7 +160,7 @@
     function (e, t, a) {},
     function (e, t, a) {},
     function (e, t, a) {
-      e.exports = a.p + "static/media/LeAvatar.20b1bf23.png";
+      e.exports = a.p + "static/media/LeAvatar.afea5eb3.png";
     },
     function (e, t, a) {
       e.exports = a.p + "static/media/address_image.137185a8.svg";
@@ -8165,4 +8165,4 @@
   ]),
   [[63, 1, 2]],
 ]);
-//# sourceMappingURL=main.2ca7b7c6.chunk.js.map
+//# sourceMappingURL=main.672de6f7.chunk.js.map
