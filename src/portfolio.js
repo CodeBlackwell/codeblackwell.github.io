@@ -461,7 +461,7 @@ const publications = {
       description:
         "PRD from Agent Negotiation & Expert Logic. Type an idea, watch 13 AI agents debate architecture, security, and UX, then 3 judges score the result. Downloads a complete PRD package with transcripts, scores, and structured exports.",
       url: "https://github.com/CodeBlackwell/PANEL",
-      image: require("./assets/images/panel.jpeg"),
+      image: require("./assets/images/agent_blackwell.jpeg"),
     },
     {
       id: "crack",
@@ -480,15 +480,6 @@ const publications = {
         "Transform any prompt into perfection. 12 optimization techniques powered by fine-tuned DeBERTa-v3 that improve AI output quality by 40%. Sub-200ms response times at enterprise scale.",
       url: "https://github.com/codeblackwell/BetterPrompts",
       image: require("./assets/images/betterprompts.jpeg"),
-    },
-    {
-      id: "agent-blackwell",
-      name: "Agent_Blackwell",
-      createdAt: "2025-09-10T00:00:00Z",
-      description:
-        "Five minds, one mission. Orchestrates specialized AI agents (Planner, Designer, Coder, Tester, Reviewer) to automate the complete software development lifecycle with production-ready output.",
-      url: "https://github.com/codeblackwell/Agent_Blackwell",
-      image: require("./assets/images/agent_blackwell.jpeg"),
     },
     {
       id: "d3-gallery",
