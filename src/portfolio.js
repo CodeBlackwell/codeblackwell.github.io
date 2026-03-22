@@ -455,6 +455,15 @@ const publications = {
       image: require("./assets/images/PROVE.png"),
     },
     {
+      id: "panel",
+      name: "PANEL",
+      createdAt: "2026-03-22T00:00:00Z",
+      description:
+        "PRD from Agent Negotiation & Expert Logic. Type an idea, watch 13 AI agents debate architecture, security, and UX, then 3 judges score the result. Downloads a complete PRD package with transcripts, scores, and structured exports.",
+      url: "https://github.com/CodeBlackwell/PANEL",
+      image: require("./assets/images/panel.jpeg"),
+    },
+    {
       id: "crack",
       name: "C.R.A.C.K.",
       createdAt: "2026-01-08T00:00:00Z",
