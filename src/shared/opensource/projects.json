@@ -1,6 +1,24 @@
 {
   "data": [
     {
+      "id": "prove",
+      "name": "PROVE",
+      "createdAt": "2026-03-20T00:00:00Z",
+      "url": "https://github.com/CodeBlackwell/PROVE",
+      "description": "Portfolio Reasoning Over Verified Evidence — turns your resume and repos into a queryable Neo4j knowledge graph with AI-powered skill verification",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
       "id": "betterprompts",
       "name": "BetterPrompts",
       "createdAt": "2025-01-01T00:00:00Z",

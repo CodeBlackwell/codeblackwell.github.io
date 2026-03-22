@@ -446,6 +446,15 @@ const publicationsHeader = {
 const publications = {
   data: [
     {
+      id: "prove",
+      name: "PROVE",
+      createdAt: "2026-03-20T00:00:00Z",
+      description:
+        "Your skills, verified by code. Ingests your resume and GitHub repos into a Neo4j knowledge graph, then lets anyone query your abilities with cited evidence, GitHub links, and proficiency scores — powered by Claude and vector search.",
+      url: "https://prove.codeblackwell.ai",
+      image: require("./assets/images/PROVE.png"),
+    },
+    {
       id: "crack",
       name: "C.R.A.C.K.",
       createdAt: "2026-01-08T00:00:00Z",
