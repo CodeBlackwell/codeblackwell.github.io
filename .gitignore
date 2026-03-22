@@ -10,8 +10,9 @@ lerna-debug.log*
 # Dependencies
 node_modules/
 
-# Build output (docs/ is tracked for GitHub Pages deployment from master)
+# Build output (CI deploys to gh-pages branch, docs/ no longer needed)
 build/
+docs/
 dist/
 dist-ssr/
 *.local

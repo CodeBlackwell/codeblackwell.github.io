@@ -17,25 +17,34 @@ dev:
 dev-open:
     npm start
 
+# Start dev server via Docker
+dev-docker:
+    docker compose --profile dev up dev
+
 # ─────────────────────────────────────────────────────────────
 # Build & Deploy
 # ─────────────────────────────────────────────────────────────
 
-# Build production bundle
+# Build production bundle (local verification)
 build:
     npm run build
 
-# Deploy to GitHub Pages (builds, copies to docs/, pushes to master)
-deploy: build
-    rm -rf docs/
-    cp -r build/ docs/
-    git add docs/
-    git commit -m "Build for deployment" --allow-empty
-    git push origin master
-    @echo "✅ Deployed to https://codeblackwell.github.io"
+# Preview production build locally via Docker (nginx on port 8080)
+preview:
+    docker compose up --build portfolio
 
-# Quick deploy - build and deploy in one command
-ship: deploy
+# Deploy: push to master triggers GitHub Actions CI/CD
+deploy:
+    git push origin master
+    @echo "Pushed to master. GitHub Actions will build and deploy to https://codeblackwell.ai"
+    @echo "Monitor: https://github.com/CodeBlackwell/codeblackwell.github.io/actions"
+
+# Commit and deploy in one command
+ship message:
+    git add -A
+    git commit -m "{{message}}"
+    git push origin master
+    @echo "Shipped! GitHub Actions will deploy to https://codeblackwell.ai"
 
 # ─────────────────────────────────────────────────────────────
 # Git Operations
@@ -53,15 +62,6 @@ commit message:
 # Commit and push to master
 push message: (commit message)
     git push origin master
-
-# Full release: commit source, build, copy to docs/, push to master
-release message: (commit message) build
-    rm -rf docs/
-    cp -r build/ docs/
-    git add docs/
-    git commit -m "Build for deployment" --allow-empty
-    git push origin master
-    @echo "🚀 Released and deployed!"
 
 # ─────────────────────────────────────────────────────────────
 # Utilities
@@ -91,6 +91,10 @@ audit:
 # Fix dependency vulnerabilities (safe fixes only)
 audit-fix:
     npm audit fix
+
+# Check CI status for latest run
+ci-status:
+    gh run list --limit 5
 
 # ─────────────────────────────────────────────────────────────
 # Combined Workflows

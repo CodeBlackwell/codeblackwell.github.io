@@ -15,7 +15,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
     if (saved !== null) return JSON.parse(saved);
-    return true; // Default to dark mode (Deep Space)
+    return false; // Default to light mode
   });
 
   const currentTheme = isDarkMode ? materialDarkTheme : blueTheme;

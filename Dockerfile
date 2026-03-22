@@ -1,16 +1,21 @@
-FROM node:20.11-alpine
+# ── Stage 1: Build ──────────────────────────────────────────
+FROM node:20.11-alpine AS build
 
-# set working directory
 WORKDIR /app
 
-# install app dependencies
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 
-# add app
-COPY . ./
+COPY . .
+ENV NODE_OPTIONS=--openssl-legacy-provider
+RUN npm run build
 
-EXPOSE 3001
+# ── Stage 2: Serve ──────────────────────────────────────────
+FROM nginx:1.27-alpine
 
-# start app
-CMD ["npm", "start"]
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/build /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

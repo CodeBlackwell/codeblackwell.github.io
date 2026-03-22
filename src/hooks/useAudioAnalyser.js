@@ -17,7 +17,6 @@ export function useAudioAnalyser(audioSrc) {
   const sourceRef = useRef(null);
   const frequencyDataRef = useRef(null);
   const isInitializedRef = useRef(false);
-  const hasTriedAutoplayRef = useRef(false);
 
   // Initialize audio context and analyser
   const initAudio = useCallback(() => {
@@ -144,53 +143,10 @@ export function useAudioAnalyser(audioSrc) {
     }
   }, [isPlaying, pause, play]);
 
-  // Initialize and attempt autoplay on mount
+  // Initialize audio on mount (no autoplay)
   useEffect(() => {
-    const userPaused = localStorage.getItem("musicPlayerPaused") === "true";
-
-    // Initialize audio system immediately
     initAudio();
-
-    // If user hasn't explicitly paused, try to autoplay
-    if (!userPaused && !hasTriedAutoplayRef.current) {
-      hasTriedAutoplayRef.current = true;
-
-      // Try to play immediately
-      play().catch(() => {
-        // Autoplay blocked - set up listeners for ANY user interaction
-        setNeedsInteraction(true);
-      });
-    }
-  }, [initAudio, play]);
-
-  // Set up global interaction listeners to start audio on ANY interaction
-  useEffect(() => {
-    const userPaused = localStorage.getItem("musicPlayerPaused") === "true";
-    if (userPaused) return;
-
-    const startOnInteraction = () => {
-      if (!isPlaying && audioRef.current) {
-        play();
-      }
-      // Remove listeners after first successful interaction
-      cleanup();
-    };
-
-    const cleanup = () => {
-      document.removeEventListener("click", startOnInteraction);
-      document.removeEventListener("keydown", startOnInteraction);
-      document.removeEventListener("touchstart", startOnInteraction);
-      document.removeEventListener("scroll", startOnInteraction);
-    };
-
-    // Add listeners for common user interactions
-    document.addEventListener("click", startOnInteraction, { once: true });
-    document.addEventListener("keydown", startOnInteraction, { once: true });
-    document.addEventListener("touchstart", startOnInteraction, { once: true });
-    document.addEventListener("scroll", startOnInteraction, { once: true });
-
-    return cleanup;
-  }, [isPlaying, play]);
+  }, [initAudio]);
 
   // Cleanup on unmount
   useEffect(() => {
