@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
+import PageHelmet from "../../components/pageHelmet/PageHelmet";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
@@ -149,6 +150,11 @@ class Experience extends Component {
     const theme = this.props.theme;
     return (
       <div className="experience-main">
+        <PageHelmet
+          title="Experience"
+          description="8+ years of professional experience in AI/ML, full-stack development, and data engineering across startups and enterprise."
+          path="/experience"
+        />
         <Header theme={theme} />
         <div className="basic-experience">
           <Fade bottom duration={2000} distance="40px">
@@ -161,16 +167,10 @@ class Experience extends Component {
                 <ExperienceImg theme={theme} />
               </div>
               <div className="experience-heading-text-div">
-                <h1
-                  className="experience-heading-text"
-                  style={{ color: theme.text }}
-                >
+                <h1 className="experience-heading-text" style={{ color: theme.text }}>
                   {experience.title}
                 </h1>
-                <h3
-                  className="experience-heading-sub-text"
-                  style={{ color: theme.text }}
-                >
+                <h3 className="experience-heading-sub-text" style={{ color: theme.text }}>
                   {experience["subtitle"]}
                 </h3>
                 <p

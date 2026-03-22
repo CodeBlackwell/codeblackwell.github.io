@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
+import PageHelmet from "../../components/pageHelmet/PageHelmet";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -20,6 +21,11 @@ class Contact extends Component {
     const theme = this.props.theme;
     return (
       <div className="contact-main">
+        <PageHelmet
+          title="Contact"
+          description="Get in touch with LeChristopher Blackwell. Open to discussing AI/ML projects, technical challenges, and new opportunities."
+          path="/contact"
+        />
         <Header theme={theme} />
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">

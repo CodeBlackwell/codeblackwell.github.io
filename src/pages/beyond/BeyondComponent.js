@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
+import PageHelmet from "../../components/pageHelmet/PageHelmet";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import PassionCard from "../../components/passionCard/PassionCard";
@@ -21,6 +22,11 @@ class Beyond extends Component {
     const { activePassionId } = this.state;
     return (
       <div className="beyond-main">
+        <PageHelmet
+          title="Beyond The Keys"
+          description="Flow arts, martial arts, fire dancing, outdoor adventures, and travel — the passions that fuel LeChristopher beyond code."
+          path="/beyond"
+        />
         <Header theme={theme} />
         <div className="basic-beyond">
           <Fade bottom duration={2000} distance="40px">

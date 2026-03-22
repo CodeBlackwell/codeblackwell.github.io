@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
+import PageHelmet from "../../components/pageHelmet/PageHelmet";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
 import Footer from "../../components/footer/Footer";
@@ -9,6 +10,11 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <PageHelmet
+          title="Home"
+          description="LeChristopher Blackwell — Full-stack engineer specializing in AI/ML, LLMs, data pipelines, and scalable web applications."
+          path="/home"
+        />
         <Header theme={this.props.theme} />
         <Greeting theme={this.props.theme} />
         <Skills theme={this.props.theme} />

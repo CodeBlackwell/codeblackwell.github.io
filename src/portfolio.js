@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "LeChristopher Blackwell Portfolio",
     type: "website",
-    url: "https://codeblackwell.github.io/",
+    url: "https://codeblackwell.ai/",
   },
 };
 
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "LeChristopherBlackwell",
   nickname: "codeblackwell",
   subTitle:
-    "Building the future with AI — Full-stack engineer specializing in LLMs, data pipelines, and scalable web applications. Passionate about prompt engineering, machine learning, and turning complex problems into elegant solutions.",
+    "Building the future with AI. Full-stack engineer specializing in LLMs, data pipelines, and scalable web applications. Passionate about prompt engineering, machine learning, and turning complex problems into elegant solutions.",
   resumeLink: "./LeChristopher_Blackwell_Resume.pdf",
   portfolio_repository: "https://github.com/codeblackwell/codeblackwell.github.io",
   githubProfile: "https://github.com/codeblackwell",
@@ -432,7 +432,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "I specialize in building AI systems that democratize complex technology. My work spans fine-tuned LLMs with PEFT/LoRA optimization, multi-agent orchestration frameworks, and tools that bridge natural language to structured data. Each project transforms expert-level capabilities into accessible solutions—whether that's making prompt engineering intuitive, automating software development through coordinated AI agents, or turning plain English into precise database queries.",
+    "I specialize in building AI systems that democratize complex technology. My work spans fine-tuned LLMs with PEFT/LoRA optimization, multi-agent orchestration frameworks, and tools that bridge natural language to structured data. Each project transforms expert-level capabilities into accessible solutions, whether that's making prompt engineering intuitive, automating software development through coordinated AI agents, or turning plain English into precise database queries.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -450,7 +450,7 @@ const publications = {
       name: "PROVE",
       createdAt: "2026-03-20T00:00:00Z",
       description:
-        "Your skills, verified by code. Ingests your resume and GitHub repos into a Neo4j knowledge graph, then lets anyone query your abilities with cited evidence, GitHub links, and proficiency scores — powered by Claude and vector search.",
+        "Your skills, verified by code. Ingests your resume and GitHub repos into a Neo4j knowledge graph, then lets anyone query your abilities with cited evidence, GitHub links, and proficiency scores, all powered by Claude and vector search.",
       url: "https://prove.codeblackwell.ai",
       image: require("./assets/images/PROVE.png"),
     },
@@ -477,7 +477,7 @@ const publications = {
       name: "Agent_Blackwell",
       createdAt: "2025-09-10T00:00:00Z",
       description:
-        "Five minds, one mission. Orchestrates specialized AI agents—Planner, Designer, Coder, Tester, Reviewer—to automate the complete software development lifecycle with production-ready output.",
+        "Five minds, one mission. Orchestrates specialized AI agents (Planner, Designer, Coder, Tester, Reviewer) to automate the complete software development lifecycle with production-ready output.",
       url: "https://github.com/codeblackwell/Agent_Blackwell",
       image: require("./assets/images/agent_blackwell.jpeg"),
     },
@@ -486,7 +486,7 @@ const publications = {
       name: "D3 Visualization Gallery",
       createdAt: "2025-06-26T00:00:00Z",
       description:
-        "Teaching AI to see data. 800+ TypeScript/React components bridging natural language to interactive D3.js visualizations—the first comprehensive training dataset for LLM-powered data viz.",
+        "Teaching AI to see data. 800+ TypeScript/React components bridging natural language to interactive D3.js visualizations, producing the first comprehensive training dataset for LLM-powered data viz.",
       url: "https://github.com/CodeBlackwell/d3_visualization_gallery",
       image: require("./assets/images/d3_gallery.jpeg"),
     },
@@ -495,7 +495,7 @@ const publications = {
       name: "A.U.R.A",
       createdAt: "2025-06-23T00:00:00Z",
       description:
-        "Ask questions, get answers. StarCoder fine-tuned with PEFT/LoRA converts natural language to precise JSON queries—democratizing enterprise data access for non-technical users.",
+        "Ask questions, get answers. StarCoder fine-tuned with PEFT/LoRA converts natural language to precise JSON queries, democratizing enterprise data access for non-technical users.",
       url: "https://github.com/codeblackwell/A.U.R.A",
       image: require("./assets/images/aura.jpeg"),
     },

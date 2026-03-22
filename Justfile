@@ -97,8 +97,43 @@ ci-status:
     gh run list --limit 5
 
 # ─────────────────────────────────────────────────────────────
+# CDN Infrastructure
+# ─────────────────────────────────────────────────────────────
+
+# Deploy CloudFormation stack (S3, CloudFront, ACM, Route 53)
+infra-deploy:
+    ./infrastructure/deploy.sh deploy-infra
+
+# Build and deploy site to S3 + invalidate CloudFront cache
+cdn-deploy: build
+    ./infrastructure/deploy.sh deploy-site
+
+# Deploy/update Lambda@Edge OG tags function
+cdn-lambda:
+    ./infrastructure/deploy.sh deploy-lambda
+
+# Deploy everything: infrastructure + site + Lambda@Edge
+cdn-deploy-all:
+    ./infrastructure/deploy.sh deploy-all
+
+# Show CDN stack status
+cdn-status:
+    ./infrastructure/deploy.sh status
+
+# Show CDN stack outputs (bucket name, distribution ID, etc.)
+cdn-outputs:
+    ./infrastructure/deploy.sh outputs
+
+# Destroy CDN infrastructure (interactive confirmation)
+cdn-destroy:
+    ./infrastructure/deploy.sh destroy
+
+# ─────────────────────────────────────────────────────────────
 # Combined Workflows
 # ─────────────────────────────────────────────────────────────
+
+# Full deploy: push to master (GitHub Pages) + build and deploy to CDN
+deploy-full: deploy cdn-deploy
 
 # Fresh start: clean, install, and start dev
 fresh: clean install dev

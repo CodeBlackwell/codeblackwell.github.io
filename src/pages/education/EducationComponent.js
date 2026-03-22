@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
+import PageHelmet from "../../components/pageHelmet/PageHelmet";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import Educations from "../../containers/education/Educations";
@@ -15,6 +16,11 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
+        <PageHelmet
+          title="Education"
+          description="IBM Generative AI certified. Hack Reactor graduate. Continuous learner in AI/ML, prompt engineering, and software architecture."
+          path="/education"
+        />
         <Header theme={this.props.theme} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">

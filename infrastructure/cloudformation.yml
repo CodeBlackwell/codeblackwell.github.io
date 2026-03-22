@@ -1,0 +1,306 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  CDN infrastructure for codeblackwell.ai — S3 origin with CloudFront distribution,
+  ACM certificate, and Origin Access Control.
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: codeblackwell.ai
+    Description: Primary domain name
+
+  IncludeWWW:
+    Type: String
+    Default: "true"
+    AllowedValues: ["true", "false"]
+    Description: Whether to include www subdomain as an alternate domain
+
+Conditions:
+  HasWWW: !Equals [!Ref IncludeWWW, "true"]
+
+Resources:
+  # ─────────────────────────────────────────────────────────────
+  # S3 Bucket — private origin for CloudFront
+  # ─────────────────────────────────────────────────────────────
+  SiteBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${DomainName}-site"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: CleanupOldVersions
+            Status: Enabled
+            NoncurrentVersionExpiration:
+              NoncurrentDays: 30
+
+  # ─────────────────────────────────────────────────────────────
+  # S3 Bucket Policy — allow CloudFront OAC read access
+  # ─────────────────────────────────────────────────────────────
+  SiteBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref SiteBucket
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: AllowCloudFrontOAC
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: s3:GetObject
+            Resource: !Sub "${SiteBucket.Arn}/*"
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub "arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution}"
+
+  # ─────────────────────────────────────────────────────────────
+  # ACM Certificate — must be in us-east-1 for CloudFront
+  # ─────────────────────────────────────────────────────────────
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !Ref DomainName
+      SubjectAlternativeNames:
+        - !If [HasWWW, !Sub "www.${DomainName}", !Ref "AWS::NoValue"]
+      ValidationMethod: DNS
+      DomainValidationOptions:
+        - DomainName: !Ref DomainName
+          HostedZoneId: !Ref HostedZoneId
+
+  # ─────────────────────────────────────────────────────────────
+  # Route 53 Hosted Zone (if managing DNS via AWS)
+  # ─────────────────────────────────────────────────────────────
+  HostedZoneId:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: !Ref DomainName
+
+  # ─────────────────────────────────────────────────────────────
+  # CloudFront Origin Access Control
+  # ─────────────────────────────────────────────────────────────
+  CloudFrontOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: codeblackwell-cdn-oac
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  # ─────────────────────────────────────────────────────────────
+  # CloudFront Cache Policy — optimized for static SPA
+  # ─────────────────────────────────────────────────────────────
+  CachePolicy:
+    Type: AWS::CloudFront::CachePolicy
+    Properties:
+      CachePolicyConfig:
+        Name: codeblackwell-cdn-cache-policy
+        DefaultTTL: 86400
+        MaxTTL: 31536000
+        MinTTL: 0
+        ParametersInCacheKeyAndForwardedToOrigin:
+          CookiesConfig:
+            CookieBehavior: none
+          EnableAcceptEncodingBrotli: true
+          EnableAcceptEncodingGzip: true
+          HeadersConfig:
+            HeaderBehavior: none
+          QueryStringsConfig:
+            QueryStringBehavior: none
+
+  # ─────────────────────────────────────────────────────────────
+  # CloudFront Response Headers Policy — security + cache headers
+  # ─────────────────────────────────────────────────────────────
+  ResponseHeadersPolicy:
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties:
+      ResponseHeadersPolicyConfig:
+        Name: codeblackwell-cdn-response-headers
+        SecurityHeadersConfig:
+          ContentTypeOptions:
+            Override: true
+          FrameOptions:
+            FrameOption: SAMEORIGIN
+            Override: true
+          ReferrerPolicy:
+            ReferrerPolicy: strict-origin-when-cross-origin
+            Override: true
+          StrictTransportSecurity:
+            AccessControlMaxAgeSec: 31536000
+            IncludeSubdomains: true
+            Override: true
+            Preload: true
+
+  # ─────────────────────────────────────────────────────────────
+  # CloudFront Distribution
+  # ─────────────────────────────────────────────────────────────
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true
+        Comment: !Sub "CDN for ${DomainName}"
+        DefaultRootObject: index.html
+        HttpVersion: http2and3
+        IPV6Enabled: true
+        PriceClass: PriceClass_100
+
+        Aliases:
+          - !Ref DomainName
+          - !If [HasWWW, !Sub "www.${DomainName}", !Ref "AWS::NoValue"]
+
+        ViewerCertificate:
+          AcmCertificateArn: !Ref Certificate
+          MinimumProtocolVersion: TLSv1.2_2021
+          SslSupportMethod: sni-only
+
+        Origins:
+          - Id: S3Origin
+            DomainName: !GetAtt SiteBucket.RegionalDomainName
+            OriginAccessControlId: !Ref CloudFrontOAC
+            S3OriginConfig:
+              OriginAccessIdentity: ""
+
+        DefaultCacheBehavior:
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods: [GET, HEAD, OPTIONS]
+          CachedMethods: [GET, HEAD]
+          CachePolicyId: !Ref CachePolicy
+          ResponseHeadersPolicyId: !Ref ResponseHeadersPolicy
+          Compress: true
+
+        CacheBehaviors:
+          # Hashed static assets — aggressive long-term caching
+          - PathPattern: /static/*
+            TargetOriginId: S3Origin
+            ViewerProtocolPolicy: redirect-to-https
+            AllowedMethods: [GET, HEAD]
+            CachedMethods: [GET, HEAD]
+            CachePolicyId: !Ref CachePolicy
+            ResponseHeadersPolicyId: !Ref ResponseHeadersPolicy
+            Compress: true
+
+        # SPA routing — serve index.html for client-side routes
+        CustomErrorResponses:
+          - ErrorCode: 403
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+            ErrorCachingMinTTL: 10
+          - ErrorCode: 404
+            ResponseCode: 200
+            ResponsePagePath: /index.html
+            ErrorCachingMinTTL: 10
+
+  # ─────────────────────────────────────────────────────────────
+  # Route 53 DNS Records
+  # ─────────────────────────────────────────────────────────────
+  DNSRecord:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Ref DomainName
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2  # CloudFront hosted zone ID (global constant)
+
+  DNSRecordIPv6:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Ref DomainName
+      Type: AAAA
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+
+  DNSRecordWWW:
+    Type: AWS::Route53::RecordSet
+    Condition: HasWWW
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Sub "www.${DomainName}"
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+
+  DNSRecordWWWIPv6:
+    Type: AWS::Route53::RecordSet
+    Condition: HasWWW
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: !Sub "www.${DomainName}"
+      Type: AAAA
+      AliasTarget:
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+
+  # ─────────────────────────────────────────────────────────────
+  # Lambda@Edge — dynamic OG meta tags for social link previews
+  # ─────────────────────────────────────────────────────────────
+  LambdaEdgeRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: codeblackwell-lambda-edge-role
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+                - edgelambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  # ─────────────────────────────────────────────────────────────
+  # External Aliases
+  # ─────────────────────────────────────────────────────────────
+  SpiceAlias:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZoneId
+      Name: spice.codeblackwell.ai
+      Type: CNAME
+      TTL: 300
+      ResourceRecords:
+        - spice.letitcook.ing
+
+Outputs:
+  BucketName:
+    Value: !Ref SiteBucket
+    Description: S3 bucket name for deployments
+    Export:
+      Name: !Sub "${AWS::StackName}-BucketName"
+
+  DistributionId:
+    Value: !Ref CloudFrontDistribution
+    Description: CloudFront distribution ID for cache invalidation
+    Export:
+      Name: !Sub "${AWS::StackName}-DistributionId"
+
+  DistributionDomainName:
+    Value: !GetAtt CloudFrontDistribution.DomainName
+    Description: CloudFront distribution domain name
+
+  CertificateArn:
+    Value: !Ref Certificate
+    Description: ACM certificate ARN
+
+  LambdaEdgeRoleArn:
+    Value: !GetAtt LambdaEdgeRole.Arn
+    Description: IAM role ARN for Lambda@Edge OG tags function
+
+  NameServers:
+    Value: !Join [", ", !GetAtt HostedZoneId.NameServers]
+    Description: Route 53 name servers - update your domain registrar to use these

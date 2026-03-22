@@ -35,9 +35,64 @@ jobs:
           NODE_OPTIONS: "--openssl-legacy-provider"
           CI: false
 
+      # ── GitHub Pages (fallback) ──────────────────────────────
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           cname: codeblackwell.ai
+
+      # ── CloudFront CDN ───────────────────────────────────────
+      - name: Configure AWS credentials
+        if: env.AWS_ACCESS_KEY_ID != ''
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+
+      - name: Deploy to S3
+        if: env.AWS_ACCESS_KEY_ID != ''
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        run: |
+          BUCKET=$(aws cloudformation describe-stacks \
+            --stack-name codeblackwell-cdn \
+            --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" \
+            --output text)
+
+          # Sync hashed assets with immutable cache headers
+          aws s3 sync build/static "s3://${BUCKET}/static" \
+            --cache-control "public, max-age=31536000, immutable" \
+            --delete
+
+          # Sync remaining files with short cache
+          aws s3 sync build "s3://${BUCKET}" \
+            --cache-control "public, max-age=300, s-maxage=86400" \
+            --exclude "static/*" \
+            --delete
+
+          # Override entry points with no-cache for instant updates
+          for file in index.html asset-manifest.json service-worker.js; do
+            if [ -f "build/$file" ]; then
+              aws s3 cp "build/$file" "s3://${BUCKET}/$file" \
+                --cache-control "public, max-age=0, must-revalidate"
+            fi
+          done
+
+      - name: Invalidate CloudFront cache
+        if: env.AWS_ACCESS_KEY_ID != ''
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        run: |
+          DISTRIBUTION_ID=$(aws cloudformation describe-stacks \
+            --stack-name codeblackwell-cdn \
+            --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" \
+            --output text)
+
+          aws cloudfront create-invalidation \
+            --distribution-id "$DISTRIBUTION_ID" \
+            --paths "/*"

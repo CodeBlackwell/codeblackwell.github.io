@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
+import PageHelmet from "../../components/pageHelmet/PageHelmet";
 import Footer from "../../components/footer/Footer";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
@@ -14,6 +15,11 @@ class Projects extends Component {
     const theme = this.props.theme;
     return (
       <div className="projects-main">
+        <PageHelmet
+          title="Projects"
+          description="Open source AI projects: PROVE knowledge graphs, C.R.A.C.K. pentesting toolkit, BetterPrompts, multi-agent systems, and more."
+          path="/projects"
+        />
         <Header theme={theme} />
         <div className="basic-projects">
           <Fade bottom duration={2000} distance="40px">
