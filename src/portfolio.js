@@ -461,7 +461,7 @@ const publications = {
       description:
         "PRD from Agent Negotiation & Expert Logic. Type an idea, watch 13 AI agents debate architecture, security, and UX, then 3 judges score the result. Downloads a complete PRD package with transcripts, scores, and structured exports.",
       url: "https://github.com/CodeBlackwell/PANEL",
-      image: require("./assets/images/agent_blackwell.jpeg"),
+      image: require("./assets/images/panel-og.png"),
     },
     {
       id: "crack",
