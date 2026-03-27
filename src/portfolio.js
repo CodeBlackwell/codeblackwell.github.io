@@ -432,82 +432,101 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "I specialize in building AI systems that democratize complex technology. My work spans fine-tuned LLMs with PEFT/LoRA optimization, multi-agent orchestration frameworks, and tools that bridge natural language to structured data. Each project transforms expert-level capabilities into accessible solutions, whether that's making prompt engineering intuitive, automating software development through coordinated AI agents, or turning plain English into precise database queries.",
+    "Every project here is deployed and live. From autonomous trading systems to AI-powered portfolio reasoning, multi-agent PRD generation to Active Directory attack path visualization — each one solves a real problem with a production stack I built end to end.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "Featured Projects",
   description:
-    "Open source tools pushing the boundaries of AI accessibility, security automation, and intelligent development.",
+    "Live applications spanning AI agents, security tooling, data validation, and infrastructure — all deployed and running.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
   data: [
     {
+      id: "spice",
+      name: "SPICE",
+      createdAt: "2026-03-01T00:00:00Z",
+      description:
+        "Autonomous crypto trading engine. Real-time market analysis, automated strategy execution, and a full trading cockpit — built on FastAPI, React, PostgreSQL/TimescaleDB, and Redis. Deployed on AWS EC2 with CloudFront.",
+      url: "https://letitcook.ing",
+      image: require("./assets/images/spice_screenshot.png"),
+    },
+    {
       id: "prove",
       name: "PROVE",
       createdAt: "2026-03-20T00:00:00Z",
       description:
-        "Your skills, verified by code. Ingests your resume and GitHub repos into a Neo4j knowledge graph, then lets anyone query your abilities with cited evidence, GitHub links, and proficiency scores, all powered by Claude and vector search.",
+        "Your skills, verified by code. Ingests your resume and GitHub repos into a Neo4j knowledge graph, then lets anyone query your abilities with cited evidence, GitHub links, and proficiency scores — powered by Claude and vector search.",
       url: "https://prove.codeblackwell.ai",
-      image: require("./assets/images/PROVE.png"),
+      image: require("./assets/images/prove_screenshot.png"),
     },
     {
       id: "panel",
       name: "PANEL",
       createdAt: "2026-03-22T00:00:00Z",
       description:
-        "PRD from Agent Negotiation & Expert Logic. Type an idea, watch 13 AI agents debate architecture, security, and UX, then 3 judges score the result. Downloads a complete PRD package with transcripts, scores, and structured exports.",
-      url: "https://github.com/CodeBlackwell/PANEL",
-      image: require("./assets/images/panel-og.png"),
+        "PRD from Agent Negotiation & Expert Logic. Type an idea, watch 13 AI agents debate architecture, security, and UX, then 3 judges score the result. Downloads a complete PRD package with transcripts and structured exports.",
+      url: "https://panel.codeblackwell.ai",
+      image: require("./assets/images/panel_screenshot.png"),
     },
     {
-      id: "crack",
-      name: "C.R.A.C.K.",
-      createdAt: "2026-01-08T00:00:00Z",
+      id: "bloodtrail",
+      name: "BloodTrail",
+      createdAt: "2026-03-10T00:00:00Z",
       description:
-        "Your complete penetration testing arsenal. 1,487 commands, 32 attack chains, and 50 cheatsheets unified in CLI, Electron GUI, and Claude AI integration. Neo4j-powered attack path visualization meets intelligent reconnaissance.",
-      url: "https://github.com/CodeBlackwell/C.R.A.C.K.",
-      image: require("./assets/images/crack.jpeg"),
+        "BloodHound attack path visualizer. Upload SharpHound data and instantly see Active Directory attack chains ranked by severity — dual graph view, execution playbooks with copy-paste commands, and thermal heatmap modes.",
+      url: "https://bloodtrail.codeblackwell.ai",
+      image: require("./assets/images/bloodtrail_screenshot.png"),
     },
     {
-      id: "betterprompts",
-      name: "BetterPrompts",
-      createdAt: "2025-09-10T00:00:00Z",
+      id: "crackpedia",
+      name: "Crackpedia",
+      createdAt: "2026-02-15T00:00:00Z",
       description:
-        "Transform any prompt into perfection. 12 optimization techniques powered by fine-tuned DeBERTa-v3 that improve AI output quality by 40%. Sub-200ms response times at enterprise scale.",
-      url: "https://github.com/codeblackwell/BetterPrompts",
-      image: require("./assets/images/betterprompts.jpeg"),
+        "Pentesting command encyclopedia. 54 attack chains, cheatsheets, and writeups with Neo4j-powered graph visualization. Browse by category, search by technique, and walk through step-by-step execution paths.",
+      url: "https://crackpedia.codeblackwell.ai",
+      image: require("./assets/images/crackpedia_screenshot.png"),
     },
     {
-      id: "d3-gallery",
-      name: "D3 Visualization Gallery",
-      createdAt: "2025-06-26T00:00:00Z",
+      id: "veridatum",
+      name: "Veridatum",
+      createdAt: "2026-02-01T00:00:00Z",
       description:
-        "Teaching AI to see data. 800+ TypeScript/React components bridging natural language to interactive D3.js visualizations, producing the first comprehensive training dataset for LLM-powered data viz.",
-      url: "https://github.com/CodeBlackwell/d3_visualization_gallery",
-      image: require("./assets/images/d3_gallery.jpeg"),
+        "Multi-source data validation. Upload CSVs from Shopify, Stripe, NetSuite — any system — and instantly see every discrepancy. Auto-detects join keys, configurable tolerances, pairwise comparisons with downloadable results.",
+      url: "https://veridatum.codeblackwell.ai",
+      image: require("./assets/images/veridatum_screenshot.png"),
     },
     {
-      id: "aura",
-      name: "A.U.R.A",
-      createdAt: "2025-06-23T00:00:00Z",
+      id: "kata",
+      name: "Kata",
+      createdAt: "2026-01-15T00:00:00Z",
       description:
-        "Ask questions, get answers. StarCoder fine-tuned with PEFT/LoRA converts natural language to precise JSON queries, democratizing enterprise data access for non-technical users.",
-      url: "https://github.com/codeblackwell/A.U.R.A",
-      image: require("./assets/images/aura.jpeg"),
+        "Declarative schema engine. Define your tables, columns, and conflict resolution strategies in Python — Kata generates the SQL, migrations, and upsert logic. Interactive demo with D3 visualization and CodeMirror editor.",
+      url: "https://kata.codeblackwell.ai",
+      image: require("./assets/images/kata_screenshot.png"),
     },
-    {
-      id: "liblearner",
-      name: "LibLearner",
-      createdAt: "2024-12-04T00:00:00Z",
-      description:
-        "Train your own intelligence. Extract code from any repository, process functions and classes, and fine-tune custom T5 models specialized on your codebase. Supports Python, JS, Jupyter, and more.",
-      url: "https://github.com/codeblackwell/LibLearner",
-      image: require("./assets/images/liblearner.jpeg"),
-    },
+  ],
+};
+
+// Workshop Page
+const workshopData = {
+  title: "The Workshop",
+  hint: "Hover a ring to inspect, click to explore.",
+  apiUrl: "https://prove.codeblackwell.ai/api/repositories",
+  palette: [
+    "#5a8a6a",
+    "#4a7ab5",
+    "#b8864e",
+    "#7a5195",
+    "#c0392b",
+    "#2c8c99",
+    "#8b6d3f",
+    "#6a5acd",
+    "#d4726a",
+    "#3a7d5e",
   ],
 };
 
@@ -633,4 +652,5 @@ export {
   publications,
   contactPageData,
   beyondPageData,
+  workshopData,
 };

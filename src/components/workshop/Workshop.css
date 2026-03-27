@@ -1,0 +1,104 @@
+.workshop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ws-gap);
+  padding: var(--ws-padding);
+  border-radius: var(--ws-radius);
+  background: var(--ws-bg);
+  color: var(--ws-text);
+  width: 100%;
+}
+
+.workshop-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--ws-border);
+}
+
+.workshop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workshop-title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  margin: 0;
+}
+
+.workshop-stage {
+  display: flex;
+  justify-content: center;
+  gap: var(--ws-gap);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem 0;
+}
+
+.workshop-ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.workshop-ring-svg {
+  width: var(--ws-ring-size);
+  height: var(--ws-ring-size);
+  transform: rotate(-90deg);
+}
+
+.workshop-ring-label {
+  font-size: 0.75rem;
+  color: var(--ws-muted);
+  text-align: center;
+  max-width: var(--ws-ring-size);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.workshop-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.workshop-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--ws-muted);
+}
+
+.workshop-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.workshop-hint {
+  color: var(--ws-muted);
+  font-size: 0.8rem;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .workshop-title {
+    font-size: 24px;
+  }
+
+  .workshop {
+    --ws-ring-size: 90px;
+    --ws-padding: 1rem;
+  }
+}
