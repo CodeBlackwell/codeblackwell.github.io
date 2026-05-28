@@ -446,6 +446,24 @@ const publicationsHeader = {
 const publications = {
   data: [
     {
+      id: "methodproof",
+      name: "MethodProof",
+      createdAt: "2026-05-01T00:00:00Z",
+      description:
+        "Engineering process intelligence. Captures how you actually think, debug, and build — then turns it into a Neo4j-backed graph that resumes and interviews can't show. Python/FastAPI + React + Chrome extension + mobile, deployed on AWS ECS with RDS, Redis, and CloudFront. Three provisional patents filed.",
+      url: "https://methodproof.com",
+      image: require("./assets/images/methodproof_screenshot.png"),
+    },
+    {
+      id: "specter-1",
+      name: "SPECTER·1",
+      createdAt: "2026-05-15T00:00:00Z",
+      description:
+        "Byzantine-resilient cooperative SLAM workshop. Interactive in-browser simulator for adversarial multi-agent mapping — replay storms, sybil floods, collusion attacks. TypeScript sim-core runs entirely client-side; React + Vite SPA shipped via GitHub Actions to Hetzner.",
+      url: "https://specter.codeblackwell.ai",
+      image: require("./assets/images/specter_screenshot.png"),
+    },
+    {
       id: "spice",
       name: "SPICE",
       createdAt: "2026-03-01T00:00:00Z",
