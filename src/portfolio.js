@@ -452,7 +452,7 @@ const publications = {
       description:
         "Engineering process intelligence. Captures how you actually think, debug, and build — then turns it into a Neo4j-backed graph that resumes and interviews can't show. Python/FastAPI + React + Chrome extension + mobile, deployed on AWS ECS with RDS, Redis, and CloudFront. Three provisional patents filed.",
       url: "https://methodproof.com",
-      image: require("./assets/images/methodproof_screenshot.png"),
+      image: require("./assets/images/methodproof_screenshot.webp"),
     },
     {
       id: "specter-1",
@@ -461,7 +461,7 @@ const publications = {
       description:
         "Byzantine-resilient cooperative SLAM workshop. Interactive in-browser simulator for adversarial multi-agent mapping — replay storms, sybil floods, collusion attacks. TypeScript sim-core runs entirely client-side; React + Vite SPA shipped via GitHub Actions to Hetzner.",
       url: "https://specter.codeblackwell.ai",
-      image: require("./assets/images/specter_screenshot.png"),
+      image: require("./assets/images/specter_screenshot.webp"),
     },
     {
       id: "agentopolis",
@@ -470,7 +470,7 @@ const publications = {
       description:
         "Watch your codebase build itself as a living isometric city. Claude Code agents become citizens, repos become districts — forge a city from any GitHub URL. Published to PyPI (uv tool install agentopolis); FastAPI + canvas, hosted demo deployed on Hetzner.",
       url: "https://agentopolis.codeblackwell.ai",
-      image: require("./assets/images/agentopolis_screenshot.png"),
+      image: require("./assets/images/agentopolis_screenshot.webp"),
     },
     {
       id: "spice",
@@ -479,7 +479,7 @@ const publications = {
       description:
         "Autonomous crypto trading engine. Real-time market analysis, automated strategy execution, and a full trading cockpit — built on FastAPI, React, PostgreSQL/TimescaleDB, and Redis. Deployed on AWS EC2 with CloudFront.",
       url: "https://letitcook.ing",
-      image: require("./assets/images/spice_screenshot.png"),
+      image: require("./assets/images/spice_screenshot.webp"),
     },
     {
       id: "prove",
@@ -488,7 +488,7 @@ const publications = {
       description:
         "Your skills, verified by code. Ingests your resume and GitHub repos into a Neo4j knowledge graph, then lets anyone query your abilities with cited evidence, GitHub links, and proficiency scores — powered by Claude and vector search.",
       url: "https://prove.codeblackwell.ai",
-      image: require("./assets/images/prove_screenshot.png"),
+      image: require("./assets/images/prove_screenshot.webp"),
     },
     {
       id: "panel",
@@ -497,7 +497,7 @@ const publications = {
       description:
         "PRD from Agent Negotiation & Expert Logic. Type an idea, watch 13 AI agents debate architecture, security, and UX, then 3 judges score the result. Downloads a complete PRD package with transcripts and structured exports.",
       url: "https://panel.codeblackwell.ai",
-      image: require("./assets/images/panel_screenshot.png"),
+      image: require("./assets/images/panel_screenshot.webp"),
     },
     {
       id: "bloodtrail",
@@ -506,7 +506,7 @@ const publications = {
       description:
         "BloodHound attack path visualizer. Upload SharpHound data and instantly see Active Directory attack chains ranked by severity — dual graph view, execution playbooks with copy-paste commands, and thermal heatmap modes.",
       url: "https://bloodtrail.codeblackwell.ai",
-      image: require("./assets/images/bloodtrail_screenshot.png"),
+      image: require("./assets/images/bloodtrail_screenshot.webp"),
     },
     {
       id: "crackpedia",
@@ -515,7 +515,7 @@ const publications = {
       description:
         "Pentesting command encyclopedia. 54 attack chains, cheatsheets, and writeups with Neo4j-powered graph visualization. Browse by category, search by technique, and walk through step-by-step execution paths.",
       url: "https://crackpedia.codeblackwell.ai",
-      image: require("./assets/images/crackpedia_screenshot.png"),
+      image: require("./assets/images/crackpedia_screenshot.webp"),
     },
     {
       id: "veridatum",
@@ -524,7 +524,7 @@ const publications = {
       description:
         "Multi-source data validation. Upload CSVs from Shopify, Stripe, NetSuite — any system — and instantly see every discrepancy. Auto-detects join keys, configurable tolerances, pairwise comparisons with downloadable results.",
       url: "https://veridatum.codeblackwell.ai",
-      image: require("./assets/images/veridatum_screenshot.png"),
+      image: require("./assets/images/veridatum_screenshot.webp"),
     },
     {
       id: "kata",
@@ -533,7 +533,7 @@ const publications = {
       description:
         "Declarative schema engine. Define your tables, columns, and conflict resolution strategies in Python — Kata generates the SQL, migrations, and upsert logic. Interactive demo with D3 visualization and CodeMirror editor.",
       url: "https://kata.codeblackwell.ai",
-      image: require("./assets/images/kata_screenshot.png"),
+      image: require("./assets/images/kata_screenshot.webp"),
     },
   ],
 };
