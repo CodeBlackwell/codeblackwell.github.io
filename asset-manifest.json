@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.063243ca.chunk.css",
-    "main.js": "./static/js/main.d808b9bf.chunk.js",
-    "main.js.map": "./static/js/main.d808b9bf.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.fb7e7b0c.js",
-    "runtime-main.js.map": "./static/js/runtime-main.fb7e7b0c.js.map",
-    "static/js/2.dd5e7fde.chunk.js": "./static/js/2.dd5e7fde.chunk.js",
-    "static/js/2.dd5e7fde.chunk.js.map": "./static/js/2.dd5e7fde.chunk.js.map",
+    "main.css": "./static/css/main.53ece310.chunk.css",
+    "main.js": "./static/js/main.2ba4eacc.chunk.js",
+    "main.js.map": "./static/js/main.2ba4eacc.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4397f428.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4397f428.js.map",
+    "static/js/2.9836acb7.chunk.js": "./static/js/2.9836acb7.chunk.js",
+    "static/js/2.9836acb7.chunk.js.map": "./static/js/2.9836acb7.chunk.js.map",
+    "static/js/3.90080163.chunk.js": "./static/js/3.90080163.chunk.js",
+    "static/js/3.90080163.chunk.js.map": "./static/js/3.90080163.chunk.js.map",
+    "static/css/4.d2b67cee.chunk.css": "./static/css/4.d2b67cee.chunk.css",
+    "static/js/4.3a5e0152.chunk.js": "./static/js/4.3a5e0152.chunk.js",
+    "static/js/4.3a5e0152.chunk.js.map": "./static/js/4.3a5e0152.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.e6da9c1c239590d59f322edfbc6f1973.js": "./precache-manifest.e6da9c1c239590d59f322edfbc6f1973.js",
+    "precache-manifest.b151b511e63e1e4456fb058de3e2ecbe.js": "./precache-manifest.b151b511e63e1e4456fb058de3e2ecbe.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.063243ca.chunk.css.map": "./static/css/main.063243ca.chunk.css.map",
+    "static/css/4.d2b67cee.chunk.css.map": "./static/css/4.d2b67cee.chunk.css.map",
+    "static/css/main.53ece310.chunk.css.map": "./static/css/main.53ece310.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/LeAvatar.png": "./static/media/LeAvatar.afea5eb3.png",
     "static/media/PROVE.png": "./static/media/PROVE.bd925112.png",
@@ -53,9 +59,7 @@
     "static/media/methodproof_screenshot.png": "./static/media/methodproof_screenshot.60f50351.png",
     "static/media/muffito_logo.png": "./static/media/muffito_logo.069938a8.png",
     "static/media/nptel_logo.png": "./static/media/nptel_logo.95a12a2b.png",
-    "static/media/panel-og.png": "./static/media/panel-og.13c6cff0.png",
     "static/media/panel_screenshot.png": "./static/media/panel_screenshot.7b6e9d83.png",
-    "static/media/portfolio.gif": "./static/media/portfolio.414dfbd9.gif",
     "static/media/profile_avatar.png": "./static/media/profile_avatar.eaf02c2d.png",
     "static/media/programmer.svg": "./static/media/programmer.d86d0a61.svg",
     "static/media/projects_image.svg": "./static/media/projects_image.3cdc8120.svg",
@@ -72,9 +76,9 @@
     "static/media/veridatum_screenshot.png": "./static/media/veridatum_screenshot.b7c1b908.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb7e7b0c.js",
-    "static/js/2.dd5e7fde.chunk.js",
-    "static/css/main.063243ca.chunk.css",
-    "static/js/main.d808b9bf.chunk.js"
+    "static/js/runtime-main.4397f428.js",
+    "static/js/2.9836acb7.chunk.js",
+    "static/css/main.53ece310.chunk.css",
+    "static/js/main.2ba4eacc.chunk.js"
   ]
 }
