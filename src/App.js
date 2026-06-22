@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import "./App.css";
 import Main from "./containers/Main";
 import { ThemeProvider } from "styled-components";
@@ -6,10 +6,12 @@ import { blueTheme, materialDarkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import ThemeToggle from "./components/themeToggle/ThemeToggle";
 import MusicPlayer, { AUDIO_FILE } from "./components/musicPlayer/MusicPlayer";
-import AudioVisualizer from "./components/audioVisualizer/AudioVisualizer";
 import ModeSelector from "./components/modeSelector/ModeSelector";
 import { useAudioAnalyser } from "./hooks/useAudioAnalyser";
 import { useVisualizerMode } from "./hooks/useVisualizerMode";
+
+// three.js is heavy; load it as a separate chunk after the page is interactive
+const AudioVisualizer = lazy(() => import("./components/audioVisualizer/AudioVisualizer"));
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -25,6 +27,13 @@ function App() {
 
   // Visualizer mode cycling hook
   const { currentMode, opacity, cycleMode } = useVisualizerMode();
+
+  // Defer the background visualizer until the browser is idle after first paint
+  const [showVisualizer, setShowVisualizer] = useState(false);
+  useEffect(() => {
+    const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
+    idle(() => setShowVisualizer(true));
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
@@ -44,14 +53,18 @@ function App() {
         <GlobalStyles />
 
         {/* Background visualizer - z-index: 0 */}
-        <AudioVisualizer
-          theme={currentTheme}
-          getFrequencyData={getFrequencyData}
-          isPlaying={isPlaying}
-          currentMode={currentMode}
-          opacity={visualizerOpacity}
-          isDarkMode={isDarkMode}
-        />
+        {showVisualizer && (
+          <Suspense fallback={null}>
+            <AudioVisualizer
+              theme={currentTheme}
+              getFrequencyData={getFrequencyData}
+              isPlaying={isPlaying}
+              currentMode={currentMode}
+              opacity={visualizerOpacity}
+              isDarkMode={isDarkMode}
+            />
+          </Suspense>
+        )}
 
         <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
 

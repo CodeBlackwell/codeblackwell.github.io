@@ -14,7 +14,7 @@ export default function PublicationCard({ pub, theme }) {
         <div key={pub.id} onClick={() => openPubinNewTab(pub.url)}>
           {pub.image && (
             <div className="publication-image-div">
-              <img src={pub.image} alt={pub.name} className="publication-image" />
+              <img src={pub.image} alt={pub.name} className="publication-image" loading="lazy" />
             </div>
           )}
           <div className="publication-name-div">

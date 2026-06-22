@@ -6,7 +6,7 @@ export default function BlogCard({ blog }) {
     <div>
       <div class="container">
         <div class="square">
-          <img src={blog.image} alt="blog" className="blog-card-image mask" />
+          <img src={blog.image} alt="blog" className="blog-card-image mask" loading="lazy" />
           <div class="blog-card-title">{blog.title}</div>
           <p className="blog-card-subtitle">{blog.description}</p>
 

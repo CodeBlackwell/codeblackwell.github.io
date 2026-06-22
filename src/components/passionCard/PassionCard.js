@@ -78,7 +78,15 @@ class PassionCard extends Component {
           className="passion-card-header passion-card-video"
           style={{ borderTopColor: passion.color_code }}
         >
-          <video ref={this.videoRef} className="passion-card-image" loop muted playsInline>
+          <video
+            ref={this.videoRef}
+            className="passion-card-image"
+            loop
+            muted
+            playsInline
+            preload="none"
+            poster={process.env.PUBLIC_URL + "/" + passion.image_path}
+          >
             <source src={process.env.PUBLIC_URL + "/" + passion.video_path} type="video/mp4" />
           </video>
           <div
@@ -140,6 +148,7 @@ class PassionCard extends Component {
           className="passion-card-image"
           src={process.env.PUBLIC_URL + "/" + passion.image_path}
           alt={passion.name}
+          loading="lazy"
         />
         <div
           className="passion-card-overlay"
