@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "42731351d96876c34b14ddb1f3b63751",
+    "revision": "865cfe711d19518661a22ecfcac18ef4",
     "url": "./index.html"
   },
   {
-    "revision": "395c30d71d2e1411f75f",
+    "revision": "af233da03c038fea1805",
     "url": "./static/css/main.063243ca.chunk.css"
   },
   {
-    "revision": "1247f0a46aea63c44906",
-    "url": "./static/js/2.03b30edc.chunk.js"
+    "revision": "c95630353e8b8a646e46",
+    "url": "./static/js/2.dd5e7fde.chunk.js"
   },
   {
-    "revision": "395c30d71d2e1411f75f",
-    "url": "./static/js/main.a2549662.chunk.js"
+    "revision": "af233da03c038fea1805",
+    "url": "./static/js/main.d808b9bf.chunk.js"
   },
   {
     "revision": "bfba2a34f9928e5e0d9c",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2ec8a8a7866c757d1f464e0578ea276e",
     "url": "./static/media/agent_blackwell.2ec8a8a7.jpeg"
+  },
+  {
+    "revision": "ebb821f350137a014fdd2951e0a4cbc5",
+    "url": "./static/media/agentopolis_screenshot.ebb821f3.png"
   },
   {
     "revision": "dcd6dee2bd7458a4a576dc131506fd83",
