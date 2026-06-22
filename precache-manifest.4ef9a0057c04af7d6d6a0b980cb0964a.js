@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "97891555c14526106c50a21e8096c0fb",
+    "revision": "71147fcb0640a7e09c071d42e3e54f28",
     "url": "./index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/css/4.d2b67cee.chunk.css"
   },
   {
-    "revision": "cc19e0bad4be9d02f7ad",
+    "revision": "198665c89b1662bbe414",
     "url": "./static/css/main.53ece310.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/js/4.3a5e0152.chunk.js"
   },
   {
-    "revision": "cc19e0bad4be9d02f7ad",
-    "url": "./static/js/main.2ba4eacc.chunk.js"
+    "revision": "198665c89b1662bbe414",
+    "url": "./static/js/main.0a9242e9.chunk.js"
   },
   {
     "revision": "a430d14c336deaaab09a",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/agent_blackwell.2ec8a8a7.jpeg"
   },
   {
-    "revision": "ebb821f350137a014fdd2951e0a4cbc5",
-    "url": "./static/media/agentopolis_screenshot.ebb821f3.png"
+    "revision": "0c8acd9a7d1ff9baeb1f3850ebeca1a2",
+    "url": "./static/media/agentopolis_screenshot.0c8acd9a.webp"
   },
   {
     "revision": "dcd6dee2bd7458a4a576dc131506fd83",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/blogs_image.52320b8c.svg"
   },
   {
-    "revision": "b81564fe767cc6068e58de393eb7bbac",
-    "url": "./static/media/bloodtrail_screenshot.b81564fe.png"
+    "revision": "cb60580e520c111937512ac0c1a05d4e",
+    "url": "./static/media/bloodtrail_screenshot.cb60580e.webp"
   },
   {
     "revision": "d43984709d9245496230f0276df4b5b3",
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/crack.cc6fc737.jpeg"
   },
   {
-    "revision": "eb5e95e7a2dd0911a8e0f51aee15ab85",
-    "url": "./static/media/crackpedia_screenshot.eb5e95e7.png"
+    "revision": "096a83e373cd3cf14eb3151493301d15",
+    "url": "./static/media/crackpedia_screenshot.096a83e3.webp"
   },
   {
     "revision": "b4d112aacca22f6c7c2c9f8a23124397",
@@ -256,8 +256,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/jsFramework.5b4a6449.svg"
   },
   {
-    "revision": "855a031f2f6cc9f0dd08f13d8bcce374",
-    "url": "./static/media/kata_screenshot.855a031f.png"
+    "revision": "f09b359e6ed581217ed7c4e03ec18581",
+    "url": "./static/media/kata_screenshot.f09b359e.webp"
   },
   {
     "revision": "c597fbded5de799dfb9abc3fc4f1c26f",
@@ -272,8 +272,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/manOnTable.3f17ffac.svg"
   },
   {
-    "revision": "60f50351dec2e2466c60f6f3d0200e8d",
-    "url": "./static/media/methodproof_screenshot.60f50351.png"
+    "revision": "8a0c3d7e18764f62063acde3a2269e9e",
+    "url": "./static/media/methodproof_screenshot.8a0c3d7e.webp"
   },
   {
     "revision": "069938a84edd6ebf383c318e9feb5d4c",
@@ -284,8 +284,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/nptel_logo.95a12a2b.png"
   },
   {
-    "revision": "7b6e9d83b54753b537ac314132e2cf6d",
-    "url": "./static/media/panel_screenshot.7b6e9d83.png"
+    "revision": "d23f9923fed555c3e7dcbec4faffdbc5",
+    "url": "./static/media/panel_screenshot.d23f9923.webp"
   },
   {
     "revision": "eaf02c2d0158b6b4b8c2a0a0cf830a04",
@@ -300,20 +300,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/projects_image.3cdc8120.svg"
   },
   {
-    "revision": "667312e383cadb4fbf8b2f426a89f933",
-    "url": "./static/media/prove_screenshot.667312e3.png"
+    "revision": "abeec2bc53ca7113bf480ee8620cabb1",
+    "url": "./static/media/prove_screenshot.abeec2bc.webp"
   },
   {
     "revision": "71408db71465afd742233e4a96f06526",
     "url": "./static/media/pwa.71408db7.png"
   },
   {
-    "revision": "4c98289e288f1adf4c896f73a676d0a6",
-    "url": "./static/media/specter_screenshot.4c98289e.png"
+    "revision": "1875a1d724d3db58d515de2ff5ba6bc1",
+    "url": "./static/media/specter_screenshot.1875a1d7.webp"
   },
   {
-    "revision": "5498407b014834cc3ef75840edef1895",
-    "url": "./static/media/spice_screenshot.5498407b.png"
+    "revision": "42de5e9517875777ca1a764582892ca2",
+    "url": "./static/media/spice_screenshot.42de5e95.webp"
   },
   {
     "revision": "2c497738be3831492aeb6bdc43f19154",
@@ -340,7 +340,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/ui_ux_design.f05d03dd.svg"
   },
   {
-    "revision": "b7c1b9085b63f089b8d031996da2e9ce",
-    "url": "./static/media/veridatum_screenshot.b7c1b908.png"
+    "revision": "aa76c08074e78beed455863f5d23ea74",
+    "url": "./static/media/veridatum_screenshot.aa76c080.webp"
   }
 ]);
