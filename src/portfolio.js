@@ -464,6 +464,15 @@ const publications = {
       image: require("./assets/images/specter_screenshot.png"),
     },
     {
+      id: "agentopolis",
+      name: "Agentopolis",
+      createdAt: "2026-06-13T00:00:00Z",
+      description:
+        "Watch your codebase build itself as a living isometric city. Claude Code agents become citizens, repos become districts — forge a city from any GitHub URL. Published to PyPI (uv tool install agentopolis); FastAPI + canvas, hosted demo deployed on Hetzner.",
+      url: "https://agentopolis.codeblackwell.ai",
+      image: require("./assets/images/agentopolis_screenshot.png"),
+    },
+    {
       id: "spice",
       name: "SPICE",
       createdAt: "2026-03-01T00:00:00Z",
