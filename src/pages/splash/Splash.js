@@ -5,7 +5,7 @@ import LoaderLogo from "../../components/Loader/LoaderLogo.js";
 
 function AnimatedSplash(props) {
   return (
-    <div className="logo_wrapper">
+    <div className="logo_wrapper" onClick={props.onSkip}>
       <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
         <LoaderLogo id="logo" theme={props.theme} />
       </div>
@@ -19,21 +19,24 @@ class Splash extends Component {
     this.state = {
       redirect: false,
     };
+    this.skip = () => this.setState({ redirect: true });
   }
 
   componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 5500);
+    this.id = setTimeout(this.skip, 2500);
+    window.addEventListener("keydown", this.skip);
   }
 
-  componentWillMount() {
+  componentWillUnmount() {
     clearTimeout(this.id);
+    window.removeEventListener("keydown", this.skip);
   }
 
   render() {
     return this.state.redirect ? (
       <Redirect to="/home" />
     ) : (
-      <AnimatedSplash theme={this.props.theme} />
+      <AnimatedSplash theme={this.props.theme} onSkip={this.skip} />
     );
   }
 }
