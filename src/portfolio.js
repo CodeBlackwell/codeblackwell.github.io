@@ -526,15 +526,6 @@ const publications = {
       url: "https://veridatum.codeblackwell.ai",
       image: require("./assets/images/veridatum_screenshot.webp"),
     },
-    {
-      id: "kata",
-      name: "Kata",
-      createdAt: "2026-01-15T00:00:00Z",
-      description:
-        "Declarative schema engine. Define your tables, columns, and conflict resolution strategies in Python — Kata generates the SQL, migrations, and upsert logic. Interactive demo with D3 visualization and CodeMirror editor.",
-      url: "https://kata.codeblackwell.ai",
-      image: require("./assets/images/kata_screenshot.webp"),
-    },
   ],
 };
 
