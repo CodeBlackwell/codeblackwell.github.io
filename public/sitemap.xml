@@ -26,6 +26,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://codeblackwell.ai/consulting</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://codeblackwell.ai/beyond</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>

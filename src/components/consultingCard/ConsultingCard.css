@@ -1,0 +1,108 @@
+.consulting-card-div {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  flex: 1 1 40%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.consulting-card-div:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.consulting-card-link {
+  display: block;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.consulting-lock-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.consulting-lock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-family: "Google Sans Regular";
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.consulting-period {
+  font-family: "Google Sans Regular";
+  font-size: 13px;
+}
+
+.consulting-name {
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.consulting-client {
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 13px;
+  margin: 0.35rem 0 0.9rem 0;
+}
+
+.consulting-description {
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consulting-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.1rem;
+}
+
+.consulting-chip {
+  padding: 0.2rem 0.55rem;
+  border: 1px solid;
+  border-radius: 4px;
+  font-family: "Google Sans Regular";
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.consulting-cta {
+  text-align: left;
+  font-family: "Google Sans Regular";
+  font-size: 14px;
+  font-weight: 700;
+  margin: 1.1rem 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .consulting-card-div {
+    flex: 1 1 100%;
+  }
+
+  .consulting-name {
+    font-size: 18px;
+  }
+
+  .consulting-description {
+    font-size: 13px;
+  }
+}

@@ -6,6 +6,7 @@ import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import Consulting from "../pages/consulting/Consulting";
 import Beyond from "../pages/beyond/BeyondComponent";
 import WorkshopPage from "../pages/workshop/WorkshopComponent";
 import { settings } from "../portfolio.js";
@@ -52,6 +53,10 @@ export default class Main extends Component {
           <Route
             path="/projects"
             render={(props) => <Projects {...props} theme={this.props.theme} />}
+          />
+          <Route
+            path="/consulting"
+            render={(props) => <Consulting {...props} theme={this.props.theme} />}
           />
           <Route
             path="/workshop"

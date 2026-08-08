@@ -529,6 +529,41 @@ const publications = {
   ],
 };
 
+// Consulting Page
+const consultingHeader = {
+  title: "Consulting",
+  description:
+    "Client work I built end to end, running in production behind access control. The systems below are live, but the data and the decisions inside them belong to the people who commissioned them. What you can read here is the shape of the problem and the stack that solved it. Credentials on request.",
+  avatar_image_path: "projects_image.svg",
+};
+
+const consulting = {
+  data: [
+    {
+      id: "fourth-axis",
+      name: "Fourth Axis",
+      client: "Defense acquisition consultancy",
+      period: "2026",
+      description:
+        "An acquisition strategy workbench for a firm advising on federal defense programs. It takes program documents and market context and produces structured acquisition pathways: the comparisons, tradeoffs, and framing a principal walks into a client engagement holding. Built as a single tenant internal tool by design, not a SaaS product.",
+      stack: ["Express", "React", "Vite", "Claude API", "SQLite", "Docker"],
+      url: "https://generic.codeblackwell.ai",
+      access: "Basic auth",
+    },
+    {
+      id: "titan-finder",
+      name: "Titan Finder",
+      client: "Federal research sponsor",
+      period: "2026",
+      description:
+        "Maps national defense priority mission domains onto US research institutions and ranks the matches with cited, auditable evidence. Every claim traces back to a federal award record, a publication, or an enrollment filing. No unsourced assertions. The hard part was never the graph; it was making the evidence hold up to scrutiny.",
+      stack: ["Python", "FastAPI", "Neo4j", "SQLite", "D3.js", "Claude API"],
+      url: "https://titans.codeblackwell.ai",
+      access: "Passphrase gate",
+    },
+  ],
+};
+
 // Workshop Page
 const workshopData = {
   title: "The Workshop",
@@ -668,6 +703,8 @@ export {
   projectsHeader,
   publicationsHeader,
   publications,
+  consultingHeader,
+  consulting,
   contactPageData,
   beyondPageData,
   workshopData,
