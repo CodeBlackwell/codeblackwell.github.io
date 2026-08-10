@@ -474,11 +474,11 @@ const publications = {
     },
     {
       id: "spice",
-      name: "SPICE",
+      name: "SPICE (Retired)",
       createdAt: "2026-03-01T00:00:00Z",
       description:
-        "Autonomous crypto trading engine. Real-time market analysis, automated strategy execution, and a full trading cockpit — built on FastAPI, React, PostgreSQL/TimescaleDB, and Redis. Deployed on AWS EC2 with CloudFront.",
-      url: "https://letitcook.ing",
+        "Autonomous crypto trading engine. Real-time market analysis, automated strategy execution, and a full trading cockpit — built on FastAPI, React, PostgreSQL/TimescaleDB, and Redis. Decommissioned 2026-08-10.",
+      url: "",
       image: require("./assets/images/spice_screenshot.webp"),
     },
     {
