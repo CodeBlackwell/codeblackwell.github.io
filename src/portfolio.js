@@ -446,15 +446,6 @@ const publicationsHeader = {
 const publications = {
   data: [
     {
-      id: "methodproof",
-      name: "MethodProof",
-      createdAt: "2026-05-01T00:00:00Z",
-      description:
-        "Engineering process intelligence. Captures how you actually think, debug, and build — then turns it into a Neo4j-backed graph that resumes and interviews can't show. Python/FastAPI + React + Chrome extension + mobile, deployed on AWS ECS with RDS, Redis, and CloudFront. Three provisional patents filed.",
-      url: "https://methodproof.com",
-      image: require("./assets/images/methodproof_screenshot.webp"),
-    },
-    {
       id: "specter-1",
       name: "SPECTER·1",
       createdAt: "2026-05-15T00:00:00Z",
@@ -525,6 +516,15 @@ const publications = {
         "Multi-source data validation. Upload CSVs from Shopify, Stripe, NetSuite — any system — and instantly see every discrepancy. Auto-detects join keys, configurable tolerances, pairwise comparisons with downloadable results.",
       url: "https://veridatum.codeblackwell.ai",
       image: require("./assets/images/veridatum_screenshot.webp"),
+    },
+    {
+      id: "methodproof",
+      name: "MethodProof",
+      createdAt: "2026-05-01T00:00:00Z",
+      description:
+        "Engineering process intelligence. Captures how you actually think, debug, and build — then turns it into a Neo4j-backed graph that resumes and interviews can't show. Python/FastAPI + React + Chrome extension + mobile, deployed on AWS ECS with RDS, Redis, and CloudFront. Three provisional patents filed.",
+      url: "https://methodproof.com",
+      image: require("./assets/images/methodproof_screenshot.webp"),
     },
   ],
 };
