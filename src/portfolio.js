@@ -551,15 +551,15 @@ const consulting = {
       access: "Basic auth",
     },
     {
-      id: "titan-finder",
-      name: "Titan Finder",
+      id: "cadre",
+      name: "CADRE",
       client: "Federal research sponsor",
       period: "2026",
       description:
         "Maps national defense priority mission domains onto US research institutions and ranks the matches with cited, auditable evidence. Every claim traces back to a federal award record, a publication, or an enrollment filing. No unsourced assertions. The hard part was never the graph; it was making the evidence hold up to scrutiny.",
       stack: ["Python", "FastAPI", "Neo4j", "SQLite", "D3.js", "Claude API"],
-      url: "https://titans.codeblackwell.ai",
-      access: "Passphrase gate",
+      url: "https://cadre.codeblackwell.ai",
+      access: "Named accounts",
     },
   ],
 };
