@@ -446,6 +446,33 @@ const publicationsHeader = {
 const publications = {
   data: [
     {
+      id: "academic-ancestry",
+      name: "Academic Ancestry",
+      createdAt: "2026-10-01T00:00:00Z",
+      description:
+        "Who taught the people who taught you? Type a researcher and see their advisors and students up and down the line, with examiners, coauthors and colleagues beside them. 2.3 million theses from 220 repositories in 29 countries, joined to Wikidata and OpenAlex, and every edge names its source. Python + Postgres API, React Router front end, and an MCP server so agents can ask the record too. Runs on AWS.",
+      url: "https://academicancestry.org",
+      image: require("./assets/images/academic_ancestry_screenshot.webp"),
+    },
+    {
+      id: "vizardry",
+      name: "Vizardry",
+      createdAt: "2026-08-13T00:00:00Z",
+      description:
+        "A Claude Code plugin for data visualization that holds up. /datastorm profiles any dataset and writes a self contained report of 12 to 20 chart options, each drawn live from the real data with its failure mode stated. 212 React + D3 exemplars, a dialect where React owns rendering and D3 owns math, and verifiers that render every chart in a headless harness before it ships. Open source on GitHub.",
+      url: "https://github.com/CodeBlackwell/vizardry",
+      image: require("./assets/images/vizardry_screenshot.webp"),
+    },
+    {
+      id: "maisight",
+      name: "mAiSight",
+      createdAt: "2026-08-16T00:00:00Z",
+      description:
+        "Bidirectional glossary highlighting for jargon heavy documents. Feed in Markdown, an OpenAPI spec, or an arXiv paper and get a reading page where every defined term lights up in the prose and in a glossary rail that follows your scroll. Ships as a hosted reader, an embed widget for existing docs sites, and a browser extension, with analytics on which terms readers look up most. Python/FastAPI + React/Vite with Claude extraction, deployed on Hetzner.",
+      url: "https://maisight.codeblackwell.ai",
+      image: require("./assets/images/maisight_screenshot.webp"),
+    },
+    {
       id: "specter-1",
       name: "SPECTER·1",
       createdAt: "2026-05-15T00:00:00Z",
