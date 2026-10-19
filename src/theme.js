@@ -11,13 +11,6 @@ export const blueTheme = {
   jacketColor: "#0A2472",
   headerColor: "#0E6BA877",
   splashBg: "#001C55",
-  visualizer: {
-    primary: "#0E6BA8",
-    secondary: "#A6E1FA",
-    accent: "#0A2472",
-    glow: "#0E6BA8",
-    opacity: 0.7,
-  },
 };
 
 export const brownTheme = {
@@ -32,13 +25,6 @@ export const brownTheme = {
   jacketColor: "#FB6376",
   headerColor: "#E29F9577",
   splashBg: "#5D2A42",
-  visualizer: {
-    primary: "#E29F95",
-    secondary: "#FB6376",
-    accent: "#5D2A42",
-    glow: "#E29F95",
-    opacity: 0.7,
-  },
 };
 
 export const purpleTheme = {
@@ -53,13 +39,6 @@ export const purpleTheme = {
   jacketColor: "#5E548E",
   headerColor: "#BE95C477",
   splashBg: "#231942",
-  visualizer: {
-    primary: "#BE95C4",
-    secondary: "#E0B1CB",
-    accent: "#5E548E",
-    glow: "#BE95C4",
-    opacity: 0.7,
-  },
 };
 
 export const greenTheme = {
@@ -74,13 +53,6 @@ export const greenTheme = {
   jacketColor: "#007f5f",
   headerColor: "#55a63077",
   splashBg: "#003F2F",
-  visualizer: {
-    primary: "#55a630",
-    secondary: "#dddf00",
-    accent: "#007f5f",
-    glow: "#55a630",
-    opacity: 0.7,
-  },
 };
 
 export const redTheme = {
@@ -95,13 +67,6 @@ export const redTheme = {
   jacketColor: "#9d0208",
   headerColor: "#dc2f0277",
   splashBg: "#6a040f",
-  visualizer: {
-    primary: "#dc2f02",
-    secondary: "#ffba08",
-    accent: "#9d0208",
-    glow: "#dc2f02",
-    opacity: 0.7,
-  },
 };
 
 export const blackTheme = {
@@ -116,13 +81,6 @@ export const blackTheme = {
   jacketColor: "#8d99ae",
   headerColor: "#fca31177",
   splashBg: "#14213d",
-  visualizer: {
-    primary: "#fca311",
-    secondary: "#8d99ae",
-    accent: "#14213d",
-    glow: "#fca311",
-    opacity: 0.7,
-  },
 };
 
 export const pinkTheme = {
@@ -137,13 +95,6 @@ export const pinkTheme = {
   jacketColor: "#8d99ae",
   headerColor: "#ef476f77",
   splashBg: "#620E34",
-  visualizer: {
-    primary: "#ef476f",
-    secondary: "#FBA7CD",
-    accent: "#620E34",
-    glow: "#ef476f",
-    opacity: 0.7,
-  },
 };
 
 export const violetTheme = {
@@ -158,13 +109,6 @@ export const violetTheme = {
   jacketColor: "#763D8B",
   headerColor: "#9b5de577",
   splashBg: "#430A58",
-  visualizer: {
-    primary: "#9b5de5",
-    secondary: "#D6BEF4",
-    accent: "#763D8B",
-    glow: "#9b5de5",
-    opacity: 0.7,
-  },
 };
 
 export const tealTheme = {
@@ -179,13 +123,6 @@ export const tealTheme = {
   jacketColor: "#56a3a6",
   headerColor: "#07beb877",
   splashBg: "#084c61",
-  visualizer: {
-    primary: "#07beb8",
-    secondary: "#9BEED8",
-    accent: "#56a3a6",
-    glow: "#07beb8",
-    opacity: 0.7,
-  },
 };
 
 export const orangeTheme = {
@@ -200,13 +137,6 @@ export const orangeTheme = {
   jacketColor: "#d7263d",
   headerColor: "#FF6B3577",
   splashBg: "#99401F",
-  visualizer: {
-    primary: "#FF6B35",
-    secondary: "#FFB59A",
-    accent: "#d7263d",
-    glow: "#FF6B35",
-    opacity: 0.7,
-  },
 };
 
 export const yellowTheme = {
@@ -221,13 +151,6 @@ export const yellowTheme = {
   jacketColor: "#4e342e",
   headerColor: "#FFEA3D",
   splashBg: "#5f4339",
-  visualizer: {
-    primary: "#ffea3d",
-    secondary: "#ffff73",
-    accent: "#4e342e",
-    glow: "#ffea3d",
-    opacity: 0.7,
-  },
 };
 
 export const materialDarkTheme = {
@@ -243,13 +166,6 @@ export const materialDarkTheme = {
   headerColor: "#1a1030ee",
   splashBg: "#0a0a18",
   isDeepSpace: true,
-  visualizer: {
-    primary: "#8b5cf6",
-    secondary: "#c084fc",
-    accent: "#3b0764",
-    glow: "#a855f7",
-    opacity: 0.9,
-  },
   glass: {
     background: "rgba(10, 10, 20, 0.6)",
     border: "1px solid rgba(139, 92, 246, 0.2)",
@@ -270,13 +186,6 @@ export const materialLightTheme = {
   jacketColor: "#E1E2E1",
   headerColor: "#E1E2E1",
   splashBg: "#7d56c2",
-  visualizer: {
-    primary: "#7d56c2",
-    secondary: "#E9E3F5",
-    accent: "#2b1958",
-    glow: "#7d56c2",
-    opacity: 0.7,
-  },
 };
 
 export const materialTealTheme = {
@@ -291,13 +200,6 @@ export const materialTealTheme = {
   jacketColor: "#E1E2E1",
   headerColor: "#E1E2E1",
   splashBg: "#05505E",
-  visualizer: {
-    primary: "#05505E",
-    secondary: "#a1dded",
-    accent: "#0a343c",
-    glow: "#05505E",
-    opacity: 0.7,
-  },
 };
 
 export const chosenTheme = blueTheme;

@@ -1,11 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
-// Frequency band ranges (for fftSize 2048, 1024 bins)
-// Sample rate ~44100Hz, each bin = ~43Hz
-const BASS_RANGE = [0, 10]; // 0-430Hz (bass/sub-bass)
-const MID_RANGE = [10, 100]; // 430-4300Hz (mids)
-const TREBLE_RANGE = [100, 512]; // 4300Hz+ (highs)
-
 export function useAudioAnalyser(audioSrc) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReady, setIsReady] = useState(false);
@@ -70,34 +64,6 @@ export function useAudioAnalyser(audioSrc) {
       return null;
     }
   }, [audioSrc]);
-
-  // Get frequency data for visualizer
-  const getFrequencyData = useCallback(() => {
-    if (!analyserRef.current || !frequencyDataRef.current) {
-      return { bass: 0, mid: 0, treble: 0, average: 0, raw: new Uint8Array(0) };
-    }
-
-    analyserRef.current.getByteFrequencyData(frequencyDataRef.current);
-    const data = frequencyDataRef.current;
-
-    // Calculate averages for each band
-    const getAverage = (start, end) => {
-      let sum = 0;
-      const actualEnd = Math.min(end, data.length);
-      for (let i = start; i < actualEnd; i++) {
-        sum += data[i];
-      }
-      return sum / (actualEnd - start) / 255; // Normalize to 0-1
-    };
-
-    return {
-      bass: getAverage(...BASS_RANGE),
-      mid: getAverage(...MID_RANGE),
-      treble: getAverage(...TREBLE_RANGE),
-      average: getAverage(0, data.length),
-      raw: data,
-    };
-  }, []);
 
   // Play audio
   const play = useCallback(async () => {
@@ -167,7 +133,6 @@ export function useAudioAnalyser(audioSrc) {
     play,
     pause,
     toggle,
-    getFrequencyData,
     audioElement: audioRef.current,
   };
 }
